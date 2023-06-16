@@ -49,7 +49,7 @@
 
 
 ** [[https://wg21.link/p0009][P0009]] mdspan: A Non-Owning Multidimensional Array Reference (H. Carter Edwards, Bryce Adelstein
-LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan
+***** tags: LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan
 
 ** [[https://wg21.link/p0288][P0288]] any_invocable (Ryan McDougall, Matt Calabrese)
 #+begin_quote
@@ -57,10 +57,10 @@ This paper proposes a conservative, move-only equivalent of std::function.
 #+end_quote
 
 
-LWG, C++23, IS, large, plenary-approved
+***** tags: LWG, C++23, IS, large, plenary-approved
 
 ** [[https://wg21.link/p0323][P0323]] std::expected (Vicente Botet, JF Bastien)...
-LWG, C++23, IS, B3 - addition, size - large, plenary-approved
+***** tags: LWG, C++23, IS, B3 - addition, size - large, plenary-approved
 
 ** [[https://wg21.link/p0330][P0330]] Literal Suffixes for ptrdiff_t and size_t (JeanHeyd Meneide, Rein Halbersma)
 #+begin_quote
@@ -90,7 +90,7 @@ for (auto i = 0uz, s = v.size(); i < s; ++i) {
 LWG, C++23, tiny, plenary-approved
 
 
-C++23, plenary-approved
+***** tags: C++23, plenary-approved
 
 ** [[https://wg21.link/p0401r1][P0401R1]] Providing size feedback in the Allocator interface (Chris Kennelly, Jonathan Wakely)
 LWG, C++23, size - small, plenary-approved
@@ -99,12 +99,10 @@ LWG, C++23, size - small, plenary-approved
 Utilize size feedback from Allocator to reduce spurious reallocations
 #+end_quote
 
-LWG, C++23, small, plenary-approved
-
-18 papers
+***** tags: LWG, C++23, small, plenary-approved
 
 ** [[https://wg21.link/p0429][P0429]] A Standard flatmap (Zach Laine)...
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p0448][P0448]] A strstream replacement using span<charT> as buffer (Peter Sommerlad)
 #+begin_quote
@@ -128,7 +126,7 @@ is >> i;
 ASSERT(!is);
 #+end_src
 
-LWG, C++23, size - large, plenary-approved
+***** tags: LWG, C++23, size - large, plenary-approved
 
 ** [[https://wg21.link/p0533][P0533]] constexpr for <cmath> and <cstdlib> (Edward J. Rosten, Oliver J. Rosten)
 #+begin_quote
@@ -149,7 +147,7 @@ return a;
 constexpr int i{foo(0.5f)}.
 #+end_src
 
-CWG, LWG, C++23, IS, B3 - addition, size - medium, plenary-approved, constexpr
+***** tags: CWG, LWG, C++23, IS, B3 - addition, size - medium, plenary-approved, constexpr
 
 ** [[https://wg21.link/p0627][P0627]] Function to mark unreachable code (Melissa Mears)
 #+begin_quote
@@ -165,7 +163,7 @@ unreachable.
     std::unreachable();
 }
 #+end_src
-LWG, C++23, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p0798][P0798]] Monadic operations for std::optional (Sy Brand)
 #+begin_quote
@@ -195,7 +193,7 @@ Here is a list of programming languages which have a optional-like type without 
 - or_else :: ~or_else~ returns the optional if it has a value, otherwise it calls a given function. This allows you do things like logging or throwing exceptions in monadic contexts:
 
 
-LWG, SG14, C++23, IS, size - small, plenary-approved
+***** tags: LWG, SG14, C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p0847][P0847]] Deducing this (Gašper Ažman, Sy Brand, Ben Deane, Barry Revzin)
 #+begin_quote
@@ -240,13 +238,13 @@ vector captured = {1, 2, 3, 4};
 #+end_src
 
 
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p0943][P0943]] Support C atomics in C++ (Hans-J. Boehm)
-C++23, IS, B2 - improvement, size - small, plenary-approved
+***** tags: C++23, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p1048][P1048]] A proposal for a type trait to detect scoped enumerations (Juan Alday)
-C++23, IS, B3 - addition, size - small, plenary-approved
+***** tags: C++23, IS, B3 - addition, size - small, plenary-approved
 
 ** [[https://wg21.link/p1072][P1072]] basic_string::resize_default_init (Chris Kennelly, Mark Zeren)
 #+begin_quote
@@ -268,10 +266,10 @@ std::string GeneratePattern(const std::string& pattern, size_t count) {
     return ret;
 }
 #+end_src
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1102][P1102]] Down with ()! (Alex Christensen, JF Bastien)
-C++23, IS, plenary-approved
+***** tags: C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1132][P1132]] out_ptr - a scalable output pointer abstraction (JeanHeyd Meneide, Todor Buyukliev, Isabella Muerte)
 #+begin_quote
@@ -293,7 +291,7 @@ if (err == C_API_ERROR_CONDITION) {
 }
 // resource.get() the out-value from the C API function
 #+end_src
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1147][P1147]] Printing =volatile= Pointers (Bryce Adelstein Lelbach)
 #+begin_quote
@@ -320,10 +318,10 @@ This produces the following output:
 
 1
 #+end_quote
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1169][P1169]] static operator() (Barry Revzin, Casey Carter)
-CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, expedited-library-...
+***** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, expedited-library-...
 
 ** [[https://wg21.link/p1206][P1206]] ranges::to: A function to convert any range to a container (Corentin Jabot, Eric Niebler, Casey Carter)
 #+begin_quote
@@ -341,16 +339,16 @@ After:
 #+begin_src c++
 auto vec = get_widgets_map() | ranges::to<vector>
 #+end_src
-LWG, ranges, C++23, IS, plenary-approved
+***** tags: LWG, ranges, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1222][P1222]] A Standard flatset (Zach Laine)
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p1223][P1223]] find_backward (Zach Laine)
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p1264][P1264]] Revising the wording of stream input operations (Louis Dionne)...
-LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium, plenary-approved, lwg-wording-only
+***** tags: LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium, plenary-approved, lwg-wording-only
 
 ** [[https://wg21.link/p1272][P1272]] Byteswapping for fun&&nuf (Isabella Muerte)
 #+begin_src c++
@@ -360,13 +358,13 @@ namespace std {
 }
 // Where std::is_integral_v<IntegerType> is true.
 #+end_src
-CWG, LWG, C++23, plenary-approved
+***** tags: CWG, LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p1328][P1328]] Making std::type_info::operator== constexpr (Peter Dimov)
 #+begin_quote
 This paper proposes std::type_info::operator== and operator!= be made constexpr, enabling practical, rather than theoretical, use of typeid in constant expressions.
 #+end_quote
-LWG, C++23, IS, B3 - addition, size - tiny, plenary-approved
+***** tags: LWG, C++23, IS, B3 - addition, size - tiny, plenary-approved
 
 ** [[https://wg21.link/p1401][P1401]] Narrowing contextual conversions to bool (Andrzej Krzemienski)
 #+begin_quote
@@ -380,7 +378,7 @@ This paper proposes to allow narrowing conversions in *contextually converted co
 | ~static_assert(N % 4 != 0);~              | ~static_assert(N % 4);~             |
 | ~static_assert(bool(N));~                 | ~static_assert(N);~                 |
 
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p1413][P1413]] A safer interface for std::aligned_storage (CJ Johnson)
 #+begin_quote
@@ -393,7 +391,7 @@ std::aligned_storage. The symbols should be ~std::aligned_storage_for~ and
 of the standard library.
 #+end_quote
 
-LWG, C++23, plenary-approved
+***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p1425][P1425]] Iterators pair constructors for stack and queue (Corentin Jabot)
 #+begin_quote
@@ -408,7 +406,7 @@ This paper proposes to add iterators-pair constructors to ~std::stack~ and ~std:
 | ~std::queue<int> q({v.begin(), v.end()});~ | ~std::queue q(v.begin(), v.end());~ |
 
 
-LWG, C++23, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p1467][P1467]] Extended floating-point types (Michał Dominiak, David Olsen)
 #+begin_quote
@@ -421,17 +419,17 @@ for implementation specific floating point types, that can model more binary
 layouts than just a single fundamental type (the previously proposed short
 float) can provide for
 #+end_quote
-CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+***** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p1518][P1518]] Stop overconstraining allocators in container deduction guides (Arthur O'Dwyer, Mike Spertus)
 #+begin_quote
 Discussion of flatmap’s deduction guides revealed that the deduction guides for sequence containers and container adaptors are needlessly overconstrained, making use cases such as pmr containers unnecessarily difficult.
 #+end_quote
 
-LWG, C++23, IS, size - small, plenary-approved
+***** tags: LWG, C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p1642][P1642]] Freestanding Library: Easy [utilities] (Ben Craig)
-CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS, B2 - improvement, size - medium, plenary-approved
+***** tags: CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p1659][P1659]] starts_with and ends_with (Christopher Di Bella)
 #+begin_quote
@@ -455,7 +453,7 @@ if (ranges::starts_with(some_ints, some_more_ints)) {
 }
 #+end_src
 
-LWG, C++23, IS, size - small, plenary-approved
+***** tags: LWG, C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p1675][P1675]] rethrow_exception must be allowed to copy (Billy O'Neal)
 #+begin_quote
@@ -470,13 +468,13 @@ http://eel.is/c++draft/propagation#8.
 Unfortunately, such care was not taken for ~rethrow_exception~.
 #+end_quote
 
-CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved
+***** tags: CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p1679][P1679]] String Contains function (Wim Leflere)
-C++23, IS, size - small, plenary-approved
+***** tags: C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p1682][P1682]] std::to_underlying (JeanHeyd Meneide)
-C++23, IS, size - small, plenary-approved
+***** tags: C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p1774][P1774]] Portable optimisation hints (Timur Doumler)
 #+begin_quote
@@ -487,10 +485,10 @@ very useful for high-performance and low-latency applications in order to genera
 and smaller code.
 #+end_quote
 
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p1787][P1787]] Declarations and where to find them (S. Davis Herring)
-modules, C++23, IS, plenary-approved
+***** tags: modules, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1847][P1847]] Make declaration order layout mandated (Pal Balog)
 #+begin_quote
@@ -498,10 +496,10 @@ The current rules allow implementations freedom to reorder members in the layout
 access control. To our knowledge no implementation actually used that freedom. We propose to fix this
 established industry practice in the standard as mandatory.
 #+end_quote
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p1899][P1899]] stride_view (Christopher Di Bella)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p1938][P1938]] if consteval (Barry Revzin, Daveed Vandevoorde, Richard Smith)
 #+begin_quote
@@ -525,7 +523,7 @@ consteval int h(int i) {
     return f(i) + 1; // ok: immediate function context
 }
 #+end_src
-CWG, LWG, C++23, plenary-approved
+***** tags: CWG, LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p1949][P1949]] C++ Identifier Syntax using Unicode Standard Annex 31 (Steve Downey)
 #+begin_quote
@@ -559,7 +557,7 @@ int 😀 = 0;
 
 All Invalid After p1949
 
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p1951][P1951]] Default Arguments for pair's Forwarding Constructor (Logan R. Smith)
 #+begin_quote
@@ -568,7 +566,7 @@ This paper proposes defaulting the template arguments U1 and U2 in pair's forwar
 #+begin_src c++
 std::pair<std::string, std::vector<std::string>> p("hello", {});
 #+end_src
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p1989][P1989]] Range constructor for std::string_view 2: Constrain Harder (Corentin Jabot)
 #+begin_src c++
@@ -576,13 +574,13 @@ template<class R>
 basic_string_view(R&&)
 -> basic_string_view<ranges::range_value_t<R>>;
 #+end_src
-LWG, ranges, C++23, plenary-approved
+***** tags: LWG, ranges, C++23, plenary-approved
 
 ** [[https://wg21.link/p2017][P2017]] Conditionally safe ranges (Barry Revzin)
-ranges, C++23, IS, size - small, plenary-approved
+***** tags: ranges, C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p2029][P2029]] Proposed resolution for core issues 411, 1656, and 2333; escapes in character and string li...
-C++23, IS, plenary-approved
+***** tags: C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2036][P2036]] Changing scope for lambda trailing-return-type (Barry Revzin)
 #+begin_quote
@@ -592,7 +590,7 @@ not know at the time of parsing the return type which names actually are
 captured, so this paper proposes to treat all capturable entities as if they
 were captured.
 #+end_quote
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2071][P2071]] Named universal character escapes (Tom Honermann, R. Martinho Fernandes, Peter Bindels, Corentin Jabot, Steve Downey)
 #+begin_quote
@@ -612,13 +610,13 @@ U'\N{LATIN CAPITAL LETTER A WITH MACRON}' // Equivalent to U'\u0100'
 u8"\N{LATIN CAPITAL LETTER A WITH MACRON}\N{COMBINING GRAVE ACCENT}" // Equivalent to u8"\u0100\u0300"
 #+end_src
 
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2077][P2077]] Heterogeneous erasure overloads for associative containers (Konstantin Boyarinov, Sergey Vinogradov; Ruslan Arutyunyan)
 #+begin_quote
 The authors propose heterogeneous erasure overloads for ordered and unordered associative containers, which add an ability to erase values or extract nodes without creating a temporary key_type object.
 #+end_quote
-LWG, C++23, IS, B2: Improvement, plenary-approved
+***** tags: LWG, C++23, IS, B2: Improvement, plenary-approved
 
 ** [[https://wg21.link/p2093][P2093]] Formatted output (Victor Zverovich)
 #+begin_quote
@@ -643,10 +641,10 @@ std::cout << std::format("Hello, {}!", name);
 #+begin_src c++
 std::print("Hello, {}!", name);
 #+end_src
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p2096][P2096]] Generalized wording for partial specializations (James Touton)...
-C++23, IS, plenary-approved
+***** tags: C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2128][P2128]] Multidimensional subscript operator (Corentin Jabot, Isabella Muerte, Daisy Hollman, Christian Trott, Mark Hoemmen)
 #+begin_quote
@@ -679,13 +677,13 @@ int main() {
     s[1, 1, 1]             = 42;
 }
 #+end_src
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2136][P2136]] invoke<R> (Zhihao Yuan)
 #+begin_quote
 This paper proposes invoke_r, a variant of std::invoke that allows specifying the return type, realizing the semantics of INVOKE<R> rather than INVOKE.
 #+end_quote
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2156][P2156]] Allow Duplicate Attributes (Erich Keane)
 #+begin_quote
@@ -695,28 +693,28 @@ is no such prohibition if they appear in separate attribute-specifiers within a
 single attributespecifier-seq. Since intuitively these cases are equivalent,
 they should be treated the same, accepting duplicates in both or neither.
 #+end_quote
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2160][P2160]] Locks lock lockables (wording for LWG 2363) (Tim Song)
-C++23, IS, size - medium, plenary-approved
+***** tags: C++23, IS, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2162][P2162]] Inheriting from std::variant (resolving LWG3052) (Barry Revzin)
-C++23, IS, size - small, plenary-approved
+***** tags: C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p2164][P2164]] views::enumerate (Corentin Jabot)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2165][P2165]] Comparing pair and tuples (Corentin Jabot)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2166][P2166]] A Proposal to Prohibit std::basic_string and std::basic_string_view construction from nullptr (Yuriy Chernyshov)
 #+begin_quote
 the behavior of std::basic_string::basic_string(const CharT* s) constructor is undefined if [s, s + Traits::length(s)) is not a valid range (for example, if s is a null pointer)
 #+end_quote
-LWG, C++23, IS, size - small, plenary-approved
+***** tags: LWG, C++23, IS, size - small, plenary-approved
 
 ** [[https://wg21.link/p2167][P2167]] Improved Proposed Wording for LWG 2114 (Daniel Krügler)
-LWG, C++23, tentatively-ready-for-plenary, B2 - improvement, size - small, plenary-approved, lwg-wording-only
+***** tags: LWG, C++23, tentatively-ready-for-plenary, B2 - improvement, size - small, plenary-approved, lwg-wording-only
 
 ** [[https://wg21.link/p2173][P2173]] Attributes on Lambda-Expressions (Daveed Vandevoorde, Inbal Levi, Ville Voutilainen)
 #+begin_quote
@@ -728,7 +726,7 @@ call operator of the lambda.
 #+begin_src c++
 auto lm = [] [[nodiscard, vendor::attr]] () -> int { return 42; };
 #+end_src
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2186][P2186]] Removing Garbage Collection Support (JF Bastien, Alisdair Meredith)
 #+begin_quote
@@ -741,7 +739,7 @@ We propose removing (not deprecating) C++'s Garbage Collection support. Specific
 
 As well as the pointer_safety enum, the \_\_STDCPP_STRICT_POINTER_SAFETY\_\_ macro, and the Core Language wording.
 #+end_quote
-CWG, LWG, C++23, IS, plenary-approved
+***** tags: CWG, LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2201][P2201]] Mixed string literal concatenation (Jens Maurer)
 #+begin_quote
@@ -751,7 +749,7 @@ No meaningful use-case for such mixed concatenations is known.
 
 This paper makes such mixed concatenations ill-formed.
 #+end_quote
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2210][P2210]] Superior String Splitting (Barry Revzin)
 *** Proposal Part 1
@@ -778,10 +776,10 @@ auto parts = ip | std::views::split('.')
                       return i;
                   });
 #+end_src
-LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2212][P2212]] Relax Requirements for time_point::clock (Alexey Dmitriev, Howard Hinnant)
-C++23, IS, plenary-approved
+***** tags: C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2216][P2216]] std::format improvements (Victor Zverovich)
 #+begin_quote
@@ -793,7 +791,7 @@ This paper proposes the following improvements to the C++20 formatting facility:
 std::string s = std::format("{:d}", "I am not a number");
 #+end_src
 Becomes ill-formed
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2223][P2223]] Trimming whitespaces before line splicing (Corentin Jabot)
 #+begin_quote
@@ -808,22 +806,22 @@ int i = 1
 return i;
 }
 #+end_src
-CWG, C++23, SG22, plenary-approved
+***** tags: CWG, C++23, SG22, plenary-approved
 
 ** [[https://wg21.link/p2227][P2227]] Update normative reference to POSIX (Jonathan Wakely)
-C++23, IS, plenary-approved
+***** tags: C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2231][P2231]] Missing =constexpr= in =std::optional= and =std::variant= (Barry Revzin)
 #+begin_quote
 But even though the language provided the tools to make ~std::optional~ and ~std::variant~ completely ~constexpr~-able, there was no such update to the library. This paper seeks to remedy that omission by simply adding ~constexpr~ to all the relevant places.
 #+end_quote
-LWG, C++23, IS, B2 - improvement, plenary-approved
+***** tags: LWG, C++23, IS, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2236][P2236]] C++ Standard Library Issues to be moved in Virtual Plenary, Nov. 2020 (Jonathan Wakely)
-info, C++23, plenary-approved
+***** tags: info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2238][P2238]] Core Language Working Group "tentatively ready" issues for the November, 2020 meeting (Will...
-info, C++23, plenary-approved
+***** tags: info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2242][P2242]] Non-literal variables (and labels and gotos) in constexpr functions (Ville Voutilainen)
 #+begin_quote
@@ -847,7 +845,7 @@ struct nonliteral {
 };
 static_assert(f<nonliteral>());
 #+end_src
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2246][P2246]] Character encoding of diagnostic text (Aaron Ballman)
 #+begin_quote
@@ -862,7 +860,7 @@ proposal is to place no character set related requirements on the diagnostic out
 understanding that implementations will do what makes the most sense for their situation when issuing
 diagnostics in terms of which characters need to be escaped or otherwise handled in a special way.
 #+end_quote
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2251][P2251]] Require span & basic_string_view to be Trivially Copyable (Nevin Liber)
 #+begin_quote
@@ -870,7 +868,7 @@ Given its definition, it is strongly implied that span & basic_string_view are
 trivially copyable, but that is not yet a requirement.
 #+end_quote
 
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2255][P2255]] A type trait to detect reference binding to temporary (Tim Song)
 #+begin_quote
@@ -888,16 +886,16 @@ f(); // dangling
 std::tuple<const std::string&>      x("hello");            // ill-formed
 std::function<const std::string&()> f = [] { return ""; }; // ill-formed
 #+end_src
-LWG, C++23, IS, small, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, IS, small, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2259][P2259]] Repairing input range adaptors and counted_iterator (Tim Song)
-C++23, IS, plenary-approved
+***** tags: C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2266][P2266]] Simpler implicit move (Arthur O'Dwyer)
 #+begin_quote
 In C++20, return statements can implicitly move from local variables of rvalue reference type; but a defect in the wording means that implicit move fails to apply to functions that return references. C++20’s implicit move is specified via a complicated process involving two overload resolutions, which is hard to implement, causing implementation divergence. We fix the defect and simplify the spec by saying that a returned move-eligible id-expression is always an xvalue.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2273][P2273]] Making std::unique_ptr constexpr (Andreas Fertig)
 #+begin_quote
@@ -917,10 +915,10 @@ int main() {
 }
 #+end_src
 
-LWG, C++23, B2 - improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, B2 - improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2278][P2278]] cbegin should always return a constant iterator (Barry Revzin)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2280][P2280]] Using unknown references in constant expressions (Barry Revzin)
 #+begin_src c++
@@ -939,7 +937,7 @@ void check(int const (&param)[3]) {
 The proposal is to allow all these cases to just work. That is, if during constant evaluation, we run into a reference with unknown origin, this is still okay, we keep going. Similarly, if we run into a pointer with unknown origin, we allow indirecting through it.
 #+end_quote
 
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2281][P2281]] Clarifying range adaptor objects (Tim Song)
 #+begin_quote
@@ -955,7 +953,7 @@ auto t = transform(f); // copies f
 c | t;                 // copies f again from t
 c | std::move(t);      // moves f from t
 #+end_src
-LWG, C++23, plenary-approved
+***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2286][P2286]] Formatting Ranges (Barry Revzin)
 #+begin_quote
@@ -1051,7 +1049,7 @@ int main() {
 <<[]--['y']--[]>>
 #+end_example
 
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p2290][P2290]] Delimited escape sequences (Corentin Jabot)
 #+begin_quote
@@ -1063,7 +1061,7 @@ We propose new syntaxes \u{}, \o{}, \x{} usable in places where \u, \x, \nnn cur
 \o{} accepts an arbitrary number of octal digits while \u{} and \x{} accept an arbitrary number
 of hexadecimal digit.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2291][P2291]] Add Constexpr Modifiers to Functions =to_chars= and =from_chars= for Integral Types in =<charconv>= Header (Daniil Goncharov, Karaev Alexander)
 #+begin_quote
@@ -1075,10 +1073,10 @@ so they look like natural candidates for constexpr string conversions. The
 paper proposes to make ~std::to_chars~ and ~std::from_chars~ functions for *integral
 types* usable in constexpr context.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2295][P2295]] Correct UTF-8 handling during phase 1 of translation (Corentin Jabot)
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
 #+begin_quote
@@ -1105,7 +1103,7 @@ std::pmr::monotonic_buffer_resource pool{
 std::pmr::stacktrace trace{&pool};
 #+end_src
 
-LWG, C++23, tiny, plenary-approved
+***** tags: LWG, C++23, tiny, plenary-approved
 
 ** [[https://wg21.link/p2302][P2302]] Prefer std::ranges::contains over std::basic_string_view::contains (Christopher Di Bella)
 #+begin_quote
@@ -1127,10 +1125,10 @@ stdr::contains(haystack, 'o')
 stdr::contains_subrange(haystack, long_needle)
 stdr::contains_subrange(haystack, long_needle, bind_back(std::modulo(), 4))
 #+end_src
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p2313][P2313]] Core Language Working Group "tentatively ready" issues for the February, 2021 mee...
-CWG, info, C++23, plenary-approved
+***** tags: CWG, info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2314][P2314]] Character sets and encodings (Jens Maurer)
 #+begin_quote
@@ -1152,10 +1150,10 @@ After:
 const char * s1 = S(Köppe);       // "Köppe"
 const char * s2 = S(K\u00f6ppe);  // "Köppe"
 #+end_src
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2315][P2315]] C++ Standard Library Issues to be moved in Virtual Plenary, Feb. 2021 (Jonathan Wakely)
-LWG, info, C++23, plenary-approved
+***** tags: LWG, info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2316][P2316]] Consistent character literal encoding (Corentin Jabot)
 #+begin_quote
@@ -1167,7 +1165,7 @@ Character literals in preprocessor conditional should behave like they do in C++
 #endif
 if ('A' == 0x41){}
 #+end_src
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2321][P2321]] zip (Tim Song)
 #+begin_quote
@@ -1187,13 +1185,13 @@ fmt::print("{}\n", std::views::zip_transform(std::multiplies(), v1, v3)); // {3,
 fmt::print("{}\n", v2 | std::views::pairwise);                            // {('a', 'b'), ('b', 'c')}
 fmt::print("{}\n", v3 | std::views::pairwise_transform(std::plus()));     // {7, 9}
 #+end_src
-LWG, ranges, C++23, IS, B3 - addition, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p2322][P2322]] ranges::fold (Barry Revzin)
 #+begin_quote
 While we do have an iterator-based version of fold in the standard library, it is currently named accumulate, defaults to performing + on its operands, and is found in the header <numeric>. But fold is much more than addition, so as described in the linked paper, it’s important to give it the more generic name and to avoid a default operator.
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p2324][P2324]] Labels at the end of compound statements (C compatibility) (Martin Uecker)
 #+begin_quote
@@ -1214,7 +1212,7 @@ x = 1;
 last: // not allowed in C++, but now allowed in C
 }
 #+end_src
-CWG, straw-poll, C++23, size - small, plenary-approved
+***** tags: CWG, straw-poll, C++23, size - small, plenary-approved
 
 ** [[https://wg21.link/p2325][P2325]] Views should not be required to be default constructible (Barry Revzin)
 #+begin_quote
@@ -1234,7 +1232,7 @@ Three of these four criteria, I understand. A view clearly needs to be a range, 
 
 But why does a view need to be default_initializable?
 #+end_quote
-LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2327][P2327]] De-deprecating volatile compound assignment (Paul Bendixen, Jens Maurer, Arthur O'Dwyer, Ben Saks)
 #+begin_quote
@@ -1247,13 +1245,13 @@ used for communicating with peripheral devices in microcontrollers[van Ooijen, 2
 The purpose of this paper is to give a solution that will not undo what was achieved with
 P1152, and still keep the parts that are critical to the embedded community.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/P2328][P2328]] join_view should join all views of ranges (Tim Song)
 #+begin_quote
 This paper proposes relaxing the constraint on join_view to support joining ranges of prvalue non-view ranges.
 #+end_quote
-LWG, ranges, C++23, IS, B2: Improvement, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2: Improvement, plenary-approved
 
 ** [[https://wg21.link/p2334][P2334]] Add support for preprocessing directives elifdef and elifndef (Melanie Blower)
 #+begin_quote
@@ -1262,13 +1260,13 @@ was discussed in the March 2021 meeting and approved (15 in favor, 1 opposed, 4 
 inclusion into C23. This paper is being proposed to WG21 to avoid preprocessor incompatibilities with C
 and because the utility is valuable to C++ users of the preprocessor.
 #+end_quote
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2340][P2340]] Clarifying the status of the ‘C headers' (Thomas Köppe)
 #+begin_quote
 We propose to move the specification of “[depr.c.headers] C headers” from Annex D into the main document, and changing those headers’ status from “deprecated” to an explicitly discussed state “for foreign-language interoperability only”.
 #+end_quote
-LWG, C++23, policy, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, policy, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2360][P2360]] Extend init-statement to allow alias-declaration (Jens Maurer)
 *** Before:
@@ -1281,7 +1279,7 @@ LWG, C++23, policy, IS, B2 - improvement, size - small, plenary-approved
   for (using T = int; T e : v)
     /* something */;
 #+end_src
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2362][P2362]] Make obfuscating wide character literals ill-formed (Peter Brett, Corentin Jabot)
 #+begin_quote
@@ -1298,7 +1296,7 @@ wchar_t c = L'é'; // \u{65}\u{301};
 Make these literals ill-formed.
 #+end_quote
 
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2367][P2367]] Remove misuses of list-initialization from Clause 24 (Tim Song)
 #+begin_quote
@@ -1308,7 +1306,7 @@ This paper provides wording for [LWG3524] and resolves related issues caused by 
 #+begin_quote
 As discussed in [LWG3524], the use of list-initialization in the ranges specification implies ordering guarantees that are unintended and unimplementable in ordinary C++, as well as narrowing checks that are unnecessary and sometimes unimplementable.
 #+end_quote
-LWG, C++23, plenary-approved
+***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/P2372][P2372]] Fixing locale handling in chrono formatters (Victor Zverovich, Corentin Jabot)
 #+begin_quote
@@ -1335,16 +1333,16 @@ auto s = std::format("{:L%S}", sec(4.2));
 // s == "04,200"
 #+end_src
 
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2374][P2374]] views::cartesian_product (Sy Brand)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2385][P2385]] C++ Standard Library Issues to be moved in Virtual Plenary, June 2021 (Jonathan Wakely)
-info, C++23, plenary-approved
+***** tags: info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2386][P2386]] Core Language Working Group "ready" Issues for the June, 2021 meeting (William M....
-info, C++23, plenary-approved
+***** tags: info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2387][P2387]] Pipe support for user-defined range adaptors (Barry Revzin)
 #+begin_quote
@@ -1353,37 +1351,37 @@ Walter Brown made an excellent observation: if we gave users the tools to write 
 The goal of this paper is provide that functionality: provide a standard customization mechanism for range adaptors, so that everybody can write their own adaptors.
 #+end_quote
 
-LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2393][P2393]] Cleaning up integer-class types (Tim Song)
 #+begin_quote
 This paper revamps the specification and use of integer-class types to resolve a number of issues, including [LWG3366], [LWG3376], and [LWG3575].
 #+end_quote
-LWG, C++23, plenary-approved
+***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2401][P2401]] Add a conditional noexcept specification to std::exchange (Giuseppe D'Angelo)
 #+begin_quote
 We propose to add a noexcept-specification to std::exchange , which is currently lacking one.
 #+end_quote
-LWG, C++23, IS, plenary-approved
+***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2404][P2404]] Relaxing equality_comparable_with's and three_way_comparable_with's common reference requir...
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2408][P2408]] Ranges views as inputs to non-Ranges algorithms (David Olsen)
 #+begin_quote
 Change the iterator requirements for non-Ranges algorithms. For forward iterators and above that are constant iterators, instead of requiring that iterators meet certain /Cpp17...Iterator/ requirements, require that the iterators model certain iterator concepts. This makes iterators from several standard views usable with non-Ranges algorithms that require forward iterators or above, such as the parallel overloads of most algorithms.
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2415][P2415]] What is a view? (Barry Revzin, Tim Song)
 #+begin_quote
 Once upon a time, a view was a cheaply copyable, non-owning range. We’ve already somewhat lost the “cheaply copyable” requirement since views don’t have to be copyable, and now this paper is suggesting that we also lose the non-owning part.
 #+end_quote
-LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2417][P2417]] A more constexpr bitset (Daniil Goncharov)
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, constexpr, expedited-library-evolut...
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, constexpr, expedited-library-evolut...
 
 ** [[https://wg21.link/p2418][P2418]] Add support for std::generator-like types to std::format (Victor Zverovich)
 #+begin_quote
@@ -1392,10 +1390,10 @@ Unfortunately we cannot make std::generator formattable because it is neither co
 #+begin_quote
 This paper proposes solving the issue by making std::format and other formatting functions take arguments by forwarding references.
 #+end_quote
-LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved
+***** tags: LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2419][P2419]] Clarify handling of encodings in localized formatting of chrono types (Victor Zverovich)
-LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved
 
 ** [[https://wg21.link/P2432][P2432]] Fix istream_view (Nicolai Josuttis)
 #+begin_quote
@@ -1413,7 +1411,7 @@ After:
 std::ranges::istream_view<int> v{mystream}
  // OK
 #+end_src
-LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2437][P2437]] Support for #warning (Aaron Ballman)
 #+begin_quote
@@ -1427,7 +1425,7 @@ feature into C23 (straw poll results were: 17 in favor, 0 oppose, 1 abstain). Th
 functionally identical to the WG14 proposal, with the only difference being due to existing variance in
 specification around how #error causes translation to stop.
 #+end_quote
-CWG, straw-poll, C++23, size - tiny, plenary-approved
+***** tags: CWG, straw-poll, C++23, size - tiny, plenary-approved
 
 ** [[https://wg21.link/p2438][P2438]] std::string::substr() && (Federico Kircheis, Tomasz Kamiński)
 #+begin_src c++
@@ -1443,19 +1441,19 @@ After:
 #+begin_quote
 foo() returns a std::string. .substr implementation can reuse the storage of the string returned by foo and leave it in a valid but unspecified state. At last, the temporary string returned by foo() is released.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2440][P2440]] ranges::iota, ranges::shift_left, and ranges::shift_right (Tim Song)
 #+begin_quote
 This paper proposes adding the algorithms ranges::iota, ranges::shift_left, and ranges::shift_right, to match their std counterparts.
 #+end_quote
-LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2441][P2441]] views::join_with (Barry Revzin)
 #+begin_quote
 The behavior of ~views::join_with~ is an inverse of ~views::split~. That is, given a range ~r~ and a pattern ~p~, ~r | views::split(p) | views::join_with(p)~ should yield a range consisting of the same elements as ~r~.
 #+end_quote
-LWG, ranges, C++23, IS, plenary-approved
+***** tags: LWG, ranges, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2442][P2442]] Windowing range adaptors: views::chunk and views::slide (Tim Song)
 #+begin_quote
@@ -1466,7 +1464,7 @@ std::vector v = {1, 2, 3, 4, 5};
 fmt::print("{}\n", v | std::views::chunk(2));   // [[1, 2], [3, 4], [5]]
 fmt::print("{}\n", v | std::views::slide(2));   // [[1, 2], [2, 3], [3, 4], [4, 5]]
 #+end_src
-LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2443][P2443]] views::chunk_by (Tim Song)
 #+begin_quote
@@ -1477,7 +1475,7 @@ std::vector v = {1, 2, 2, 3, 0, 4, 5, 2};
 fmt::print("{}\n", v | std::views::chunk_by(ranges::less_equal{}));   // [[1, 2, 2, 3], [0, 4, 5], [2]]
 #+end_src
 
-LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2445][P2445]] forward_like (Gašper Ažman)
 #+begin_quote
@@ -1495,7 +1493,7 @@ callback();            // retry(callback)
 std::move(callback)(); // try-or-fail(rvalue)
 #+end_src
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved
 
 ** [[https://wg21.link/p2446][P2446]] views::move (Barry Revzin)
 #+begin_quote
@@ -1503,22 +1501,22 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plen
 
 The name views::as_rvalue denotes a range adaptor object ([range.adaptor.object]).
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2448][P2448]] Relaxing some constexpr restrictions (Barry Revzin)
 #+begin_quote
 There are two rules about constexpr programming that make code ill-formed or ill-formed (no diagnostic required) when functions or function templates are marked constexpr that might never evaluate to a constant expression. But… so what if they don’t? The goal of this paper is to stop diagnosing problems that don’t exist.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2450][P2450]] C++ Standard Library Issues to be moved in Virtual Plenary, Oct. 2021 (Jonathan Wakely)
-LWG, C++23, plenary-approved
+***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2460][P2460]] Relax requirements on wchar_t to match existing practices (Corentin Jabot)
-CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved, ...
+***** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved, ...
 
 ** [[https://wg21.link/p2462][P2462]] Core Language Working Group “ready” issues for the October, 2021 meeting (Willi...
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2412][P2465]] Standard Library Modules std and std.all (Stephan T. Lavavej, Gabriel Dos Reis, Bjarne Stroustrup, Jonathan Wakely)
 #+begin_quote
@@ -1540,7 +1538,7 @@ This paper provides Standardese for two named modules: ~std~ and ~std.compat~.
 counterparts for the C wrapper headers (e.g. ~::fopen~).
 #+end_quote
 
-CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, modular-standard-library, size - large, plenary-approved
+***** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, modular-standard-library, size - large, plenary-approved
 
 ** [[https://wg21.link/P2467][P2467]] Support exclusive mode for fstreams (Jonathan Wakely)
 #+begin_quote
@@ -1548,7 +1546,7 @@ Historically, C++ iostreams libraries had a ~noreplace~ open mode that correspon
 
 Since then, ISO C added support for "exclusive" mode to ~fopen~, so now C++'s ~<fstream>~ is missing a feature that is present in both ISO C and POSIX. We should fix this for C++23.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2468][P2468]] The Equality Operator You Are Looking For (Barry Revzin, Bjarne Stroustrup, Cameron DaCamara, Daveed Vandevoorde, Gabriel Dos Reis, Herb Sutter, Jason Merrill, Jonathan Caves, Richard Smith, Ville Voutilainen)
 #+begin_quote
@@ -1561,10 +1559,10 @@ This paper details some changes to make rewriting equality in expressions less o
 
 - operator<=> is always used for rewrites (from <, <=, >, >=); if you don’t want rewrites, don’t write an operator<=>.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2474][P2474]] views::repeat (Michał Dominiak)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-...
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-...
 
 ** [[https://wg21.link/p2493][P2493]] Missing feature test macros for C++20 core papers (Barry Revzin)
 #+begin_quote
@@ -1574,7 +1572,7 @@ As Jonathan Wakely pointed out on the SG10 mailing list, neither [P0848R3] (Cond
 #+begin_quote
 This paper proposes Richard’s second suggestion: bump __cpp_concepts and __cpp_constexpr to 202002L
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2494][P2494]] Relaxing range adaptors to allow for move only types (Michał Dominiak)
 #+begin_quote
@@ -1584,10 +1582,10 @@ Currently, many range adaptors require that the user-provided types they store m
 #+begin_quote
 Similarly to how [P2325R3] turned semiregular-box into copyable-box, this paper proposes to turn copyable-box into movable-box. This name is probably not ideal, because it still turns types that happen to be copy constructible into copyable types, but it follows from the prior changes to the wrapper.
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2499][P2499]] string_view range constructor should be explicit (James Touton)
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/P2502][P2502]] std::generator: Synchronous Coroutine Generator for Ranges (Casey Carter)
 #+begin_quote
@@ -1607,10 +1605,10 @@ int answer_to_the_universe() {
     return std::ranges::fold_left(std::move(range), 0, std::plus{});
 }
 #+end_src
-LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
+***** tags: LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
 
 ** [[https://wg21.link/p2505][P2505]] Monadic Functions for std::expected (Jeff Garland)
-LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2508][P2508]] Exposing std::basic-format-string (Barry Revzin)
 #+begin_quote
@@ -1625,13 +1623,13 @@ void log(std::format_string<Args...> s, Args&&... args) {
     }
 }
 #+end_src
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
 
 ** [[https://wg21.link/p2513][P2513]] char8_t Compatibility and Portability Fixes (JeanHeyd Meneide, Tom Honermann)
 #+begin_quote
 char8_t has compatibility problems and issues during deployment that people have had to spend energy working around. This paper aims to alleviate some of those compatibility problems, for both C and C++, around string and character literals for the char8_t type.
 #+end_quote
-CWG, straw-poll, C++23, B2 - improvement, plenary-approved
+***** tags: CWG, straw-poll, C++23, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2517][P2517]] Add a conditional noexcept specification to std::apply (Hewill Kang)
 #+begin_quote
@@ -1644,20 +1642,19 @@ forward_as_tuple(args...))~, adding ~noexcept~ to ~apply~ can easily achieve
 this and make it more consistent with ~invoke~.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
-plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, plenary-approved
 
 ** [[https://wg21.link/p2520][P2520]] move_iterator should be a random access iterator (Barry Revzin)
 #+begin_quote
 ~move_iterator<T*>~ should be a random access iterator
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, expedited-library-evoluti...
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, expedited-library-evoluti...
 
 ** [[https://wg21.link/p2539][P2539]] Should the output of std::print to a terminal be synchronized with the underlying stream? (...
 #+begin_quote
 To prevent mojibake std::print may use a native Unicode API when writing to a terminal bypassing the stream buffer. During the review of [P2093] "Formatted output" Tim Song suggested that synchronizing std::print with the underlying stream may be beneficial for gradual adoption. This paper presents motivating examples, observes that this problem doesn’t normally happen in practice and proposes a minor update to the wording to provide a synchronization guarantee.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2540][P2540]] Empty Product for certain Views (Steve Downey)
 #+begin_quote
@@ -1669,7 +1666,7 @@ inconsistencies.
 #+end_quote
 
 
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2549][P2549]] std::unexpected should have error() as member accessor (Yihe Li)
 
@@ -1700,7 +1697,7 @@ void fun()
 }
 #+end_src
 
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2553][P2553]] Make mdspan size_type controllable (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K. R. Walker, Daniel Sunderland)
 #+begin_quote
@@ -1721,7 +1718,7 @@ All in all we prefer the option of making extents require the additional argumen
 template<size_t ... Extents>
 using extents = basic_extents<size_t, Extents...>;
 #+end_src
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
 
 ** [[https://wg21.link/p2554][P2554]] C-Array Interoperability of MDSpan (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K. R. Walker, Daniel Sunderland)
 #+begin_quote
@@ -1730,7 +1727,7 @@ We cannot currently fix the multidimensional c-array construction, since it is U
 What we can fix today is the deduction from 1D c-array, by adding a deduction guide from c-array constraint to rank-1 arrays.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
 
 ** [[https://wg21.link/p2564][P2564]] consteval needs to propagate up (Barry Revzin)
 #+begin_quote
@@ -1745,7 +1742,7 @@ Specifically, these three rules:
 3. Other manifestly constant evaluated contexts (like constant-expression and the condition of a constexpr if statement) are now considered to be immediate function contexts.
 #+end_quote
 
-CWG, straw-poll, C++23, nb-comment, plenary-approved
+***** tags: CWG, straw-poll, C++23, nb-comment, plenary-approved
 
 ** [[https://wg21.link/p2579][P2579]] Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type” (Corentin Jabot)
 #+begin_quote
@@ -1773,7 +1770,7 @@ int x;
 -> decltype((x)) // const float&
 #+end_src
 
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2582][P2582]] Wording for class template argument deduction from inherited constructors (Timur Doumler)
 #+begin_quote
@@ -1801,7 +1798,7 @@ struct Point { T x; T y; };
 Point p{3.0, 4.0};
 Point p2{.x = 3.0, .y = 4.0};
 #+end_src
-CWG, straw-poll, C++23, plenary-approved
+***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2585][P2585]] Improving default container formatting (Barry Revzin)
 #+begin_quote
@@ -1812,14 +1809,14 @@ CWG, straw-poll, C++23, plenary-approved
 However, this distinction is a result of [P2286R8] explicitly providing formatters for all the standard library map and set containers, and applying those changes to them. This is something that users can do for their own containers as well, but which also means that it is something users have to do - if this is the behavior they want.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2588][P2588]] Relax std::barrier phase completion step guarantees (Gonzalo Brito Gadeschi, Eric Niebler, Anthony Williams, Thomas Rodgers)
 #+begin_quote
 Unintended consequences of ~std::barrier~ ’s specification constrain implementations to run the ~CompletionFunction~ on the last thread that arrives at the barrier during the phase. This prevents ~std::barrier~ from benefiting from hardware acceleration for thread synchronization. Removing these constraints is a _breaking change_. This paper aims to find a sweet spot for the barrier specification that delivers the functionality that applications need while allowing efficient implementations.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2590][P2590]] Explicit lifetime management (Timur Doumler, Richard Smith)
 #+begin_quote
@@ -1832,7 +1829,7 @@ C++20 by providing the standard library portion of that paper (only the core
 language portion of that paper made it into C++20).
 #+end_quote
 
-CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved
+***** tags: CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved
 
 ** [[https://wg21.link/P2599][P2599]] mdspan::size_type should be index_type (Nevin Liber)
 #+begin_quote
@@ -1840,7 +1837,7 @@ With the adoption of P2553R1, ~mdspan::size_type~ may now be a signed type.
 ~size_type~ is no longer an appropriate name for this type and it should be changed to ~index_type~.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
 
 ** [[https://wg21.link/p2602][P2602]] Poison Pills are Too Toxic (Barry Revzin)
 Given the following declarations:
@@ -1859,7 +1856,7 @@ struct B {
 
 B and const A satisfy std::ranges::range, but A does not. The goal of this paper is that both of these should count as ranges.
 
-LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/P2604][P2604]] mdspan: rename pointer and contiguous (Christian Trott)
 #+begin_quote
@@ -1870,7 +1867,7 @@ During LWG review a few members of classes in the mdspan proposals were identifi
 *** ~data()~ to ~data_handle()~
 *** ~contiguous~ to ~exhaustive~
 
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
 
 ** [[https://wg21.link/p2609][P2609]] Relaxing Ranges Just A Smidge (John Eivind Helset)
 #+begin_quote
@@ -1897,14 +1894,14 @@ And likewise in the binary case. This is caused by the composition of indirect c
 A fix is proposed that introduces a type-trait and makes a slight change to the definitions of the indirect callable concepts, as well as iter_common_reference_t. The fix is a slight relaxation of the algorithmic constraints in ranges that does not break ABI.
 #+end_quote
 
-LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2613][P2613]] Add the missing =empty= to =mdspan= (Yihe Le)
 #+begin_quote
 This paper propose to fix a defect in [P0009R17]. During its LWG review, I found that even though the proposed std::mdspan type have a size() member function, it does not have an empty() member function, which makes it distinct from nearly all other STL containers. So this paper propose to add the missing member to increase consistency and performance of common operations.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
 
 ** [[https://wg21.link/p2614][P2614]] Deprecate numeric_limits::has_denorm (Matthias Kretz)
 #+begin_quote
@@ -1914,7 +1911,7 @@ general, compile-time constants that describe floating-point behavior are
 problematic, since behavior might change at runtime. Let’s also deprecate
 ~numeric_limits::has_denorm_loss~ while we’re at it.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2644][P2644]] Get Fix of Broken Range-based for Loop Finally Done (Nicolai Josuttis)
 #+begin_quote
@@ -1941,7 +1938,7 @@ teaching and training.
 | ~for (char c : getData().value)~                   | OK     | OK    |
 | ~for (char c : getData().getValue())~              | BROKEN | OK    |
 
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2652][P2652]] Disallow user specialization of allocator_traits (Pablo Halpern)
 #+begin_quote
@@ -1964,7 +1961,7 @@ This paper proposes that the standard remove the user’s latitude for specializ
 
 This paper is the proposed resolution to a US NB comment having the same title; it is targeted for C++23.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2655][P2655]] common_reference_t of reference_wrapper Should Be a Reference Type (Hui Xie, S. Levent Yilmaz)
 #+begin_quote
@@ -2000,7 +1997,7 @@ static_assert(same_as<
               common_reference_t<int&, const reference_wrapper<int>&>,
               int&>);
 #+end_src
-LWG, C++23, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2674][P2674]] A trait for implicit lifetime types (Timur Doumler, Vittorio Romeo)
 #+begin_quote
@@ -2011,7 +2008,7 @@ proposes a new type trait std::is_implicit_lifetime to achieve this.
 #+end_quote
 
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved
 
 ** [[https://wg21.link/p2675][P2675]] LWG3780: The Paper
 format's width estimation is too approximate and not forward compatible
@@ -2021,7 +2018,7 @@ LWG3780 describes an issue with width in std::format estimation. This paper
 offers more information
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format
 
 ** [[https://wg21.link/p2679][P2679]] Fixing std::start_lifetime_as for arrays (Timur Doumler, Arthur O'Dwyer, Richard Smith)
 #+begin_quote
@@ -2032,7 +2029,7 @@ C++23. We propose to fix some remaining issues before C++23 ships. We also
 discuss possible changes to the API that were considered but rejected.
 #+end_quote
 
-CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+***** tags: CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/P2693][P2693]] Formatting thread::id and stacktrace (Corentin Jabot, Victor Zverovich)
 #+begin_quote
@@ -2040,7 +2037,7 @@ This paper provides wording in reply to NB comments suggesting to adopt P1636R2
 (Formatters for library types) and to add formatters for std::stacktrace.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved, format
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved, format
 
 ** [[https://wg21.link/P2711][P2711]] Ruminations on explicit multi-param constructors of views (Ville Voutilainen)
 #+begin_quote
@@ -2048,14 +2045,14 @@ This paper is about LWG 3714, Non-single-argument constructors for range adaptor
 
 We have C++20 views, none of which have explicit multi-param constructors, and some newer C++23 views which do. This is an obscure and rarely-noticeable difference. This paper looks at some aspects of it.
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved
+***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2713][P2713]] Escaping improvements in std::format (Victor Zverovich)
 #+begin_quote
 This paper provides wording for the resolution of national body comments [US38-098] and [FR005-134] per direction voted in SG16 Unicode and LEWG.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -small, plenary-approved, format
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -small, plenary-approved, format
 
 ** [[https://wg21.link/p2736][P2736]] Referencing the Unicode Standard (Corentin Jabot)
 #+begin_quote
@@ -2064,21 +2061,21 @@ proposal has no impact on implementations. This resolves NB comments FR-010-133
 and FR-021-013
 #+end_quote
 
-CWG, LWG, C++23, nb-comment, plenary-approved
+***** tags: CWG, LWG, C++23, nb-comment, plenary-approved
 
 ** [[https://wg21.link/p2763][P2763]] =layout_stride= static extents default constructor fix (Christian Trott, Damien Lebrun-Gran...
 #+begin_quote
 During work on the padded layouts project an oversight in the layout_stride definition was discovered for a corner case. Specifically, the default constructor of a layout_stride with fully static extents will produce an invalid mapping.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan
 
 ** [[https://wg21.link/p2770][P2770]] Stashing stashing iterators for proper flattening (Tim Song)
 #+begin_quote
 This paper provides wording to resolve [LWG3698], [LWG3700], [LWG3791], and NB comment US 61-126.
 #+end_quote
 
-LWG, C++23, plenary-approved
+***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2787][P2787]] =pmr::generator= - Promise Types are not Values (Steve Downey)
 #+begin_quote
@@ -2104,7 +2101,7 @@ std::pmr::polymorphic_allocator<>   pa{&mbr};
 std::pmr::generator<int> g = pmr_requiring_coroutine(std::allocator_arg, pa);
 #+end_src
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2788][P2788]] Linkage for modular constants (S. Davis Herring)
 #+begin_quote
@@ -2112,13 +2109,13 @@ National body comment US 8-036 points out an unfortunate interaction between C++
 #+end_quote
 
 ** [[https://wg21.link/p2789][P2789]] C++ Standard Library Ready Issues to be moved in Issaquah, Feb. 2023 (Jonathan Wakely)
-LWG, info, C++23, plenary-approved
+***** tags: LWG, info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2790][P2790]] C++ Standard Library Immediate Issues to be moved in Issaquah, Feb. 2023 (Jonathan Wakely)
-LWG, info, C++23, plenary-approved
+***** tags: LWG, info, C++23, plenary-approved
 
 ** [[https://wg21.link/p2796][P2796]] Core Language Working Group "ready" Issues for the February, 2023 meeting (Jens Maurer)
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2797][P2797]] Proposed resolution for CWG2692 Static and explicit object member functions with the same parameter-type-lists (Gašper Ažman, Barry Revzin)
 #+begin_quote
@@ -2126,4 +2123,4 @@ This document proposes a resolution to [CWG2692]. This also touches the proposed
 #+end_quote
 
 
-CWG, C++23, plenary-approved
+***** tags: CWG, C++23, plenary-approved
