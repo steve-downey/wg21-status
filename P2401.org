@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2401][P2401]] Add a conditional noexcept specification to std::exchange (Giuseppe D'Angelo)
+:PROPERTIES:
+:CUSTOM_ID: p2401-add-a-conditional-noexcept-specification-to-stdexchange-giuseppe-dangelo
+:END:
+LWG, C++23, IS, plenary-approved

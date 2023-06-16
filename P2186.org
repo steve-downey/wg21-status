@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2186][P2186]] Removing Garbage Collection Support (JF Bastien, Alisdair Meredith)
+:PROPERTIES:
+:CUSTOM_ID: p2186-removing-garbage-collection-support-jf-bastien-alisdair-meredith
+:END:
+CWG, LWG, C++23, IS, plenary-approved

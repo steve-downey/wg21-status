@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2251][P2251]] Require span & basic_string_view to be Trivially Copyable (Nevin Liber)
+:PROPERTIES:
+:CUSTOM_ID: p2251-require-span-basic_string_view-to-be-trivially-copyable-nevin-liber
+:END:
+LWG, C++23, IS, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2675][P2675]] LWG3780: The Paper (format's width estimation is too approximate and not forward compatible...
+:PROPERTIES:
+:CUSTOM_ID: p2675-lwg3780-the-paper-formats-width-estimation-is-too-approximate-and-not-forward-compatible
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format

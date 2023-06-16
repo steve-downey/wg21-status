@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1675][P1675]] rethrow_exception must be allowed to copy (Billy O'Neal)
+:PROPERTIES:
+:CUSTOM_ID: p1675-rethrow_exception-must-be-allowed-to-copy-billy-oneal
+:END:
+CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved

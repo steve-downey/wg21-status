@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1328][P1328]] Making std::type_info::operator== constexpr (Peter Dimov)
+:PROPERTIES:
+:CUSTOM_ID: p1328-making-stdtype_infooperator-constexpr-peter-dimov
+:END:
+LWG, C++23, IS, B3 - addition, size - tiny, plenary-approved

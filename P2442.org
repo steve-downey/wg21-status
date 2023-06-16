@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2442][P2442]] Windowing range adaptors: views::chunk and views::slide (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2442-windowing-range-adaptors-viewschunk-and-viewsslide-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

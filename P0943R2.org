@@ -1,0 +1,5 @@
+* [[https://wg21.link/p0943r2][P0943R2]] Support C atomics in C++ (Hans-J. Boehm)
+:PROPERTIES:
+:CUSTOM_ID: p0943r2-support-c-atomics-in-c-hans-j.-boehm
+:END:
+C++23, IS, B2 - improvement, size - small, plenary-approved

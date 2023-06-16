@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2393][P2393]] Cleaning up integer-class types (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2393-cleaning-up-integer-class-types-tim-song
+:END:
+LWG, C++23, plenary-approved

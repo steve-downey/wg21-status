@@ -1,0 +1,15 @@
+* [[https://isocpp.org/files/papers/P2328.html][P2328]] join_view should join all views of ranges (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2328-join_view-should-join-all-views-of-ranges-tim-song
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+* [[https://wg21.link/P2328][P2328]] join_view should join all views of ranges (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2328-join_view-should-join-all-views-of-ranges-tim-song
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+* [[https://wg21.link/P2328.html][P2328]] join_view should join all views of ranges (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2328-join_view-should-join-all-views-of-ranges-tim-song
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

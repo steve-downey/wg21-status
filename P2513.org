@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2513][P2513]] char8_t Compatibility and Portability Fixes (JeanHeyd Meneide, Tom Honermann)
+:PROPERTIES:
+:CUSTOM_ID: p2513-char8_t-compatibility-and-portability-fixes-jeanheyd-meneide-tom-honermann
+:END:
+CWG, straw-poll, C++23, B2 - improvement, plenary-approved

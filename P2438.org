@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2438][P2438]] std::string::substr() && (Federico Kircheis, Tomasz Kamiński)
+:PROPERTIES:
+:CUSTOM_ID: p2438-stdstringsubstr-federico-kircheis-tomasz-kamiński
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+

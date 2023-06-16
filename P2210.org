@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2210][P2210]] Superior String Splitting (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2210-superior-string-splitting-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

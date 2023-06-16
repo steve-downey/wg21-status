@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1679][P1679]] String Contains function (Wim Leflere)
+:PROPERTIES:
+:CUSTOM_ID: p1679-string-contains-function-wim-leflere
+:END:
+C++23, IS, size - small, plenary-approved

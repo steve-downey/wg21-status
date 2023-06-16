@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1147][P1147]] Printing =volatile= Pointers (Bryce Adelstein Lelbach)
+:PROPERTIES:
+:CUSTOM_ID: p1147-printing-volatile-pointers-bryce-adelstein-lelbach
+:END:
+LWG, C++23, IS, plenary-approved

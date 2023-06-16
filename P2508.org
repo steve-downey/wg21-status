@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2508][P2508]] Exposing std::basic-format-string (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2508-exposing-stdbasic-format-string-barry-revzin
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2419][P2419]] Clarify handling of encodings in localized formatting of chrono types (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2419-clarify-handling-of-encodings-in-localized-formatting-of-chrono-types-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved

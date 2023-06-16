@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2071][P2071]] Named universal character escapes (Tom Honermann, Peter Bindels)
+:PROPERTIES:
+:CUSTOM_ID: p2071-named-universal-character-escapes-tom-honermann-peter-bindels
+:END:
+CWG, straw-poll, C++23, plenary-approved

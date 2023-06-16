@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2236][P2236]] C++ Standard Library Issues to be moved in Virtual Plenary, Nov. 2020 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2236-c-standard-library-issues-to-be-moved-in-virtual-plenary-nov.-2020-jonathan-wakely
+:END:
+info, C++23, plenary-approved

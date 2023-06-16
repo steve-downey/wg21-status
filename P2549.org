@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2549][P2549]] std::unexpected should have error() as member accessor (Yihe Li)
+:PROPERTIES:
+:CUSTOM_ID: p2549-stdunexpected-should-have-error-as-member-accessor-yihe-li
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+

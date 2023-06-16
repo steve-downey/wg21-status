@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2796][P2796]] Core Language Working Group "ready" Issues for the February, 2023 meeting (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2796-core-language-working-group-ready-issues-for-the-february-2023-meeting-jens-maurer
+:END:
+CWG, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2520][P2520]] move_iterator should be a random access iterator (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2520-move_iterator-should-be-a-random-access-iterator-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, expedited-library-evoluti...

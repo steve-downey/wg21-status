@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2334][P2334]] Add support for preprocessing directives elifdef and elifndef (Melanie Blower)
+:PROPERTIES:
+:CUSTOM_ID: p2334-add-support-for-preprocessing-directives-elifdef-and-elifndef-melanie-blower
+:END:
+CWG, C++23, plenary-approved

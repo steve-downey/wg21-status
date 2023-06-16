@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2579][P2579]] Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type” (Corentin ...
+:PROPERTIES:
+:CUSTOM_ID: p2579-mitigation-strategies-for-p2036-changing-scope-for-lambda-trailing-return-type-corentin
+:END:
+CWG, straw-poll, C++23, plenary-approved

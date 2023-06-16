@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1518][P1518]] Stop overconstraining allocators in container deduction guides (Arthur O'Dwyer, Mike Spertus)
+:PROPERTIES:
+:CUSTOM_ID: p1518-stop-overconstraining-allocators-in-container-deduction-guides-arthur-odwyer-mike-spertus
+:END:
+LWG, C++23, IS, size - small, plenary-approved

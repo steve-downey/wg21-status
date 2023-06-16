@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2602][P2602]] Poison Pills are Too Toxic (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2602-poison-pills-are-too-toxic-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

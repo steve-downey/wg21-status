@@ -1,0 +1,5 @@
+* [[https://wg21.link/P2599][P2599]] mdspan::size_type should be index_type (Nevin Liber)
+:PROPERTIES:
+:CUSTOM_ID: p2599-mdspansize_type-should-be-index_type-nevin-liber
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p0849][P0849]] auto(x): DECAY_COPY in the language (Zhihao Yuan)
+:PROPERTIES:
+:CUSTOM_ID: p0849-autox-decay_copy-in-the-language-zhihao-yuan
+:END:
+CWG, LWG, C++23, IS, plenary-approved

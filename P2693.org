@@ -1,0 +1,5 @@
+* [[https://wg21.link/P2693.pdf][P2693]] Formatting thread::id and stacktrace (Corentin Jabot, Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: d2693-formatting-threadid-and-stacktrace-corentin-jabot-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved, format

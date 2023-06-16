@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2165][P2165]] Comparing pair and tuples (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2165-comparing-pair-and-tuples-corentin-jabot
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
+B2 - improvement, size - medium, plenary-approved

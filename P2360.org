@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2360][P2360]] Extend init-statement to allow alias-declaration (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2360-extend-init-statement-to-allow-alias-declaration-jens-maurer
+:END:
+CWG, C++23, plenary-approved

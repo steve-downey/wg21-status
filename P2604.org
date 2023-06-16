@@ -1,0 +1,6 @@
+* [[https://wg21.link/P2604][P2604]] mdspan: rename pointer and contiguous (Christian Trott)
+:PROPERTIES:
+:CUSTOM_ID: p2604-mdspan-rename-pointer-and-contiguous-christian-trott
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+

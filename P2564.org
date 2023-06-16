@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2564][P2564]] consteval needs to propagate up (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2564-consteval-needs-to-propagate-up-barry-revzin
+:END:
+CWG, straw-poll, C++23, nb-comment, plenary-approved

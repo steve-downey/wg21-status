@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2227][P2227]] Update normative reference to POSIX (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2227-update-normative-reference-to-posix-jonathan-wakely
+:END:
+C++23, IS, plenary-approved

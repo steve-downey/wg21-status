@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2446][P2446]] views::move (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2446-viewsmove-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

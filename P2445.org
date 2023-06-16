@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2445][P2445]] forward_like (Gašper Ažman)
+:PROPERTIES:
+:CUSTOM_ID: p2445-forward_like-gašper-ažman
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2553][P2553]] Make mdspan size_type controllable (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, D...
+:PROPERTIES:
+:CUSTOM_ID: p2553-make-mdspan-size_type-controllable-christian-trott-damien-lebrun-grandie-mark-hoemmen-d
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

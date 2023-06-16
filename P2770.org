@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2770][P2770]] Stashing stashing iterators for proper flattening (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2770-stashing-stashing-iterators-for-proper-flattening-tim-song
+:END:
+LWG, C++23, plenary-approved

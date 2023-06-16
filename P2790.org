@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2790][P2790]] C++ Standard Library Immediate Issues to be moved in Issaquah, Feb. 2023 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2790-c-standard-library-immediate-issues-to-be-moved-in-issaquah-feb.-2023-jonathan-wakely
+:END:
+LWG, info, C++23, plenary-approved

@@ -1,0 +1,6 @@
+* [[https://wg21.link/P2711][P2711]] Ruminations on explicit multi-param constructors of views (Ville Voutilainen)
+:PROPERTIES:
+:CUSTOM_ID: p2711-ruminations-on-explicit-multi-param-constructors-of-views-ville-voutilainen
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement,
+size - medium, plenary-approved

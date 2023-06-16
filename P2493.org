@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2493][P2493]] Missing feature test macros for C++20 core papers (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2493-missing-feature-test-macros-for-c20-core-papers-barry-revzin
+:END:
+CWG, straw-poll, C++23, plenary-approved

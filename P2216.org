@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2216][P2216]] std::format improvements (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2216-stdformat-improvements-victor-zverovich
+:END:
+LWG, C++23, IS, plenary-approved

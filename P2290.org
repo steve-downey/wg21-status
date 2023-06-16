@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2290][P2290]] Delimited escape sequences (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2290-delimited-escape-sequences-corentin-jabot
+:END:
+CWG, straw-poll, C++23, plenary-approved
+* [[https://wg21.link/p2290][P2290]] Delimited escape sequences (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2290-delimited-escape-sequences-corentin-jabot
+:END:
+CWG, straw-poll, C++23, plenary-approved

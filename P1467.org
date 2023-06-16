@@ -1,0 +1,6 @@
+* [[https://wg21.link/p1467][P1467]] Extended floating-point types (Michał Dominiak, David Olsen)
+:PROPERTIES:
+:CUSTOM_ID: p1467-extended-floating-point-types-michał-dominiak-david-olsen
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 -
+addition, plenary-approved

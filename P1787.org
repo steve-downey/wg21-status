@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1787][P1787]] Declarations and where to find them (S. Davis Herring)
+:PROPERTIES:
+:CUSTOM_ID: p1787-declarations-and-where-to-find-them-s.-davis-herring
+:END:
+modules, C++23, IS, plenary-approved

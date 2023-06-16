@@ -1,0 +1,6 @@
+* [[https://wg21.link/p1264][P1264]] Revising the wording of stream input operations (Louis Dionne)...
+:PROPERTIES:
+:CUSTOM_ID: p1264-revising-the-wording-of-stream-input-operations-louis-dionne
+:END:
+LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium,
+plenary-approved, lwg-wording-only

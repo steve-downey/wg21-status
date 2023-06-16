@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2441][P2441]] views::join_with (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2441-viewsjoin_with-barry-revzin
+:END:
+LWG, ranges, C++23, IS, plenary-approved
+

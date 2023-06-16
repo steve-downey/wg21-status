@@ -1,0 +1,6 @@
+* [[https://wg21.link/p0009r9][P0009R9]] mdspan: A Non-Owning Multidimensional Array Reference (H. Carter Edwards, Bryce Adelstein
+L...
+:PROPERTIES:
+:CUSTOM_ID: p0009r9-mdspan-a-non-owning-multidimensional-array-reference-h.-carter-edwards-bryce-adelstein-l
+:END:
+LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan

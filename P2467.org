@@ -1,0 +1,5 @@
+* [[https://wg21.link/P2467][P2467]] Support exclusive mode for fstreams (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2467-support-exclusive-mode-for-fstreams-jonathan-wakely
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll

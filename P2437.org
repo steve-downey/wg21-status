@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2437][P2437]] Support for #warning (Aaron Ballman)
+:PROPERTIES:
+:CUSTOM_ID: p2437-support-for-warning-aaron-ballman
+:END:
+CWG, straw-poll, C++23, size - tiny, plenary-approved

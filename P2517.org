@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2517][P2517]] Add a conditional noexcept specification to std::apply (Hewill Kang)
+:PROPERTIES:
+:CUSTOM_ID: p2517-add-a-conditional-noexcept-specification-to-stdapply-hewill-kang
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
+plenary-approved

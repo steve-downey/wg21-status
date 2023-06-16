@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2231][P2231]] Missing =constexpr= in =std::optional= and =std::variant= (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2231-missing-constexpr-in-stdoptional-and-stdvariant-barry-revzin
+:END:
+LWG, C++23, IS, B2 - improvement, plenary-approved

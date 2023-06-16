@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2325][P2325]] Views should not be required to be default constructible (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2325-views-should-not-be-required-to-be-default-constructible-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+* [[https://wg21.link/p2325][P2325]] Views should not be required to be default constructible (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2325-views-should-not-be-required-to-be-default-constructible-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

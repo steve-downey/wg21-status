@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2162][P2162]] Inheriting from std::variant (resolving LWG3052) (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2162-inheriting-from-stdvariant-resolving-lwg3052-barry-revzin
+:END:
+C++23, IS, size - small, plenary-approved

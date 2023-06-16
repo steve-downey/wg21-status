@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2540][P2540]] Empty Product for certain Views (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2540-empty-product-for-certain-views-steve-downey
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+

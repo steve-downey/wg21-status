@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2324][P2324]] Labels at the end of compound statements (C compatibility) (Martin Uecker)
+:PROPERTIES:
+:CUSTOM_ID: p2324-labels-at-the-end-of-compound-statements-c-compatibility-martin-uecker
+:END:
+CWG, straw-poll, C++23, size - small, plenary-approved
+* [[https://wg21.link/p2324][P2324]] Labels at the end of compound statements (C compatibility) (Martin Uecker)
+:PROPERTIES:
+:CUSTOM_ID: p2324-labels-at-the-end-of-compound-statements-c-compatibility-martin-uecker
+:END:
+CWG, straw-poll, C++23, size - small, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2440][P2440]] ranges::iota, ranges::shift_left, and ranges::shift_right (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2440-rangesiota-rangesshift_left-and-rangesshift_right-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

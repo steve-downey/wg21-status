@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2590][P2590]] Explicit lifetime management (Timur Doumler, Richard Smith)
+:PROPERTIES:
+:CUSTOM_ID: p2590-explicit-lifetime-management-timur-doumler-richard-smith
+:END:
+CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved

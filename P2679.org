@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2679][P2679]] Fixing std::start_lifetime_as for arrays (Timur Doumler, Arthur O'Dwyer, Richard Smith)
+:PROPERTIES:
+:CUSTOM_ID: p2679-fixing-stdstart_lifetime_as-for-arrays-timur-doumler-arthur-odwyer-richard-smith
+:END:
+CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

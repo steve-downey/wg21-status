@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2789][P2789]] C++ Standard Library Ready Issues to be moved in Issaquah, Feb. 2023 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2789-c-standard-library-ready-issues-to-be-moved-in-issaquah-feb.-2023-jonathan-wakely
+:END:
+LWG, info, C++23, plenary-approved

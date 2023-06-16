@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2367][P2367]] Remove misuses of list-initialization from Clause 24 (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2367-remove-misuses-of-list-initialization-from-clause-24-tim-song
+:END:
+LWG, C++23, plenary-approved

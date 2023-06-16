@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1682][P1682]] std::to_underlying (JeanHeyd Meneide)
+:PROPERTIES:
+:CUSTOM_ID: p1682-stdto_underlying-jeanheyd-meneide
+:END:
+C++23, IS, size - small, plenary-approved

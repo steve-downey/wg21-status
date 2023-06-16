@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2448][P2448]] Relaxing some constexpr restrictions (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2448-relaxing-some-constexpr-restrictions-barry-revzin
+:END:
+CWG, straw-poll, C++23, plenary-approved

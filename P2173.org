@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2173][P2173]] Attributes on Lambda-Expressions (Daveed Vandevoorde, Inbal Levi, Ville Voutilainen)
+:PROPERTIES:
+:CUSTOM_ID: p2173-attributes-on-lambda-expressions-daveed-vandevoorde-inbal-levi-ville-voutilainen
+:END:
+CWG, straw-poll, C++23, plenary-approved

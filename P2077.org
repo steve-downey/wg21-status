@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2077][P2077]] Heterogeneous erasure overloads for associative containers (Konstantin Boyarinov, Sergey Vi...
+:PROPERTIES:
+:CUSTOM_ID: p2077-heterogeneous-erasure-overloads-for-associative-containers-konstantin-boyarinov-sergey-vi
+:END:
+LWG, C++23, IS, B2 - improvement, plenary-approved

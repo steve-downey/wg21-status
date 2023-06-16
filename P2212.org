@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2212][P2212]] Relax Requirements for time_point::clock (Alexey Dmitriev, Howard Hinnant)
+:PROPERTIES:
+:CUSTOM_ID: p2212-relax-requirements-for-time_pointclock-alexey-dmitriev-howard-hinnant
+:END:
+C++23, IS, plenary-approved

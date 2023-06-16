@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1425][P1425]] Iterators pair constructors for stack and queue (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p1425-iterators-pair-constructors-for-stack-and-queue-corentin-jabot
+:END:
+LWG, C++23, B2 - improvement, size - small, plenary-approved

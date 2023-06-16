@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2273][P2273]] Making std::unique_ptr constexpr (Andreas Fertig)
+:PROPERTIES:
+:CUSTOM_ID: p2273-making-stdunique_ptr-constexpr-andreas-fertig
+:END:
+LWG, C++23, B2 - improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll

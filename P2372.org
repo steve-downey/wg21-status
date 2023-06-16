@@ -1,0 +1,5 @@
+* [[https://wg21.link/P2372][P2372]] Fixing locale handling in chrono formatters (Victor Zverovich, Corentin ...
+:PROPERTIES:
+:CUSTOM_ID: p2372-fixing-locale-handling-in-chrono-formatters-victor-zverovich-corentin
+:END:
+LWG, C++23, IS, plenary-approved

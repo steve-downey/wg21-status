@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2609][P2609]] Relaxing Ranges Just A Smidge (John Eivind Helset)
+:PROPERTIES:
+:CUSTOM_ID: p2609-relaxing-ranges-just-a-smidge-john-eivind-helset
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2418][P2418]] Add support for std::generator-like types to std::format (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2418-add-support-for-stdgenerator-like-types-to-stdformat-victor-zverovich
+:END:
+LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved

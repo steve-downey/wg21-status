@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2494][P2494]] Relaxing range adaptors to allow for move only types (Michał Dominiak)
+:PROPERTIES:
+:CUSTOM_ID: p2494-relaxing-range-adaptors-to-allow-for-move-only-types-michał-dominiak
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved

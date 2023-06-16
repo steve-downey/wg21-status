@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2460][P2460]] Relax requirements on wchar_t to match existing practices (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2460-relax-requirements-on-wchar_t-to-match-existing-practices-corentin-jabot
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved, ...

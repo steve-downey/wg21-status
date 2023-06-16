@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2415][P2415]] What is a view? (Barry Revzin, Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2415-what-is-a-view-barry-revzin-tim-song
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved

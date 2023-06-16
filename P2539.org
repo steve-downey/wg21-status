@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2539][P2539]] Should the output of std::print to a terminal be synchronized with the underlying stream? (...
+:PROPERTIES:
+:CUSTOM_ID: p2539-should-the-output-of-stdprint-to-a-terminal-be-synchronized-with-the-underlying-stream
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+

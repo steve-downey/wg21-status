@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2321][P2321]] zip (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2321-zip-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, plenary-approved
+* [[https://wg21.link/p2321][P2321]] zip (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2321-zip-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, plenary-approved

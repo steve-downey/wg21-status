@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2128][P2128]] Multidimensional subscript operator (Corentin Jabot, Isabella Muerte, Daisy Hollman, Christ...
+:PROPERTIES:
+:CUSTOM_ID: p2128-multidimensional-subscript-operator-corentin-jabot-isabella-muerte-daisy-hollman-christ
+:END:
+CWG, C++23, plenary-approved

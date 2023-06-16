@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1989][P1989]] Range constructor for std::string_view 2: Constrain Harder (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p1989-range-constructor-for-stdstring_view-2-constrain-harder-corentin-jabot
+:END:
+LWG, ranges, C++23, plenary-approved

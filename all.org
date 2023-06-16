@@ -1,0 +1,1127 @@
+* [[https://wg21.link/p2797][P2797]] Proposed resolution for CWG2692 Static and explicit object member functions with the same p...
+:PROPERTIES:
+:EXPORT_FILE_NAME: P2797.org
+:CUSTOM_ID: p2797-proposed-resolution-for-cwg2692-static-and-explicit-object-member-functions-with-the-same-p
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2796][P2796]] Core Language Working Group "ready" Issues for the February, 2023 meeting (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2796-core-language-working-group-ready-issues-for-the-february-2023-meeting-jens-maurer
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2790][P2790]] C++ Standard Library Immediate Issues to be moved in Issaquah, Feb. 2023 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2790-c-standard-library-immediate-issues-to-be-moved-in-issaquah-feb.-2023-jonathan-wakely
+:END:
+LWG, info, C++23, plenary-approved
+
+* [[https://wg21.link/p2789][P2789]] C++ Standard Library Ready Issues to be moved in Issaquah, Feb. 2023 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2789-c-standard-library-ready-issues-to-be-moved-in-issaquah-feb.-2023-jonathan-wakely
+:END:
+LWG, info, C++23, plenary-approved
+
+* [[https://wg21.link/p2788][P2788]] Linkage for modular constants (S. Davis Herring)
+:PROPERTIES:
+:CUSTOM_ID: p2788-linkage-for-modular-constants-s.-davis-herring
+:END:
+EWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2770][P2770]] Stashing stashing iterators for proper flattening (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2770-stashing-stashing-iterators-for-proper-flattening-tim-song
+:END:
+LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2787][P2787]] =pmr::generator= - Promise Types are not Values (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2787-pmrgenerator---promise-types-are-not-values-steve-downey
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+
+* Consider this example:...
+:PROPERTIES:
+:CUSTOM_ID: consider-this-example
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2763][P2763]] =layout_stride= static extents default constructor fix (Christian Trott, Damien Lebrun-Gran...
+:PROPERTIES:
+:CUSTOM_ID: p2763-layout_stride-static-extents-default-constructor-fix-christian-trott-damien-lebrun-gran
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan
+
+* [[https://wg21.link/p2736][P2736]] Referencing the Unicode Standard (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2736-referencing-the-unicode-standard-corentin-jabot
+:END:
+CWG, LWG, C++23, nb-comment, plenary-approved
+
+* [[https://wg21.link/p2713][P2713]] Escaping improvements in std::format (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2713-escaping-improvements-in-stdformat-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -small, plenary-approved, format
+
+* CWG alerts LWG and LEWG of serious implementability concerns when =std::source_location::current= appears in a constant expressi...
+:PROPERTIES:
+:CUSTOM_ID: cwg-alerts-lwg-and-lewg-of-serious-implementability-concerns-when-stdsource_locationcurrent-appears-in-a-constant-expressi
+:END:
+CWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved
+
+* https://cplusplus.github.io/LWG/issue3810...
+:PROPERTIES:
+:CUSTOM_ID: httpscplusplus.github.iolwgissue3810
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, format
+
+* CWG2521...
+:PROPERTIES:
+:CUSTOM_ID: cwg2521
+:END:
+CWG, LWG, C++23, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/P2711][P2711]] Ruminations on explicit multi-param constructors of views (Ville Voutilainen)
+:PROPERTIES:
+:CUSTOM_ID: p2711-ruminations-on-explicit-multi-param-constructors-of-views-ville-voutilainen
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement,
+size - medium, plenary-approved
+
+* [[https://wg21.link/P2693][P2693]] Formatting thread::id and stacktrace (Corentin Jabot, Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: d2693-formatting-threadid-and-stacktrace-corentin-jabot-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved, format
+
+* [[https://wg21.link/p2679][P2679]] Fixing std::start_lifetime_as for arrays (Timur Doumler, Arthur O'Dwyer, Richard Smith)
+:PROPERTIES:
+:CUSTOM_ID: p2679-fixing-stdstart_lifetime_as-for-arrays-timur-doumler-arthur-odwyer-richard-smith
+:END:
+CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2675][P2675]] LWG3780: The Paper (format's width estimation is too approximate and not forward compatible...
+:PROPERTIES:
+:CUSTOM_ID: p2675-lwg3780-the-paper-formats-width-estimation-is-too-approximate-and-not-forward-compatible
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format
+
+* [[https://wg21.link/p2674][P2674]] A trait for implicit lifetime types (Timur Doumler, Vittorio Romeo)
+:PROPERTIES:
+:CUSTOM_ID: p2674-a-trait-for-implicit-lifetime-types-timur-doumler-vittorio-romeo
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved
+
+* [[https://wg21.link/p2655][P2655]] common_reference_t of reference_wrapper Should Be a Reference Type (Hui Xie, S. Levent Yilmaz)
+:PROPERTIES:
+:CUSTOM_ID: p2655-common_reference_t-of-reference_wrapper-should-be-a-reference-type-hui-xie-s.-levent-yilmaz
+:END:
+LWG, C++23, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2652][P2652]] Disallow user specialization of allocator_traits (Pablo Halpern)
+:PROPERTIES:
+:CUSTOM_ID: p2652-disallow-user-specialization-of-allocator_traits-pablo-halpern
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2644][P2644]] Get Fix of Broken Range-based for Loop Finally Done (Nicolai Josuttis)
+:PROPERTIES:
+:CUSTOM_ID: p2644-get-fix-of-broken-range-based-for-loop-finally-done-nicolai-josuttis
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2614][P2614]] Deprecate numeric_limits::has_denorm (Matthias Kretz)
+:PROPERTIES:
+:CUSTOM_ID: p2614-deprecate-numeric_limitshas_denorm-matthias-kretz
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -
+small, plenary-approved
+
+* [[https://wg21.link/p2579][P2579]] Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type” (Corentin ...
+:PROPERTIES:
+:CUSTOM_ID: p2579-mitigation-strategies-for-p2036-changing-scope-for-lambda-trailing-return-type-corentin
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2613][P2613]] Add the missing =empty= to =mdspan= (Yihe Le)
+:PROPERTIES:
+:CUSTOM_ID: p2613-add-the-missing-empty-to-mdspan-yihe-le
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+
+* [[https://wg21.link/p2609][P2609]] Relaxing Ranges Just A Smidge (John Eivind Helset)
+:PROPERTIES:
+:CUSTOM_ID: p2609-relaxing-ranges-just-a-smidge-john-eivind-helset
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2602][P2602]] Poison Pills are Too Toxic (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2602-poison-pills-are-too-toxic-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/P2604][P2604]] mdspan: rename pointer and contiguous (Christian Trott)
+:PROPERTIES:
+:CUSTOM_ID: p2604-mdspan-rename-pointer-and-contiguous-christian-trott
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+
+* [[https://wg21.link/P2599][P2599]] mdspan::size_type should be index_type (Nevin Liber)
+:PROPERTIES:
+:CUSTOM_ID: p2599-mdspansize_type-should-be-index_type-nevin-liber
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+
+* [[https://wg21.link/p2590][P2590]] Explicit lifetime management (Timur Doumler, Richard Smith)
+:PROPERTIES:
+:CUSTOM_ID: p2590-explicit-lifetime-management-timur-doumler-richard-smith
+:END:
+CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved
+
+* [[https://wg21.link/p2588][P2588]] Relax std::barrier phase completion step guarantees (Gonzalo Brito, Eric A Niebler, Anthony...
+:PROPERTIES:
+:CUSTOM_ID: p2588-relax-stdbarrier-phase-completion-step-guarantees-gonzalo-brito-eric-a-niebler-anthony
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2585][P2585]] Improving default container formatting (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2585-improving-default-container-formatting-barry-revzin
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
+
+* [[https://wg21.link/p2582][P2582]] Wording for class template argument deduction from inherited constructors (Timur Doumler)
+:PROPERTIES:
+:CUSTOM_ID: p2582-wording-for-class-template-argument-deduction-from-inherited-constructors-timur-doumler
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* See CWG2586....
+:PROPERTIES:
+:CUSTOM_ID: see-cwg2586.
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* See https://cplusplus.github.io/CWG/issues/2569.html...
+:PROPERTIES:
+:CUSTOM_ID: see-httpscplusplus.github.iocwgissues2569.html
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2564][P2564]] consteval needs to propagate up (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2564-consteval-needs-to-propagate-up-barry-revzin
+:END:
+CWG, straw-poll, C++23, nb-comment, plenary-approved
+
+* [[https://wg21.link/p2539][P2539]] Should the output of std::print to a terminal be synchronized with the underlying stream? (...
+:PROPERTIES:
+:CUSTOM_ID: p2539-should-the-output-of-stdprint-to-a-terminal-be-synchronized-with-the-underlying-stream
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+
+* CWG would like EWG to confirm that default arguments were intended to be permitted for an =operator[]= function. See [P2128R6](h...
+:PROPERTIES:
+:CUSTOM_ID: cwg-would-like-ewg-to-confirm-that-default-arguments-were-intended-to-be-permitted-for-an-operator-function.-see-p2128r6h
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2554][P2554]] C-Array Interoperability of MDSpan (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K...
+:PROPERTIES:
+:CUSTOM_ID: p2554-c-array-interoperability-of-mdspan-christian-trott-damien-lebrun-grandie-mark-hoemmen-k
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+
+* [[https://wg21.link/p2553][P2553]] Make mdspan size_type controllable (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, D...
+:PROPERTIES:
+:CUSTOM_ID: p2553-make-mdspan-size_type-controllable-christian-trott-damien-lebrun-grandie-mark-hoemmen-d
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+
+* [[https://wg21.link/p2549][P2549]] std::unexpected should have error() as member accessor (Yihe Li)
+:PROPERTIES:
+:CUSTOM_ID: p2549-stdunexpected-should-have-error-as-member-accessor-yihe-li
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p2540][P2540]] Empty Product for certain Views (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2540-empty-product-for-certain-views-steve-downey
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p2520][P2520]] move_iterator should be a random access iterator (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2520-move_iterator-should-be-a-random-access-iterator-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, expedited-library-evoluti...
+
+* [[https://wg21.link/p2517][P2517]] Add a conditional noexcept specification to std::apply (Hewill Kang)
+:PROPERTIES:
+:CUSTOM_ID: p2517-add-a-conditional-noexcept-specification-to-stdapply-hewill-kang
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
+plenary-approved
+
+* [[https://wg21.link/p2513][P2513]] char8_t Compatibility and Portability Fixes (JeanHeyd Meneide, Tom Honermann)
+:PROPERTIES:
+:CUSTOM_ID: p2513-char8_t-compatibility-and-portability-fixes-jeanheyd-meneide-tom-honermann
+:END:
+CWG, straw-poll, C++23, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2508][P2508]] Exposing std::basic-format-string (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2508-exposing-stdbasic-format-string-barry-revzin
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+
+* [[https://wg21.link/p2505][P2505]] Monadic Functions for std::expected (Jeff Garland)
+:PROPERTIES:
+:CUSTOM_ID: p2505-monadic-functions-for-stdexpected-jeff-garland
+:END:
+LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2499][P2499]] string_view range constructor should be explicit (James Touton)
+:PROPERTIES:
+:CUSTOM_ID: p2499-string_view-range-constructor-should-be-explicit-james-touton
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p2494][P2494]] Relaxing range adaptors to allow for move only types (Michał Dominiak)
+:PROPERTIES:
+:CUSTOM_ID: p2494-relaxing-range-adaptors-to-allow-for-move-only-types-michał-dominiak
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2474][P2474]] views::repeat (Michał Dominiak)
+:PROPERTIES:
+:CUSTOM_ID: p2474-viewsrepeat-michał-dominiak
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-...
+
+* [[https://wg21.link/P2502][P2502]] std::generator: Synchronous Coroutine Generator for Ranges (Casey Carter)
+:PROPERTIES:
+:CUSTOM_ID: p2502-stdgenerator-synchronous-coroutine-generator-for-ranges-casey-carter
+:END:
+LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
+
+* SG16 needs to clarify the intended design for
+https://cplusplus.github.io/LWG/issue3639....
+:PROPERTIES:
+:CUSTOM_ID: sg16-needs-to-clarify-the-intended-design-for-httpscplusplus.github.iolwgissue3639.
+:END:
+LWG, C++23, plenary-approved, format
+
+* [[https://wg21.link/p2493][P2493]] Missing feature test macros for C++20 core papers (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2493-missing-feature-test-macros-for-c20-core-papers-barry-revzin
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/P2467][P2467]] Support exclusive mode for fstreams (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2467-support-exclusive-mode-for-fstreams-jonathan-wakely
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p2468][P2468]] The Equality Operator You Are Looking For (Barry Revzin, Bjarne Stroustrup, Cameron DaCamar...
+:PROPERTIES:
+:CUSTOM_ID: p2468-the-equality-operator-you-are-looking-for-barry-revzin-bjarne-stroustrup-cameron-dacamar
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2462][P2462]] Core Language Working Group “ready” issues for the October, 2021 meeting (Willi...
+:PROPERTIES:
+:CUSTOM_ID: p2462-core-language-working-group-ready-issues-for-the-october-2021-meeting-willi
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2460][P2460]] Relax requirements on wchar_t to match existing practices (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2460-relax-requirements-on-wchar_t-to-match-existing-practices-corentin-jabot
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved, ...
+
+* [[https://wg21.link/p2450][P2450]] C++ Standard Library Issues to be moved in Virtual Plenary, Oct. 2021 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2450-c-standard-library-issues-to-be-moved-in-virtual-plenary-oct.-2021-jonathan-wakely
+:END:
+LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2448][P2448]] Relaxing some constexpr restrictions (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2448-relaxing-some-constexpr-restrictions-barry-revzin
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2445][P2445]] forward_like (Gašper Ažman)
+:PROPERTIES:
+:CUSTOM_ID: p2445-forward_like-gašper-ažman
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved
+
+* [[https://wg21.link/p2412][P2465]] Standard Library Modules std and std.all (Stephan T. Lavavej, Gabriel Dos Reis, Bjarne Stro...
+:PROPERTIES:
+:CUSTOM_ID: p2465-standard-library-modules-std-and-std.all-stephan-t.-lavavej-gabriel-dos-reis-bjarne-stro
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, modular-standard-library, size - large, plenary-approved
+
+* [[https://wg21.link/p2446][P2446]] views::move (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2446-viewsmove-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p2443][P2443]] views::chunk_by (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2443-viewschunk_by-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+
+* [[https://wg21.link/p2442][P2442]] Windowing range adaptors: views::chunk and views::slide (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2442-windowing-range-adaptors-viewschunk-and-viewsslide-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+
+* [[https://wg21.link/p2441][P2441]] views::join_with (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2441-viewsjoin_with-barry-revzin
+:END:
+LWG, ranges, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2440][P2440]] ranges::iota, ranges::shift_left, and ranges::shift_right (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2440-rangesiota-rangesshift_left-and-rangesshift_right-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+
+* [[https://wg21.link/p2438][P2438]] std::string::substr() && (Federico Kircheis, Tomasz Kamiński)
+:PROPERTIES:
+:CUSTOM_ID: p2438-stdstringsubstr-federico-kircheis-tomasz-kamiński
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p2437][P2437]] Support for #warning (Aaron Ballman)
+:PROPERTIES:
+:CUSTOM_ID: p2437-support-for-warning-aaron-ballman
+:END:
+CWG, straw-poll, C++23, size - tiny, plenary-approved
+
+* [[https://wg21.link/P2432][P2432]] Fix istream_view (Nicolai Josuttis)
+:PROPERTIES:
+:CUSTOM_ID: p2432-fix-istream_view-nicolai-josuttis
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2419][P2419]] Clarify handling of encodings in localized formatting of chrono types (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2419-clarify-handling-of-encodings-in-localized-formatting-of-chrono-types-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved
+
+* [[https://wg21.link/p2418][P2418]] Add support for std::generator-like types to std::format (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2418-add-support-for-stdgenerator-like-types-to-stdformat-victor-zverovich
+:END:
+LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved
+
+* SG16 needs to clarify the intended design for https://cplusplus.github.io/LWG/issue3576...
+:PROPERTIES:
+:CUSTOM_ID: sg16-needs-to-clarify-the-intended-design-for-httpscplusplus.github.iolwgissue3576
+:END:
+LWG, C++23, plenary-approved, format
+
+* [[https://wg21.link/p2417][P2417]] A more constexpr bitset (Daniil Goncharov)
+:PROPERTIES:
+:CUSTOM_ID: p2417-a-more-constexpr-bitset-daniil-goncharov
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, constexpr, expedited-library-evolut...
+
+* [[https://wg21.link/p2415][P2415]] What is a view? (Barry Revzin, Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2415-what-is-a-view-barry-revzin-tim-song
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
+
+* [[https://wg21.link/p2408][P2408]] Ranges views as inputs to non-Ranges algorithms (David Olsen)
+:PROPERTIES:
+:CUSTOM_ID: p2408-ranges-views-as-inputs-to-non-ranges-algorithms-david-olsen
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2404][P2404]] Relaxing equality_comparable_with's and three_way_comparable_with's common
+reference requir...
+:PROPERTIES:
+:CUSTOM_ID: p2404-relaxing-equality_comparable_withs-and-three_way_comparable_withs-common-reference-requir
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved,
+expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p2401][P2401]] Add a conditional noexcept specification to std::exchange (Giuseppe D'Angelo)
+:PROPERTIES:
+:CUSTOM_ID: p2401-add-a-conditional-noexcept-specification-to-stdexchange-giuseppe-dangelo
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2393][P2393]] Cleaning up integer-class types (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2393-cleaning-up-integer-class-types-tim-song
+:END:
+LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2387][P2387]] Pipe support for user-defined range adaptors (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2387-pipe-support-for-user-defined-range-adaptors-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
+
+* [[https://wg21.link/p2386][P2386]] Core Language Working Group "ready" Issues for the June, 2021 meeting (William M....
+:PROPERTIES:
+:CUSTOM_ID: p2386-core-language-working-group-ready-issues-for-the-june-2021-meeting-william-m.
+:END:
+info, C++23, plenary-approved
+
+* [[https://wg21.link/p2385][P2385]] C++ Standard Library Issues to be moved in Virtual Plenary, June 2021 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2385-c-standard-library-issues-to-be-moved-in-virtual-plenary-june-2021-jonathan-wakely
+:END:
+info, C++23, plenary-approved
+
+* [[https://wg21.link/p2374][P2374]] views::cartesian_product (Sy Brand)
+:PROPERTIES:
+:CUSTOM_ID: p2374-viewscartesian_product-sy-brand
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p2367][P2367]] Remove misuses of list-initialization from Clause 24 (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2367-remove-misuses-of-list-initialization-from-clause-24-tim-song
+:END:
+LWG, C++23, plenary-approved
+
+* [[https://wg21.link/P2372][P2372]] Fixing locale handling in chrono formatters (Victor Zverovich, Corentin ...
+:PROPERTIES:
+:CUSTOM_ID: p2372-fixing-locale-handling-in-chrono-formatters-victor-zverovich-corentin
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2362][P2362]] Make obfuscating wide character literals ill-formed (Peter Brett, Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2362-make-obfuscating-wide-character-literals-ill-formed-peter-brett-corentin-jabot
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2360][P2360]] Extend init-statement to allow alias-declaration (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2360-extend-init-statement-to-allow-alias-declaration-jens-maurer
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2327][P2327]] De-deprecating volatile compound assignment (Paul Bendixen, Jens Maurer, Arthur O'Dwyer, Be...
+:PROPERTIES:
+:CUSTOM_ID: p2327-de-deprecating-volatile-compound-assignment-paul-bendixen-jens-maurer-arthur-odwyer-be
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p1169r1][P1169R1]] static operator() (Barry Revzin, Casey Carter)
+:PROPERTIES:
+:CUSTOM_ID: p1169r1-static-operator-barry-revzin-casey-carter
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, expedited-library-...
+
+* [[https://wg21.link/p2340][P2340]] Clarifying the status of the ‘C headers' (Thomas Köppe)
+:PROPERTIES:
+:CUSTOM_ID: p2340-clarifying-the-status-of-the-c-headers-thomas-köppe
+:END:
+LWG, C++23, policy, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p2334][P2334]] Add support for preprocessing directives elifdef and elifndef (Melanie Blower)
+:PROPERTIES:
+:CUSTOM_ID: p2334-add-support-for-preprocessing-directives-elifdef-and-elifndef-melanie-blower
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2313][P2313]] Core Language Working Group "tentatively ready" issues for the February, 2021 mee...
+:PROPERTIES:
+:CUSTOM_ID: p2313-core-language-working-group-tentatively-ready-issues-for-the-february-2021-mee
+:END:
+CWG, info, C++23, plenary-approved
+
+* [[https://wg21.link/P2328.html][P2328]] join_view should join all views of ranges (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2328-join_view-should-join-all-views-of-ranges-tim-song
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2325][P2325]] Views should not be required to be default constructible (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2325-views-should-not-be-required-to-be-default-constructible-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2324][P2324]] Labels at the end of compound statements (C compatibility) (Martin Uecker)
+:PROPERTIES:
+:CUSTOM_ID: p2324-labels-at-the-end-of-compound-statements-c-compatibility-martin-uecker
+:END:
+CWG, straw-poll, C++23, size - small, plenary-approved
+
+* [[https://wg21.link/p2322][P2322]] ranges::fold (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2322-rangesfold-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+
+* [[https://wg21.link/p2321][P2321]] zip (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2321-zip-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, plenary-approved
+
+* [[https://wg21.link/p2316][P2316]] Consistent character literal encoding (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2316-consistent-character-literal-encoding-corentin-jabot
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2315][P2315]] C++ Standard Library Issues to be moved in Virtual Plenary, Feb. 2021 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2315-c-standard-library-issues-to-be-moved-in-virtual-plenary-feb.-2021-jonathan-wakely
+:END:
+LWG, info, C++23, plenary-approved
+
+* [[https://wg21.link/p2314][P2314]] Character sets and encodings (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2314-character-sets-and-encodings-jens-maurer
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2302][P2302]] Prefer std::ranges::contains over std::basic_string_view::contains (Christopher Di Bella)
+:PROPERTIES:
+:CUSTOM_ID: p2302-prefer-stdrangescontains-over-stdbasic_string_viewcontains-christopher-di-bella
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+
+* [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2301-add-a-pmr-alias-for-stdstacktrace-steve-downey
+:END:
+LWG, C++23, size - tiny, plenary-approved
+
+* [[https://wg21.link/p2295][P2295]] Correct UTF-8 handling during phase 1 of translation (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2295-correct-utf-8-handling-during-phase-1-of-translation-corentin-jabot
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2291][P2291]] Add Constexpr Modifiers to Functions =to_chars= and =from_chars= for Integral Types in `<ch...
+:PROPERTIES:
+:CUSTOM_ID: p2291-add-constexpr-modifiers-to-functions-to_chars-and-from_chars-for-integral-types-in-ch
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evol...
+
+* [[https://wg21.link/p2290][P2290]] Delimited escape sequences (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2290-delimited-escape-sequences-corentin-jabot
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2286][P2286]] Formatting Ranges (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2286-formatting-ranges-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+
+* [[https://wg21.link/p2281][P2281]] Clarifying range adaptor objects (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2281-clarifying-range-adaptor-objects-tim-song
+:END:
+LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2280][P2280]] Using unknown references in constant expressions (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2280-using-unknown-references-in-constant-expressions-barry-revzin
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2278][P2278]] cbegin should always return a constant iterator (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2278-cbegin-should-always-return-a-constant-iterator-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p2266][P2266]] Simpler implicit move (Arthur O'Dwyer)
+:PROPERTIES:
+:CUSTOM_ID: p2266-simpler-implicit-move-arthur-odwyer
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2273][P2273]] Making std::unique_ptr constexpr (Andreas Fertig)
+:PROPERTIES:
+:CUSTOM_ID: p2273-making-stdunique_ptr-constexpr-andreas-fertig
+:END:
+LWG, C++23, B2 - improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p2238][P2238]] Core Language Working Group "tentatively ready" issues for the November, 2020 meeting (Will...
+:PROPERTIES:
+:CUSTOM_ID: p2238-core-language-working-group-tentatively-ready-issues-for-the-november-2020-meeting-will
+:END:
+info, C++23, plenary-approved
+
+* [[https://wg21.link/p2259][P2259]] Repairing input range adaptors and counted_iterator (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2259-repairing-input-range-adaptors-and-counted_iterator-tim-song
+:END:
+C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2255][P2255]] A type trait to detect reference binding to temporary (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2255-a-type-trait-to-detect-reference-binding-to-temporary-tim-song
+:END:
+LWG, C++23, IS, size - small, plenary-approved, expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p2251][P2251]] Require span & basic_string_view to be Trivially Copyable (Nevin Liber)
+:PROPERTIES:
+:CUSTOM_ID: p2251-require-span-basic_string_view-to-be-trivially-copyable-nevin-liber
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2246][P2246]] Character encoding of diagnostic text (Aaron Ballman)
+:PROPERTIES:
+:CUSTOM_ID: p2246-character-encoding-of-diagnostic-text-aaron-ballman
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2242][P2242]] Non-literal variables (and labels and gotos) in constexpr functions (Ville Voutilainen)
+:PROPERTIES:
+:CUSTOM_ID: p2242-non-literal-variables-and-labels-and-gotos-in-constexpr-functions-ville-voutilainen
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p1102r1][P1102R1]] Down with ()! (Alex Christensen, JF Bastien)
+:PROPERTIES:
+:CUSTOM_ID: p1102r1-down-with-alex-christensen-jf-bastien
+:END:
+C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2236][P2236]] C++ Standard Library Issues to be moved in Virtual Plenary, Nov. 2020 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2236-c-standard-library-issues-to-be-moved-in-virtual-plenary-nov.-2020-jonathan-wakely
+:END:
+info, C++23, plenary-approved
+
+* [[https://wg21.link/p2231][P2231]] Missing =constexpr= in =std::optional= and =std::variant= (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2231-missing-constexpr-in-stdoptional-and-stdvariant-barry-revzin
+:END:
+LWG, C++23, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2227][P2227]] Update normative reference to POSIX (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2227-update-normative-reference-to-posix-jonathan-wakely
+:END:
+C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2223][P2223]] Trimming whitespaces before line splicing (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2223-trimming-whitespaces-before-line-splicing-corentin-jabot
+:END:
+CWG, C++23, SG22, plenary-approved
+
+* [[https://wg21.link/p2216][P2216]] std::format improvements (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2216-stdformat-improvements-victor-zverovich
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2212][P2212]] Relax Requirements for time_point::clock (Alexey Dmitriev, Howard Hinnant)
+:PROPERTIES:
+:CUSTOM_ID: p2212-relax-requirements-for-time_pointclock-alexey-dmitriev-howard-hinnant
+:END:
+C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2210][P2210]] Superior String Splitting (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2210-superior-string-splitting-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2201][P2201]] Mixed string literal concatenation (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2201-mixed-string-literal-concatenation-jens-maurer
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2186][P2186]] Removing Garbage Collection Support (JF Bastien, Alisdair Meredith)
+:PROPERTIES:
+:CUSTOM_ID: p2186-removing-garbage-collection-support-jf-bastien-alisdair-meredith
+:END:
+CWG, LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2166][P2166]] A Proposal to Prohibit std::basic_string and std::basic_string_view construction from nullp...
+:PROPERTIES:
+:CUSTOM_ID: p2166-a-proposal-to-prohibit-stdbasic_string-and-stdbasic_string_view-construction-from-nullp
+:END:
+LWG, C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p2093][P2093]] Formatted output (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2093-formatted-output-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition,
+plenary-approved
+
+* [[https://wg21.link/p2173][P2173]] Attributes on Lambda-Expressions (Daveed Vandevoorde, Inbal Levi, Ville Voutilainen)
+:PROPERTIES:
+:CUSTOM_ID: p2173-attributes-on-lambda-expressions-daveed-vandevoorde-inbal-levi-ville-voutilainen
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2167][P2167]] Improved Proposed Wording for LWG 2114 (Daniel Krügler)
+:PROPERTIES:
+:CUSTOM_ID: p2167-improved-proposed-wording-for-lwg-2114-daniel-krügler
+:END:
+LWG, C++23, tentatively-ready-for-plenary, B2 - improvement, size - small, plenary-approved, lwg-wording-only
+
+* [[https://wg21.link/p2165][P2165]] Comparing pair and tuples (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2165-comparing-pair-and-tuples-corentin-jabot
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
+B2 - improvement, size - medium, plenary-approved
+
+* [[https://wg21.link/p2164][P2164]] views::enumerate (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2164-viewsenumerate-corentin-jabot
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition,
+size - medium, plenary-approved
+
+* [[https://wg21.link/p2162][P2162]] Inheriting from std::variant (resolving LWG3052) (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2162-inheriting-from-stdvariant-resolving-lwg3052-barry-revzin
+:END:
+C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p2160][P2160]] Locks lock lockables (wording for LWG 2363) (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2160-locks-lock-lockables-wording-for-lwg-2363-tim-song
+:END:
+C++23, IS, size - medium, plenary-approved
+
+* [[https://wg21.link/p2156][P2156]] Allow Duplicate Attributes (Erich Keane)
+:PROPERTIES:
+:CUSTOM_ID: p2156-allow-duplicate-attributes-erich-keane
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2136][P2136]] invoke<R> (Zhihao Yuan)
+:PROPERTIES:
+:CUSTOM_ID: p2136-invoker-zhihao-yuan
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2128][P2128]] Multidimensional subscript operator (Corentin Jabot, Isabella Muerte, Daisy Hollman, Christ...
+:PROPERTIES:
+:CUSTOM_ID: p2128-multidimensional-subscript-operator-corentin-jabot-isabella-muerte-daisy-hollman-christ
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2096][P2096]] Generalized wording for partial specializations (James Touton)...
+:PROPERTIES:
+:CUSTOM_ID: p2096-generalized-wording-for-partial-specializations-james-touton
+:END:
+C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2077][P2077]] Heterogeneous erasure overloads for associative containers (Konstantin Boyarinov, Sergey Vi...
+:PROPERTIES:
+:CUSTOM_ID: p2077-heterogeneous-erasure-overloads-for-associative-containers-konstantin-boyarinov-sergey-vi
+:END:
+LWG, C++23, IS, B2 - improvement, plenary-approved
+
+* [[https://wg21.link/p2071][P2071]] Named universal character escapes (Tom Honermann, Peter Bindels)
+:PROPERTIES:
+:CUSTOM_ID: p2071-named-universal-character-escapes-tom-honermann-peter-bindels
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p2036][P2036]] Changing scope for lambda trailing-return-type (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2036-changing-scope-for-lambda-trailing-return-type-barry-revzin
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p2029][P2029]] Proposed resolution for core issues 411, 1656, and 2333; escapes in character and string li...
+:PROPERTIES:
+:CUSTOM_ID: p2029-proposed-resolution-for-core-issues-411-1656-and-2333-escapes-in-character-and-string-li
+:END:
+C++23, IS, plenary-approved
+
+* [[https://wg21.link/p2017][P2017]] Conditionally safe ranges (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2017-conditionally-safe-ranges-barry-revzin
+:END:
+ranges, C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p1989][P1989]] Range constructor for std::string_view 2: Constrain Harder (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p1989-range-constructor-for-stdstring_view-2-constrain-harder-corentin-jabot
+:END:
+LWG, ranges, C++23, plenary-approved
+
+* [[https://wg21.link/p1951][P1951]] Default Arguments for pair's Forwarding Constructor (Logan R. Smith)
+:PROPERTIES:
+:CUSTOM_ID: p1951-default-arguments-for-pairs-forwarding-constructor-logan-r.-smith
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p1949][P1949]] C++ Identifier Syntax using Unicode Standard Annex 31 (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p1949-c-identifier-syntax-using-unicode-standard-annex-31-steve-downey
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p1938][P1938]] if consteval (Barry Revzin, Daveed Vandevoorde, Richard Smith)
+:PROPERTIES:
+:CUSTOM_ID: p1938-if-consteval-barry-revzin-daveed-vandevoorde-richard-smith
+:END:
+CWG, LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p1899][P1899]] stride_view (Christopher Di Bella)
+:PROPERTIES:
+:CUSTOM_ID: p1899-stride_view-christopher-di-bella
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved,
+expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p1847][P1847]] Make declaration order layout mandated (Pal Balog)
+:PROPERTIES:
+:CUSTOM_ID: p1847-make-declaration-order-layout-mandated-pal-balog
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p1787][P1787]] Declarations and where to find them (S. Davis Herring)
+:PROPERTIES:
+:CUSTOM_ID: p1787-declarations-and-where-to-find-them-s.-davis-herring
+:END:
+modules, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p1774][P1774]] Portable optimisation hints (Timur Doumler)
+:PROPERTIES:
+:CUSTOM_ID: p1774-portable-optimisation-hints-timur-doumler
+:END:
+CWG, straw-poll, C++23, plenary-approved
+
+* [[https://wg21.link/p1682][P1682]] std::to_underlying (JeanHeyd Meneide)
+:PROPERTIES:
+:CUSTOM_ID: p1682-stdto_underlying-jeanheyd-meneide
+:END:
+C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p1679][P1679]] String Contains function (Wim Leflere)
+:PROPERTIES:
+:CUSTOM_ID: p1679-string-contains-function-wim-leflere
+:END:
+C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p1675][P1675]] rethrow_exception must be allowed to copy (Billy O'Neal)
+:PROPERTIES:
+:CUSTOM_ID: p1675-rethrow_exception-must-be-allowed-to-copy-billy-oneal
+:END:
+CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p1659][P1659]] starts_with and ends_with (Christopher Di Bella)
+:PROPERTIES:
+:CUSTOM_ID: p1659-starts_with-and-ends_with-christopher-di-bella
+:END:
+LWG, C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p1642][P1642]] Freestanding Library: Easy [utilities] (Ben Craig)
+:PROPERTIES:
+:CUSTOM_ID: p1642-freestanding-library-easy-utilities-ben-craig
+:END:
+CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS,
+B2 - improvement, size - medium, plenary-approved
+
+* [[https://wg21.link/p0401r1][P0401R1]] Providing size feedback in the Allocator interface (Chris Kennelly, Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p0401r1-providing-size-feedback-in-the-allocator-interface-chris-kennelly-jonathan-wakely
+:END:
+LWG, C++23, size - small, plenary-approved
+
+* [[https://wg21.link/p0288r4][P0288R4]] any_invocable (Ryan McDougall, Matt Calabrese)
+:PROPERTIES:
+:CUSTOM_ID: p0288r4-any_invocable-ryan-mcdougall-matt-calabrese
+:END:
+LWG, C++23, IS, size - large, plenary-approved
+
+* [[https://wg21.link/p1518][P1518]] Stop overconstraining allocators in container deduction guides (Arthur O'Dwyer, Mike Spertus)
+:PROPERTIES:
+:CUSTOM_ID: p1518-stop-overconstraining-allocators-in-container-deduction-guides-arthur-odwyer-mike-spertus
+:END:
+LWG, C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p0943r2][P0943R2]] Support C atomics in C++ (Hans-J. Boehm)
+:PROPERTIES:
+:CUSTOM_ID: p0943r2-support-c-atomics-in-c-hans-j.-boehm
+:END:
+C++23, IS, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p1264][P1264]] Revising the wording of stream input operations (Louis Dionne)...
+:PROPERTIES:
+:CUSTOM_ID: p1264-revising-the-wording-of-stream-input-operations-louis-dionne
+:END:
+LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium,
+plenary-approved, lwg-wording-only
+
+* [[https://wg21.link/p1147][P1147]] Printing =volatile= Pointers (Bryce Adelstein Lelbach)
+:PROPERTIES:
+:CUSTOM_ID: p1147-printing-volatile-pointers-bryce-adelstein-lelbach
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p1048][P1048]] A proposal for a type trait to detect scoped enumerations (Juan Alday)
+:PROPERTIES:
+:CUSTOM_ID: p1048-a-proposal-for-a-type-trait-to-detect-scoped-enumerations-juan-alday
+:END:
+C++23, IS, B3 - addition, size - small, plenary-approved
+
+* [[https://wg21.link/p0849][P0849]] auto(x): DECAY_COPY in the language (Zhihao Yuan)
+:PROPERTIES:
+:CUSTOM_ID: p0849-autox-decay_copy-in-the-language-zhihao-yuan
+:END:
+CWG, LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p0627r3][P0627R3]] Function to mark unreachable code (Melissa Mears)...
+:PROPERTIES:
+:CUSTOM_ID: p0627r3-function-to-mark-unreachable-code-melissa-mears
+:END:
+LWG, C++23, IS, B3 - addition, size - small, plenary-approved,
+expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p1272][P1272]] Byteswapping for fun&&nuf (Isabella Muerte)...
+:PROPERTIES:
+:CUSTOM_ID: p1272-byteswapping-for-funnuf-isabella-muerte
+:END:
+CWG, LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p0323r5][P0323R5]] std::expected (Vicente Botet, JF Bastien)...
+:PROPERTIES:
+:CUSTOM_ID: p0323r5-stdexpected-vicente-botet-jf-bastien
+:END:
+LWG, C++23, IS, B3 - addition, size - large, plenary-approved
+
+* [[https://wg21.link/p1467][P1467]] Extended floating-point types (Michał Dominiak, David Olsen)
+:PROPERTIES:
+:CUSTOM_ID: p1467-extended-floating-point-types-michał-dominiak-david-olsen
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 -
+addition, plenary-approved
+
+* [[https://wg21.link/p1425][P1425]] Iterators pair constructors for stack and queue (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p1425-iterators-pair-constructors-for-stack-and-queue-corentin-jabot
+:END:
+LWG, C++23, B2 - improvement, size - small, plenary-approved
+
+* [[https://wg21.link/p1413][P1413]] A safer interface for std::aligned_storage (CJ Johnson)
+:PROPERTIES:
+:CUSTOM_ID: p1413-a-safer-interface-for-stdaligned_storage-cj-johnson
+:END:
+LWG, C++23, plenary-approved
+
+* [[https://wg21.link/p1401][P1401]] Narrowing contextual conversions to bool (Andrzej Krzemienski)
+:PROPERTIES:
+:CUSTOM_ID: p1401-narrowing-contextual-conversions-to-bool-andrzej-krzemienski
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p1223r1][P1223R1]] find_backward (Zach Laine)
+:PROPERTIES:
+:CUSTOM_ID: p1223r1-find_backward-zach-laine
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved,
+expedited-library-evolution-electronic-poll
+
+* [[https://wg21.link/p1222r1][P1222R1]] A Standard flatset (Zach Laine)
+:PROPERTIES:
+:CUSTOM_ID: p1222r1-a-standard-flatset-zach-laine
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p1206r1][P1206R1]] ranges::to: A function to convert any range to a container (Corentin Jabot, Eric Niebler, C...
+:PROPERTIES:
+:CUSTOM_ID: p1206r1-rangesto-a-function-to-convert-any-range-to-a-container-corentin-jabot-eric-niebler-c
+:END:
+LWG, ranges, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p0881r3][P0881R3]] A Proposal to add stacktrace library (Alexey Gorgurov, Antony Polukhin)...
+:PROPERTIES:
+:CUSTOM_ID: p0881r3-a-proposal-to-add-stacktrace-library-alexey-gorgurov-antony-polukhin
+:END:
+C++23, IS, B3 - addition, plenary-approved
+
+* [[https://wg21.link/p0847r2][P0847R2]] Deducing this (Gašper Ažman, Simon Brand, Ben Deane, Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p0847r2-deducing-this-gašper-ažman-simon-brand-ben-deane-barry-revzin
+:END:
+CWG, C++23, plenary-approved
+
+* [[https://wg21.link/p0798r2][P0798R2]] Monadic operations for std::optional (Simon Brand)...
+:PROPERTIES:
+:CUSTOM_ID: p0798r2-monadic-operations-for-stdoptional-simon-brand
+:END:
+LWG, SG14, C++23, IS, size - small, plenary-approved
+
+* [[https://wg21.link/p0533r4][P0533R4]] constexpr for <cmath> and <cstdlib> (Edward J. Rosten, Oliver J. Rosten)...
+:PROPERTIES:
+:CUSTOM_ID: p0533r4-constexpr-for-cmath-and-cstdlib-edward-j.-rosten-oliver-j.-rosten
+:END:
+CWG, LWG, C++23, IS, B3 - addition, size - medium, plenary-approved,
+constexpr
+
+* [[https://wg21.link/p0448r2][P0448R2]] A strstream replacement using span<charT> as buffer (Peter Sommerlad)...
+:PROPERTIES:
+:CUSTOM_ID: p0448r2-a-strstream-replacement-using-spanchart-as-buffer-peter-sommerlad
+:END:
+LWG, C++23, size - large, plenary-approved
+
+* [[https://wg21.link/p0429r6][P0429R6]] A Standard flatmap (Zach Laine)...
+:PROPERTIES:
+:CUSTOM_ID: p0429r6-a-standard-flatmap-zach-laine
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+
+* [[https://wg21.link/p0009r9][P0009R9]] mdspan: A Non-Owning Multidimensional Array Reference (H. Carter Edwards, Bryce Adelstein
+L...
+:PROPERTIES:
+:CUSTOM_ID: p0009r9-mdspan-a-non-owning-multidimensional-array-reference-h.-carter-edwards-bryce-adelstein-l
+:END:
+LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan
+
+* [[https://wg21.link/p1328][P1328]] Making std::type_info::operator== constexpr (Peter Dimov)
+:PROPERTIES:
+:CUSTOM_ID: p1328-making-stdtype_infooperator-constexpr-peter-dimov
+:END:
+LWG, C++23, IS, B3 - addition, size - tiny, plenary-approved
+
+* [[https://wg21.link/p1132r2][P1132R2]] out_ptr - a scalable output pointer abstraction (JeanHeyd Meneide, Todor Buyukliev, Isabell...
+:PROPERTIES:
+:CUSTOM_ID: p1132r2-out_ptr---a-scalable-output-pointer-abstraction-jeanheyd-meneide-todor-buyukliev-isabell
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p1072r2][P1072R2]] basic_string::resize_default_init (Chris Kennelly, Mark Zeren)
+:PROPERTIES:
+:CUSTOM_ID: p1072r2-basic_stringresize_default_init-chris-kennelly-mark-zeren
+:END:
+LWG, C++23, IS, plenary-approved
+
+* [[https://wg21.link/p0330r3][P0330R3]] Literal Suffixes for ptrdiff_t and size_t (JeanHeyd Meneide, Rein Halbersma)
+:PROPERTIES:
+:CUSTOM_ID: p0330r3-literal-suffixes-for-ptrdiff_t-and-size_t-jeanheyd-meneide-rein-halbersma
+:END:
+C++23, plenary-approved

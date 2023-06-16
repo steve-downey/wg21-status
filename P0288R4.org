@@ -1,0 +1,5 @@
+* [[https://wg21.link/p0288r4][P0288R4]] any_invocable (Ryan McDougall, Matt Calabrese)
+:PROPERTIES:
+:CUSTOM_ID: p0288r4-any_invocable-ryan-mcdougall-matt-calabrese
+:END:
+LWG, C++23, IS, size - large, plenary-approved

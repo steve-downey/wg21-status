@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2474][P2474]] views::repeat (Michał Dominiak)
+:PROPERTIES:
+:CUSTOM_ID: p2474-viewsrepeat-michał-dominiak
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-...

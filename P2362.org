@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2362][P2362]] Make obfuscating wide character literals ill-formed (Peter Brett, Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2362-make-obfuscating-wide-character-literals-ill-formed-peter-brett-corentin-jabot
+:END:
+CWG, straw-poll, C++23, plenary-approved

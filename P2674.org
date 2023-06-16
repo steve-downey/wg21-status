@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2674][P2674]] A trait for implicit lifetime types (Timur Doumler, Vittorio Romeo)
+:PROPERTIES:
+:CUSTOM_ID: p2674-a-trait-for-implicit-lifetime-types-timur-doumler-vittorio-romeo
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved

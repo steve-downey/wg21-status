@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1949][P1949]] C++ Identifier Syntax using Unicode Standard Annex 31 (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p1949-c-identifier-syntax-using-unicode-standard-annex-31-steve-downey
+:END:
+CWG, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1401][P1401]] Narrowing contextual conversions to bool (Andrzej Krzemienski)
+:PROPERTIES:
+:CUSTOM_ID: p1401-narrowing-contextual-conversions-to-bool-andrzej-krzemienski
+:END:
+CWG, C++23, plenary-approved

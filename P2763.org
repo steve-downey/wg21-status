@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2763][P2763]] =layout_stride= static extents default constructor fix (Christian Trott, Damien Lebrun-Gran...
+:PROPERTIES:
+:CUSTOM_ID: p2763-layout_stride-static-extents-default-constructor-fix-christian-trott-damien-lebrun-gran
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan

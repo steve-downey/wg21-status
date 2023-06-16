@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1272][P1272]] Byteswapping for fun&&nuf (Isabella Muerte)...
+:PROPERTIES:
+:CUSTOM_ID: p1272-byteswapping-for-funnuf-isabella-muerte
+:END:
+CWG, LWG, C++23, plenary-approved

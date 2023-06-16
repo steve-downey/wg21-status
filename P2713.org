@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2713][P2713]] Escaping improvements in std::format (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2713-escaping-improvements-in-stdformat-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -small, plenary-approved, format

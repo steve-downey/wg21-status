@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2136][P2136]] invoke<R> (Zhihao Yuan)
+:PROPERTIES:
+:CUSTOM_ID: p2136-invoker-zhihao-yuan
+:END:
+LWG, C++23, IS, plenary-approved

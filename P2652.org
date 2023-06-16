@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2652][P2652]] Disallow user specialization of allocator_traits (Pablo Halpern)
+:PROPERTIES:
+:CUSTOM_ID: p2652-disallow-user-specialization-of-allocator_traits-pablo-halpern
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

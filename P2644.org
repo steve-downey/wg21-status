@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2644][P2644]] Get Fix of Broken Range-based for Loop Finally Done (Nicolai Josuttis)
+:PROPERTIES:
+:CUSTOM_ID: p2644-get-fix-of-broken-range-based-for-loop-finally-done-nicolai-josuttis
+:END:
+CWG, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1413][P1413]] A safer interface for std::aligned_storage (CJ Johnson)
+:PROPERTIES:
+:CUSTOM_ID: p1413-a-safer-interface-for-stdaligned_storage-cj-johnson
+:END:
+LWG, C++23, plenary-approved

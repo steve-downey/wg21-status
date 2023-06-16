@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2096][P2096]] Generalized wording for partial specializations (James Touton)...
+:PROPERTIES:
+:CUSTOM_ID: p2096-generalized-wording-for-partial-specializations-james-touton
+:END:
+C++23, IS, plenary-approved

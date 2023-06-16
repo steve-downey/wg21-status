@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2386][P2386]] Core Language Working Group "ready" Issues for the June, 2021 meeting (William M....
+:PROPERTIES:
+:CUSTOM_ID: p2386-core-language-working-group-ready-issues-for-the-june-2021-meeting-william-m.
+:END:
+info, C++23, plenary-approved

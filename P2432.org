@@ -1,0 +1,5 @@
+* [[https://wg21.link/P2432][P2432]] Fix istream_view (Nicolai Josuttis)
+:PROPERTIES:
+:CUSTOM_ID: p2432-fix-istream_view-nicolai-josuttis
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

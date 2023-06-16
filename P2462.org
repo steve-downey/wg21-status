@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2462][P2462]] Core Language Working Group “ready” issues for the October, 2021 meeting (Willi...
+:PROPERTIES:
+:CUSTOM_ID: p2462-core-language-working-group-ready-issues-for-the-october-2021-meeting-willi
+:END:
+CWG, C++23, plenary-approved

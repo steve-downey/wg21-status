@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2316][P2316]] Consistent character literal encoding (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2316-consistent-character-literal-encoding-corentin-jabot
+:END:
+CWG, C++23, plenary-approved
+* [[https://wg21.link/p2316][P2316]] Consistent character literal encoding (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2316-consistent-character-literal-encoding-corentin-jabot
+:END:
+CWG, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2387][P2387]] Pipe support for user-defined range adaptors (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2387-pipe-support-for-user-defined-range-adaptors-barry-revzin
+:END:
+LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved

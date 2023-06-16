@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2417][P2417]] A more constexpr bitset (Daniil Goncharov)
+:PROPERTIES:
+:CUSTOM_ID: p2417-a-more-constexpr-bitset-daniil-goncharov
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, constexpr, expedited-library-evolut...

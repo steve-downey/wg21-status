@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2281][P2281]] Clarifying range adaptor objects (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2281-clarifying-range-adaptor-objects-tim-song
+:END:
+LWG, C++23, plenary-approved

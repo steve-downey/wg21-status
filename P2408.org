@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2408][P2408]] Ranges views as inputs to non-Ranges algorithms (David Olsen)
+:PROPERTIES:
+:CUSTOM_ID: p2408-ranges-views-as-inputs-to-non-ranges-algorithms-david-olsen
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved

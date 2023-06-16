@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2554][P2554]] C-Array Interoperability of MDSpan (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K...
+:PROPERTIES:
+:CUSTOM_ID: p2554-c-array-interoperability-of-mdspan-christian-trott-damien-lebrun-grandie-mark-hoemmen-k
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

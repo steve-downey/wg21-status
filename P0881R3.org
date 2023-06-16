@@ -1,0 +1,5 @@
+* [[https://wg21.link/p0881r3][P0881R3]] A Proposal to add stacktrace library (Alexey Gorgurov, Antony Polukhin)...
+:PROPERTIES:
+:CUSTOM_ID: p0881r3-a-proposal-to-add-stacktrace-library-alexey-gorgurov-antony-polukhin
+:END:
+C++23, IS, B3 - addition, plenary-approved

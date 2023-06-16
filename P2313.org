@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2313][P2313]] Core Language Working Group "tentatively ready" issues for the February, 2021 mee...
+:PROPERTIES:
+:CUSTOM_ID: p2313-core-language-working-group-tentatively-ready-issues-for-the-february-2021-mee
+:END:
+CWG, info, C++23, plenary-approved

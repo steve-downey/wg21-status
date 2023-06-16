@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2588][P2588]] Relax std::barrier phase completion step guarantees (Gonzalo Brito, Eric A Niebler, Anthony...
+:PROPERTIES:
+:CUSTOM_ID: p2588-relax-stdbarrier-phase-completion-step-guarantees-gonzalo-brito-eric-a-niebler-anthony
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+

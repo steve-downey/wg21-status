@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2280][P2280]] Using unknown references in constant expressions (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2280-using-unknown-references-in-constant-expressions-barry-revzin
+:END:
+CWG, straw-poll, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2156][P2156]] Allow Duplicate Attributes (Erich Keane)
+:PROPERTIES:
+:CUSTOM_ID: p2156-allow-duplicate-attributes-erich-keane
+:END:
+CWG, C++23, plenary-approved

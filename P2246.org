@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2246][P2246]] Character encoding of diagnostic text (Aaron Ballman)
+:PROPERTIES:
+:CUSTOM_ID: p2246-character-encoding-of-diagnostic-text-aaron-ballman
+:END:
+CWG, C++23, plenary-approved

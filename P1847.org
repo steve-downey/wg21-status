@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1847][P1847]] Make declaration order layout mandated (Pal Balog)
+:PROPERTIES:
+:CUSTOM_ID: p1847-make-declaration-order-layout-mandated-pal-balog
+:END:
+CWG, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2787][P2787]] =pmr::generator= - Promise Types are not Values (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2787-pmrgenerator---promise-types-are-not-values-steve-downey
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

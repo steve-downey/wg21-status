@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2468][P2468]] The Equality Operator You Are Looking For (Barry Revzin, Bjarne Stroustrup, Cameron DaCamar...
+:PROPERTIES:
+:CUSTOM_ID: p2468-the-equality-operator-you-are-looking-for-barry-revzin-bjarne-stroustrup-cameron-dacamar
+:END:
+CWG, straw-poll, C++23, plenary-approved

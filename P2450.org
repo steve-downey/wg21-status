@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2450][P2450]] C++ Standard Library Issues to be moved in Virtual Plenary, Oct. 2021 (Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p2450-c-standard-library-issues-to-be-moved-in-virtual-plenary-oct.-2021-jonathan-wakely
+:END:
+LWG, C++23, plenary-approved

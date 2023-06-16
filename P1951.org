@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1951][P1951]] Default Arguments for pair's Forwarding Constructor (Logan R. Smith)
+:PROPERTIES:
+:CUSTOM_ID: p1951-default-arguments-for-pairs-forwarding-constructor-logan-r.-smith
+:END:
+LWG, C++23, IS, plenary-approved

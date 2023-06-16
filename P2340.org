@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2340][P2340]] Clarifying the status of the ‘C headers' (Thomas Köppe)
+:PROPERTIES:
+:CUSTOM_ID: p2340-clarifying-the-status-of-the-c-headers-thomas-köppe
+:END:
+LWG, C++23, policy, IS, B2 - improvement, size - small, plenary-approved

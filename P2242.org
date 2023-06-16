@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2242][P2242]] Non-literal variables (and labels and gotos) in constexpr functions (Ville Voutilainen)
+:PROPERTIES:
+:CUSTOM_ID: p2242-non-literal-variables-and-labels-and-gotos-in-constexpr-functions-ville-voutilainen
+:END:
+CWG, C++23, plenary-approved

@@ -1,0 +1,4 @@
+* [[https://wg21.link/p2788][P2788]] Linkage for modular constants (S. Davis Herring)
+:PROPERTIES:
+:CUSTOM_ID: p2788-linkage-for-modular-constants-s.-davis-herring
+:END:

@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2301-add-a-pmr-alias-for-stdstacktrace-steve-downey
+:END:
+LWG, C++23, size - tiny, plenary-approved
+* [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
+:PROPERTIES:
+:CUSTOM_ID: p2301-add-a-pmr-alias-for-stdstacktrace-steve-downey
+:END:
+LWG, C++23, size - tiny, plenary-approved

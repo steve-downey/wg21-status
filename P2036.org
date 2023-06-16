@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2036][P2036]] Changing scope for lambda trailing-return-type (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2036-changing-scope-for-lambda-trailing-return-type-barry-revzin
+:END:
+CWG, C++23, plenary-approved

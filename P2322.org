@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2322][P2322]] ranges::fold (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2322-rangesfold-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+* [[https://wg21.link/p2322][P2322]] ranges::fold (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2322-rangesfold-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

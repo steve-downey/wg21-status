@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1774][P1774]] Portable optimisation hints (Timur Doumler)
+:PROPERTIES:
+:CUSTOM_ID: p1774-portable-optimisation-hints-timur-doumler
+:END:
+CWG, straw-poll, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2160][P2160]] Locks lock lockables (wording for LWG 2363) (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2160-locks-lock-lockables-wording-for-lwg-2363-tim-song
+:END:
+C++23, IS, size - medium, plenary-approved

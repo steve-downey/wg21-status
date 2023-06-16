@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1938][P1938]] if consteval (Barry Revzin, Daveed Vandevoorde, Richard Smith)
+:PROPERTIES:
+:CUSTOM_ID: p1938-if-consteval-barry-revzin-daveed-vandevoorde-richard-smith
+:END:
+CWG, LWG, C++23, plenary-approved

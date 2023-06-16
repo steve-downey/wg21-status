@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2443][P2443]] views::chunk_by (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2443-viewschunk_by-tim-song
+:END:
+LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

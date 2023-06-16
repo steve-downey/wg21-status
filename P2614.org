@@ -1,0 +1,7 @@
+* [[https://wg21.link/p2614][P2614]] Deprecate numeric_limits::has_denorm (Matthias Kretz)
+:PROPERTIES:
+:CUSTOM_ID: p2614-deprecate-numeric_limitshas_denorm-matthias-kretz
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -
+small, plenary-approved
+

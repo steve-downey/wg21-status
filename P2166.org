@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2166][P2166]] A Proposal to Prohibit std::basic_string and std::basic_string_view construction from nullp...
+:PROPERTIES:
+:CUSTOM_ID: p2166-a-proposal-to-prohibit-stdbasic_string-and-stdbasic_string_view-construction-from-nullp
+:END:
+LWG, C++23, IS, size - small, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2266][P2266]] Simpler implicit move (Arthur O'Dwyer)
+:PROPERTIES:
+:CUSTOM_ID: p2266-simpler-implicit-move-arthur-odwyer
+:END:
+CWG, straw-poll, C++23, plenary-approved

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2167][P2167]] Improved Proposed Wording for LWG 2114 (Daniel Krügler)
+:PROPERTIES:
+:CUSTOM_ID: p2167-improved-proposed-wording-for-lwg-2114-daniel-krügler
+:END:
+LWG, C++23, tentatively-ready-for-plenary, B2 - improvement, size - small, plenary-approved, lwg-wording-only

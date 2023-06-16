@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2278][P2278]] cbegin should always return a constant iterator (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2278-cbegin-should-always-return-a-constant-iterator-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

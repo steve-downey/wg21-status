@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2655][P2655]] common_reference_t of reference_wrapper Should Be a Reference Type (Hui Xie, S. Levent Yilmaz)
+:PROPERTIES:
+:CUSTOM_ID: p2655-common_reference_t-of-reference_wrapper-should-be-a-reference-type-hui-xie-s.-levent-yilmaz
+:END:
+LWG, C++23, IS, B2 - improvement, size - small, plenary-approved
+

@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2613][P2613]] Add the missing =empty= to =mdspan= (Yihe Le)
+:PROPERTIES:
+:CUSTOM_ID: p2613-add-the-missing-empty-to-mdspan-yihe-le
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

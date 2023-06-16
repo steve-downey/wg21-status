@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2093][P2093]] Formatted output (Victor Zverovich)
+:PROPERTIES:
+:CUSTOM_ID: p2093-formatted-output-victor-zverovich
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition,
+plenary-approved

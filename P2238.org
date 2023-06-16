@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2238][P2238]] Core Language Working Group "tentatively ready" issues for the November, 2020 meeting (Will...
+:PROPERTIES:
+:CUSTOM_ID: p2238-core-language-working-group-tentatively-ready-issues-for-the-november-2020-meeting-will
+:END:
+info, C++23, plenary-approved

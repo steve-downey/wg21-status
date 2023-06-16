@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2327][P2327]] De-deprecating volatile compound assignment (Paul Bendixen, Jens Maurer, Arthur O'Dwyer, Be...
+:PROPERTIES:
+:CUSTOM_ID: p2327-de-deprecating-volatile-compound-assignment-paul-bendixen-jens-maurer-arthur-odwyer-be
+:END:
+CWG, straw-poll, C++23, plenary-approved

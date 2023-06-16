@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2582][P2582]] Wording for class template argument deduction from inherited constructors (Timur Doumler)
+:PROPERTIES:
+:CUSTOM_ID: p2582-wording-for-class-template-argument-deduction-from-inherited-constructors-timur-doumler
+:END:
+CWG, straw-poll, C++23, plenary-approved

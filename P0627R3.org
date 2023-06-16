@@ -1,0 +1,6 @@
+* [[https://wg21.link/p0627r3][P0627R3]] Function to mark unreachable code (Melissa Mears)...
+:PROPERTIES:
+:CUSTOM_ID: p0627r3-function-to-mark-unreachable-code-melissa-mears
+:END:
+LWG, C++23, IS, B3 - addition, size - small, plenary-approved,
+expedited-library-evolution-electronic-poll

@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2314][P2314]] Character sets and encodings (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2314-character-sets-and-encodings-jens-maurer
+:END:
+CWG, C++23, plenary-approved
+* [[https://wg21.link/p2314][P2314]] Character sets and encodings (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2314-character-sets-and-encodings-jens-maurer
+:END:
+CWG, C++23, plenary-approved

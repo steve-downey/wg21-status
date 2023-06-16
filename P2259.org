@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2259][P2259]] Repairing input range adaptors and counted_iterator (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2259-repairing-input-range-adaptors-and-counted_iterator-tim-song
+:END:
+C++23, IS, plenary-approved

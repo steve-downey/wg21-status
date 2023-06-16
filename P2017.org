@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2017][P2017]] Conditionally safe ranges (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2017-conditionally-safe-ranges-barry-revzin
+:END:
+ranges, C++23, IS, size - small, plenary-approved

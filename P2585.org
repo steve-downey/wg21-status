@@ -1,0 +1,6 @@
+* [[https://wg21.link/p2585][P2585]] Improving default container formatting (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2585-improving-default-container-formatting-barry-revzin
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
+

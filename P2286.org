@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2286][P2286]] Formatting Ranges (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2286-formatting-ranges-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+* [[https://wg21.link/p2286][P2286]] Formatting Ranges (Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p2286-formatting-ranges-barry-revzin
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

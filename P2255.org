@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2255][P2255]] A type trait to detect reference binding to temporary (Tim Song)
+:PROPERTIES:
+:CUSTOM_ID: p2255-a-type-trait-to-detect-reference-binding-to-temporary-tim-song
+:END:
+LWG, C++23, IS, size - small, plenary-approved, expedited-library-evolution-electronic-poll

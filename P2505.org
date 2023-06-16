@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2505][P2505]] Monadic Functions for std::expected (Jeff Garland)
+:PROPERTIES:
+:CUSTOM_ID: p2505-monadic-functions-for-stdexpected-jeff-garland
+:END:
+LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved

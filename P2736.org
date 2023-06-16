@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2736][P2736]] Referencing the Unicode Standard (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2736-referencing-the-unicode-standard-corentin-jabot
+:END:
+CWG, LWG, C++23, nb-comment, plenary-approved

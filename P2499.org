@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2499][P2499]] string_view range constructor should be explicit (James Touton)
+:PROPERTIES:
+:CUSTOM_ID: p2499-string_view-range-constructor-should-be-explicit-james-touton
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

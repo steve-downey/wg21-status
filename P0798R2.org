@@ -1,0 +1,5 @@
+* [[https://wg21.link/p0798r2][P0798R2]] Monadic operations for std::optional (Simon Brand)...
+:PROPERTIES:
+:CUSTOM_ID: p0798r2-monadic-operations-for-stdoptional-simon-brand
+:END:
+LWG, SG14, C++23, IS, size - small, plenary-approved

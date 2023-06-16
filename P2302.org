@@ -1,0 +1,10 @@
+* [[https://wg21.link/p2302][P2302]] Prefer std::ranges::contains over std::basic_string_view::contains (Christopher Di Bella)
+:PROPERTIES:
+:CUSTOM_ID: p2302-prefer-stdrangescontains-over-stdbasic_string_viewcontains-christopher-di-bella
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+* [[https://wg21.link/p2302][P2302]] Prefer std::ranges::contains over std::basic_string_view::contains (Christopher Di Bella)
+:PROPERTIES:
+:CUSTOM_ID: p2302-prefer-stdrangescontains-over-stdbasic_string_viewcontains-christopher-di-bella
+:END:
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

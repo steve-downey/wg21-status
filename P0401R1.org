@@ -1,0 +1,5 @@
+* [[https://wg21.link/p0401r1][P0401R1]] Providing size feedback in the Allocator interface (Chris Kennelly, Jonathan Wakely)
+:PROPERTIES:
+:CUSTOM_ID: p0401r1-providing-size-feedback-in-the-allocator-interface-chris-kennelly-jonathan-wakely
+:END:
+LWG, C++23, size - small, plenary-approved

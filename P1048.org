@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1048][P1048]] A proposal for a type trait to detect scoped enumerations (Juan Alday)
+:PROPERTIES:
+:CUSTOM_ID: p1048-a-proposal-for-a-type-trait-to-detect-scoped-enumerations-juan-alday
+:END:
+C++23, IS, B3 - addition, size - small, plenary-approved

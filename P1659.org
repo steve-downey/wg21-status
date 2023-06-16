@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1659][P1659]] starts_with and ends_with (Christopher Di Bella)
+:PROPERTIES:
+:CUSTOM_ID: p1659-starts_with-and-ends_with-christopher-di-bella
+:END:
+LWG, C++23, IS, size - small, plenary-approved

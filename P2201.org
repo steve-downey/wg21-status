@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2201][P2201]] Mixed string literal concatenation (Jens Maurer)
+:PROPERTIES:
+:CUSTOM_ID: p2201-mixed-string-literal-concatenation-jens-maurer
+:END:
+CWG, C++23, plenary-approved

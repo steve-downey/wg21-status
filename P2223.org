@@ -1,0 +1,5 @@
+* [[https://wg21.link/p2223][P2223]] Trimming whitespaces before line splicing (Corentin Jabot)
+:PROPERTIES:
+:CUSTOM_ID: p2223-trimming-whitespaces-before-line-splicing-corentin-jabot
+:END:
+CWG, C++23, SG22, plenary-approved

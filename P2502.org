@@ -1,0 +1,6 @@
+* [[https://wg21.link/P2502][P2502]] std::generator: Synchronous Coroutine Generator for Ranges (Casey Carter)
+:PROPERTIES:
+:CUSTOM_ID: p2502-stdgenerator-synchronous-coroutine-generator-for-ranges-casey-carter
+:END:
+LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
+
