@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p0009r9-mdspan-a-non-owning-multidimensional-array-reference-h.-carter-edwards-bryce-adelstein-l
 :END:
-LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan
+**** tags: LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan

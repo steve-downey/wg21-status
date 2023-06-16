@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2162-inheriting-from-stdvariant-resolving-lwg3052-barry-revzin
 :END:
-C++23, IS, size - small, plenary-approved
+**** tags: C++23, IS, size - small, plenary-approved

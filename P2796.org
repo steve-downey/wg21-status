@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2796-core-language-working-group-ready-issues-for-the-february-2023-meeting-jens-maurer
 :END:
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

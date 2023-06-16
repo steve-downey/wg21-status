@@ -27,4 +27,4 @@ teaching and training.
 | ~for (char c : getData().value)~                   | OK     | OK    |
 | ~for (char c : getData().getValue())~              | BROKEN | OK    |
 
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

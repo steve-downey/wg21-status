@@ -10,4 +10,4 @@ general, compile-time constants that describe floating-point behavior are
 problematic, since behavior might change at runtime. Let’s also deprecate
 ~numeric_limits::has_denorm_loss~ while we’re at it.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

@@ -26,4 +26,4 @@ auto parts = ip | std::views::split('.')
                       return i;
                   });
 #+end_src
-LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

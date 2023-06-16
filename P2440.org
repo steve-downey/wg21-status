@@ -5,4 +5,4 @@
 #+begin_quote
 This paper proposes adding the algorithms ranges::iota, ranges::shift_left, and ranges::shift_right, to match their std counterparts.
 #+end_quote
-LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2374-viewscartesian_product-sy-brand
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

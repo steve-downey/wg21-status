@@ -14,4 +14,4 @@ void log(std::format_string<Args...> s, Args&&... args) {
     }
 }
 #+end_src
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

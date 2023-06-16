@@ -27,4 +27,4 @@ And likewise in the binary case. This is caused by the composition of indirect c
 A fix is proposed that introduces a type-trait and makes a slight change to the definitions of the indirect callable concepts, as well as iter_common_reference_t. The fix is a slight relaxation of the algorithmic constraints in ranges that does not break ABI.
 #+end_quote
 
-LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

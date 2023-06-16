@@ -5,4 +5,4 @@
 #+begin_quote
 This paper proposes invoke_r, a variant of std::invoke that allows specifying the return type, realizing the semantics of INVOKE<R> rather than INVOKE.
 #+end_quote
-LWG, C++23, IS, plenary-approved
+**** tags: LWG, C++23, IS, plenary-approved

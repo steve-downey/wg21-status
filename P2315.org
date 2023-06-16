@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2315-c-standard-library-issues-to-be-moved-in-virtual-plenary-feb.-2021-jonathan-wakely
 :END:
-LWG, info, C++23, plenary-approved
+**** tags: LWG, info, C++23, plenary-approved

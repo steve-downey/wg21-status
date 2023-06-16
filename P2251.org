@@ -7,4 +7,4 @@ Given its definition, it is strongly implied that span & basic_string_view are
 trivially copyable, but that is not yet a requirement.
 #+end_quote
 
-LWG, C++23, IS, plenary-approved
+**** tags: LWG, C++23, IS, plenary-approved

@@ -28,4 +28,4 @@ int x;
 -> decltype((x)) // const float&
 #+end_src
 
-CWG, straw-poll, C++23, plenary-approved
+**** tags: CWG, straw-poll, C++23, plenary-approved

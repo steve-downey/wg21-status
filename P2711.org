@@ -8,4 +8,4 @@ This paper is about LWG 3714, Non-single-argument constructors for range adaptor
 
 We have C++20 views, none of which have explicit multi-param constructors, and some newer C++23 views which do. This is an obscure and rarely-noticeable difference. This paper looks at some aspects of it.
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved
+**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved

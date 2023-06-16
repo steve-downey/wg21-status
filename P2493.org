@@ -9,4 +9,4 @@ As Jonathan Wakely pointed out on the SG10 mailing list, neither [P0848R3] (Cond
 #+begin_quote
 This paper proposes Richard’s second suggestion: bump __cpp_concepts and __cpp_constexpr to 202002L
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+**** tags: CWG, straw-poll, C++23, plenary-approved

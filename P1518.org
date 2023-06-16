@@ -6,4 +6,4 @@
 Discussion of flatmap’s deduction guides revealed that the deduction guides for sequence containers and container adaptors are needlessly overconstrained, making use cases such as pmr containers unnecessarily difficult.
 #+end_quote
 
-LWG, C++23, IS, size - small, plenary-approved
+**** tags: LWG, C++23, IS, size - small, plenary-approved

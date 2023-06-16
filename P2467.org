@@ -7,10 +7,4 @@ Historically, C++ iostreams libraries had a ~noreplace~ open mode that correspon
 
 Since then, ISO C added support for "exclusive" mode to ~fopen~, so now C++'s ~<fstream>~ is missing a feature that is present in both ISO C and POSIX. We should fix this for C++23.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll
-
-# Local Variables:
-# org-html-htmlize-output-type: inline-css
-# org-html-head: ""
-# org-link-descriptive: nil
-# End:
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll

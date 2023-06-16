@@ -21,4 +21,4 @@ After:
 const char * s1 = S(Köppe);       // "Köppe"
 const char * s2 = S(K\u00f6ppe);  // "Köppe"
 #+end_src
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

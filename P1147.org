@@ -26,4 +26,4 @@ This produces the following output:
 
 1
 #+end_quote
-LWG, C++23, IS, plenary-approved
+**** tags: LWG, C++23, IS, plenary-approved

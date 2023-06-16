@@ -11,4 +11,4 @@ This paper proposes the following improvements to the C++20 formatting facility:
 std::string s = std::format("{:d}", "I am not a number");
 #+end_src
 Becomes ill-formed
-LWG, C++23, IS, plenary-approved
+**** tags: LWG, C++23, IS, plenary-approved

@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p1222-a-standard-flatset-zach-laine
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved

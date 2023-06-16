@@ -23,4 +23,4 @@ is >> i;
 ASSERT(!is);
 #+end_src
 
-LWG, C++23, size - large, plenary-approved
+**** tags: LWG, C++23, size - large, plenary-approved

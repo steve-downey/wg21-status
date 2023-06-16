@@ -20,4 +20,4 @@ int answer_to_the_universe() {
     return std::ranges::fold_left(std::move(range), 0, std::plus{});
 }
 #+end_src
-LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
+**** tags: LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved

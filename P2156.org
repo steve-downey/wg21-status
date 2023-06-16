@@ -9,4 +9,4 @@ is no such prohibition if they appear in separate attribute-specifiers within a
 single attributespecifier-seq. Since intuitively these cases are equivalent,
 they should be treated the same, accepting duplicates in both or neither.
 #+end_quote
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

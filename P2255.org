@@ -17,4 +17,4 @@ f(); // dangling
 std::tuple<const std::string&>      x("hello");            // ill-formed
 std::function<const std::string&()> f = [] { return ""; }; // ill-formed
 #+end_src
-LWG, C++23, IS, small, plenary-approved, expedited-library-evolution-electronic-poll
+**** tags: LWG, C++23, IS, small, plenary-approved, expedited-library-evolution-electronic-poll

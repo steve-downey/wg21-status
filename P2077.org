@@ -5,4 +5,4 @@
 #+begin_quote
 The authors propose heterogeneous erasure overloads for ordered and unordered associative containers, which add an ability to erase values or extract nodes without creating a temporary key_type object.
 #+end_quote
-LWG, C++23, IS, B2: Improvement, plenary-approved
+**** tags: LWG, C++23, IS, B2: Improvement, plenary-approved

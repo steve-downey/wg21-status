@@ -5,4 +5,4 @@
 #+begin_quote
 Once upon a time, a view was a cheaply copyable, non-owning range. We’ve already somewhat lost the “cheaply copyable” requirement since views don’t have to be copyable, and now this paper is suggesting that we also lose the non-owning part.
 #+end_quote
-LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved

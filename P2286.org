@@ -95,4 +95,4 @@ int main() {
 <<[]--['y']--[]>>
 #+end_example
 
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

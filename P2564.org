@@ -15,4 +15,4 @@ Specifically, these three rules:
 3. Other manifestly constant evaluated contexts (like constant-expression and the condition of a constexpr if statement) are now considered to be immediate function contexts.
 #+end_quote
 
-CWG, straw-poll, C++23, nb-comment, plenary-approved
+**** tags: CWG, straw-poll, C++23, nb-comment, plenary-approved

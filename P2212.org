@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2212-relax-requirements-for-time_pointclock-alexey-dmitriev-howard-hinnant
 :END:
-C++23, IS, plenary-approved
+**** tags: C++23, IS, plenary-approved

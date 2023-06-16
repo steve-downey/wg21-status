@@ -9,4 +9,4 @@ This paper provides wording for [LWG3524] and resolves related issues caused by 
 #+begin_quote
 As discussed in [LWG3524], the use of list-initialization in the ranges specification implies ordering guarantees that are unintended and unimplementable in ordinary C++, as well as narrowing checks that are unnecessary and sometimes unimplementable.
 #+end_quote
-LWG, C++23, plenary-approved
+**** tags: LWG, C++23, plenary-approved

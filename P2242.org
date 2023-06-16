@@ -23,4 +23,4 @@ struct nonliteral {
 };
 static_assert(f<nonliteral>());
 #+end_src
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

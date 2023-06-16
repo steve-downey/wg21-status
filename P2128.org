@@ -32,4 +32,4 @@ int main() {
     s[1, 1, 1]             = 42;
 }
 #+end_src
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

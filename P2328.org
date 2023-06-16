@@ -5,4 +5,4 @@
 #+begin_quote
 This paper proposes relaxing the constraint on join_view to support joining ranges of prvalue non-view ranges.
 #+end_quote
-LWG, ranges, C++23, IS, B2: Improvement, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B2: Improvement, plenary-approved

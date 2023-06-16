@@ -20,4 +20,4 @@ x = 1;
 last: // not allowed in C++, but now allowed in C
 }
 #+end_src
-CWG, straw-poll, C++23, size - small, plenary-approved
+**** tags: CWG, straw-poll, C++23, size - small, plenary-approved

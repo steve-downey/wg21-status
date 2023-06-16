@@ -19,4 +19,4 @@ fmt::print("{}\n", std::views::zip_transform(std::multiplies(), v1, v3)); // {3,
 fmt::print("{}\n", v2 | std::views::pairwise);                            // {('a', 'b'), ('b', 'c')}
 fmt::print("{}\n", v3 | std::views::pairwise_transform(std::plus()));     // {7, 9}
 #+end_src
-LWG, ranges, C++23, IS, B3 - addition, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B3 - addition, plenary-approved

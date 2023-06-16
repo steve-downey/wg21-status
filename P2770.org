@@ -7,4 +7,4 @@
 This paper provides wording to resolve [LWG3698], [LWG3700], [LWG3791], and NB comment US 61-126.
 #+end_quote
 
-LWG, C++23, plenary-approved
+**** tags: LWG, C++23, plenary-approved

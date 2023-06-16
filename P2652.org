@@ -24,4 +24,4 @@ This paper proposes that the standard remove the user’s latitude for specializ
 This paper is the proposed resolution to a US NB comment having the same title; it is targeted for C++23.
 
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

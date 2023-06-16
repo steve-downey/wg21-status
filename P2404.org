@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2404-relaxing-equality_comparable_withs-and-three_way_comparable_withs-common-reference-requir
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

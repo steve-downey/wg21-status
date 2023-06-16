@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p0943-support-c-atomics-in-c-hans-j.-boehm
 :END:
-C++23, IS, B2 - improvement, size - small, plenary-approved
+**** tags: C++23, IS, B2 - improvement, size - small, plenary-approved

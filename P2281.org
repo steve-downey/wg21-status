@@ -15,4 +15,4 @@ auto t = transform(f); // copies f
 c | t;                 // copies f again from t
 c | std::move(t);      // moves f from t
 #+end_src
-LWG, C++23, plenary-approved
+**** tags: LWG, C++23, plenary-approved

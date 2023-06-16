@@ -11,4 +11,4 @@ so they look like natural candidates for constexpr string conversions. The
 paper proposes to make ~std::to_chars~ and ~std::from_chars~ functions for *integral
 types* usable in constexpr context.
 #+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evolution-electronic-poll

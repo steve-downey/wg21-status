@@ -15,4 +15,4 @@ unreachable.
     std::unreachable();
 }
 #+end_src
-LWG, C++23, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-electronic-poll
+**** tags: LWG, C++23, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-electronic-poll

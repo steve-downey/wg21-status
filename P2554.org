@@ -9,4 +9,4 @@ We cannot currently fix the multidimensional c-array construction, since it is U
 What we can fix today is the deduction from 1D c-array, by adding a deduction guide from c-array constraint to rank-1 arrays.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

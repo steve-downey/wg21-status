@@ -12,4 +12,4 @@ We propose removing (not deprecating) C++'s Garbage Collection support. Specific
 
 As well as the pointer_safety enum, the \_\_STDCPP_STRICT_POINTER_SAFETY\_\_ macro, and the Core Language wording.
 #+end_quote
-CWG, LWG, C++23, IS, plenary-approved
+**** tags: CWG, LWG, C++23, IS, plenary-approved

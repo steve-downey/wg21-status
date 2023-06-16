@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p1787-declarations-and-where-to-find-them-s.-davis-herring
 :END:
-modules, C++23, IS, plenary-approved
+**** tags: modules, C++23, IS, plenary-approved

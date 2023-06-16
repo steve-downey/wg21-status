@@ -10,4 +10,4 @@ std::vector v = {1, 2, 2, 3, 0, 4, 5, 2};
 fmt::print("{}\n", v | std::views::chunk_by(ranges::less_equal{}));   // [[1, 2, 2, 3], [0, 4, 5], [2]]
 #+end_src
 
-LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

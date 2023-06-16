@@ -11,4 +11,4 @@ C++23. We propose to fix some remaining issues before C++23 ships. We also
 discuss possible changes to the API that were considered but rejected.
 #+end_quote
 
-CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+**** tags: CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

@@ -19,4 +19,4 @@ struct B {
 
 B and const A satisfy std::ranges::range, but A does not. The goal of this paper is that both of these should count as ranges.
 
-LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

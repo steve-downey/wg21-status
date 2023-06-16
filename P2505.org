@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2505-monadic-functions-for-stdexpected-jeff-garland
 :END:
-LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved
+**** tags: LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved

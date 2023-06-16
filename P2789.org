@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2789-c-standard-library-ready-issues-to-be-moved-in-issaquah-feb.-2023-jonathan-wakely
 :END:
-LWG, info, C++23, plenary-approved
+**** tags: LWG, info, C++23, plenary-approved

@@ -21,4 +21,4 @@ stdr::contains(haystack, 'o')
 stdr::contains_subrange(haystack, long_needle)
 stdr::contains_subrange(haystack, long_needle, bind_back(std::modulo(), 4))
 #+end_src
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

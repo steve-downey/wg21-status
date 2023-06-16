@@ -7,4 +7,4 @@ This paper proposes a conservative, move-only equivalent of std::function.
 #+end_quote
 
 
-LWG, C++23, IS, large, plenary-approved
+**** tags: LWG, C++23, IS, large, plenary-approved

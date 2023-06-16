@@ -11,4 +11,4 @@ Character literals in preprocessor conditional should behave like they do in C++
 #endif
 if ('A' == 0x41){}
 #+end_src
-CWG, C++23, plenary-approved
+**** tags: CWG, C++23, plenary-approved

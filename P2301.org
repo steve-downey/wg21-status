@@ -26,4 +26,4 @@ std::pmr::monotonic_buffer_resource pool{
 std::pmr::stacktrace trace{&pool};
 #+end_src
 
-LWG, C++23, tiny, plenary-approved
+**** tags: LWG, C++23, tiny, plenary-approved

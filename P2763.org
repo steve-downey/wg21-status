@@ -7,4 +7,4 @@
 During work on the padded layouts project an oversight in the layout_stride definition was discovered for a corner case. Specifically, the default constructor of a layout_stride with fully static extents will produce an invalid mapping.
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan

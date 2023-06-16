@@ -12,4 +12,4 @@ for implementation specific floating point types, that can model more binary
 layouts than just a single fundamental type (the previously proposed short
 float) can provide for
 #+end_quote
-CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
+**** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

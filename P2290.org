@@ -11,4 +11,4 @@ We propose new syntaxes \u{}, \o{}, \x{} usable in places where \u, \x, \nnn cur
 \o{} accepts an arbitrary number of octal digits while \u{} and \x{} accept an arbitrary number
 of hexadecimal digit.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+**** tags: CWG, straw-poll, C++23, plenary-approved

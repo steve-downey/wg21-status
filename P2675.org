@@ -10,4 +10,4 @@ LWG3780 describes an issue with width in std::format estimation. This paper
 offers more information
 #+end_quote
 
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format
+**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format

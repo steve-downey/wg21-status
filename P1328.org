@@ -5,4 +5,4 @@
 #+begin_quote
 This paper proposes std::type_info::operator== and operator!= be made constexpr, enabling practical, rather than theoretical, use of typeid in constant expressions.
 #+end_quote
-LWG, C++23, IS, B3 - addition, size - tiny, plenary-approved
+**** tags: LWG, C++23, IS, B3 - addition, size - tiny, plenary-approved

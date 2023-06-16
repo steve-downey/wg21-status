@@ -12,4 +12,4 @@ This paper details some changes to make rewriting equality in expressions less o
 
 - operator<=> is always used for rewrites (from <, <=, >, >=); if you don’t want rewrites, don’t write an operator<=>.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+**** tags: CWG, straw-poll, C++23, plenary-approved

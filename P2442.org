@@ -10,4 +10,4 @@ std::vector v = {1, 2, 3, 4, 5};
 fmt::print("{}\n", v | std::views::chunk(2));   // [[1, 2], [3, 4], [5]]
 fmt::print("{}\n", v | std::views::slide(2));   // [[1, 2], [2, 3], [3, 4], [4, 5]]
 #+end_src
-LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

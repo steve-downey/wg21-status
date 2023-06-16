@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2029-proposed-resolution-for-core-issues-411-1656-and-2333-escapes-in-character-and-string-li
 :END:
-C++23, IS, plenary-approved
+**** tags: C++23, IS, plenary-approved

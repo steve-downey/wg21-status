@@ -12,4 +12,4 @@ used for communicating with peripheral devices in microcontrollers[van Ooijen, 2
 The purpose of this paper is to give a solution that will not undo what was achieved with
 P1152, and still keep the parts that are critical to the embedded community.
 #+end_quote
-CWG, straw-poll, C++23, plenary-approved
+**** tags: CWG, straw-poll, C++23, plenary-approved

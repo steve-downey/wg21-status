@@ -5,4 +5,4 @@
 #+begin_quote
 This paper revamps the specification and use of integer-class types to resolve a number of issues, including [LWG3366], [LWG3376], and [LWG3575].
 #+end_quote
-LWG, C++23, plenary-approved
+**** tags: LWG, C++23, plenary-approved

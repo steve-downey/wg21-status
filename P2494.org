@@ -9,4 +9,4 @@ Currently, many range adaptors require that the user-provided types they store m
 #+begin_quote
 Similarly to how [P2325R3] turned semiregular-box into copyable-box, this paper proposes to turn copyable-box into movable-box. This name is probably not ideal, because it still turns types that happen to be copy constructible into copyable types, but it follows from the prior changes to the wrapper.
 #+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
+**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved

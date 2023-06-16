@@ -26,4 +26,4 @@ auto s = std::format("{:L%S}", sec(4.2));
 // s == "04,200"
 #+end_src
 
-LWG, C++23, IS, plenary-approved
+**** tags: LWG, C++23, IS, plenary-approved

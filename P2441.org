@@ -5,4 +5,4 @@
 #+begin_quote
 The behavior of ~views::join_with~ is an inverse of ~views::split~. That is, given a range ~r~ and a pattern ~p~, ~r | views::split(p) | views::join_with(p)~ should yield a range consisting of the same elements as ~r~.
 #+end_quote
-LWG, ranges, C++23, IS, plenary-approved
+**** tags: LWG, ranges, C++23, IS, plenary-approved

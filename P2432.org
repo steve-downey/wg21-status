@@ -17,4 +17,4 @@ After:
 std::ranges::istream_view<int> v{mystream}
  // OK
 #+end_src
-LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
+**** tags: LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved
