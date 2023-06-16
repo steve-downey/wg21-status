@@ -1,5 +1,25 @@
-* [[https://wg21.link/p2553][P2553]] Make mdspan size_type controllable (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, D...
+* [[https://wg21.link/p2553][P2553]] Make mdspan size_type controllable (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K. R. Walker, Daniel Sunderland)
 :PROPERTIES:
 :CUSTOM_ID: p2553-make-mdspan-size_type-controllable-christian-trott-damien-lebrun-grandie-mark-hoemmen-d
 :END:
+
+#+begin_quote
+P0009 explicitly sets the size_type of extents to size_t, which is then used by layout mappings and mdspan. While this matches span whose extent function returns size_t, this behavior has significant performance impact on various architectures where 64-bit integer throughput is significantly lower than 32-bit integer computation throughput.
+
+#+end_quote
+
+Proposal:
+
+#+begin_quote
+All in all we prefer the option of making extents require the additional argument (2.2.2), with the next best thing being the introduction basic_extents and making extents an alias to basic_extents with size_t as the size_type. If LEWG would prefer the second option, the wording is largely the same with the following changes at the end:
+
+- Rename extents to basic_extents throughout P0009 and
+
+- Add an alias in [mdspan.syn]:
+#+end_quote
+
+#+begin_src c++
+template<size_t ... Extents>
+using extents = basic_extents<size_t, Extents...>;
+#+end_src
 LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

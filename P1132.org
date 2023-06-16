@@ -1,0 +1,24 @@
+* [[https://wg21.link/p1132][P1132]] out_ptr - a scalable output pointer abstraction (JeanHeyd Meneide, Todor Buyukliev, Isabella Muerte)
+:PROPERTIES:
+:CUSTOM_ID: p1132r2-out_ptr---a-scalable-output-pointer-abstraction-jeanheyd-meneide-todor-buyukliev-isabell
+:END:
+#+begin_quote
+out_ptr is an abstraction to bring both C APIs and smart pointers back into the promised land by creating a temporary pointer-to-pointer that updates the smart pointer when it destructs.
+#+end_quote
+**** Example
+#+begin_src c++
+error_num c_api_create_handle(int seed_value, int** p_handle);
+void      c_api_delete_handle(int* handle);
+
+struct resource_deleter {
+    void operator()(int* handle) { c_api_delete_handle(handle); }
+};
+
+std::unique_ptr<int, resource_deleter> resource(nullptr);
+error_num err = c_api_create_handle(24, std::out_ptr(resource));
+if (err == C_API_ERROR_CONDITION) {
+    // handle errors
+}
+// resource.get() the out-value from the C API function
+#+end_src
+LWG, C++23, IS, plenary-approved

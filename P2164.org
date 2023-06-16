@@ -2,5 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2164-viewsenumerate-corentin-jabot
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition,
-size - medium, plenary-approved
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved

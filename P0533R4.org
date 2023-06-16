@@ -1,6 +1,0 @@
-* [[https://wg21.link/p0533r4][P0533R4]] constexpr for <cmath> and <cstdlib> (Edward J. Rosten, Oliver J. Rosten)...
-:PROPERTIES:
-:CUSTOM_ID: p0533r4-constexpr-for-cmath-and-cstdlib-edward-j.-rosten-oliver-j.-rosten
-:END:
-CWG, LWG, C++23, IS, B3 - addition, size - medium, plenary-approved,
-constexpr

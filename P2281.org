@@ -2,4 +2,17 @@
 :PROPERTIES:
 :CUSTOM_ID: p2281-clarifying-range-adaptor-objects-tim-song
 :END:
+#+begin_quote
+The wording below clarifies that the partial application performed by range adaptor objects is essentially identical to that performed by bind_front. (Indeed, it is effectively a limited version of bind_back.) In particular, this means that the bound arguments are captured by copy or move, and never by reference. Invocation of the pipeline then either copies or moves the bound entities, depending on the value category of the pipeline.
+#+end_quote
+** Example
+#+begin_src c++
+auto c = /* some range */;
+auto f = /* expensive-to-copy function object */;
+c | transform(f); // copies f and then move it into the view
+
+auto t = transform(f); // copies f
+c | t;                 // copies f again from t
+c | std::move(t);      // moves f from t
+#+end_src
 LWG, C++23, plenary-approved

@@ -1,5 +1,31 @@
-* [[https://wg21.link/p2579][P2579]] Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type” (Corentin ...
+* [[https://wg21.link/p2579][P2579]] Mitigation strategies for P2036 ”Changing scope for lambda trailing-return-type” (Corentin Jabot)
 :PROPERTIES:
 :CUSTOM_ID: p2579-mitigation-strategies-for-p2036-changing-scope-for-lambda-trailing-return-type-corentin
 :END:
+
+#+begin_quote
+P2036R3 was adopted for C++23 and as a Defect Report, affecting C++11 and
+greater. After implementing this paper in Clang, we observed the proposed
+changes make ill-formed previously valid and relied upon code.
+#+end_quote
+#+begin_quote
+identifiers refered to captured variables but do not take the mutable keyword
+into account
+#+end_quote
+
+#+begin_src c++
+struct F {
+float x;
+void mem1(decltype((x)) p3); // p3 is a float&
+void mem2(decltype((x)) p4) const; // p4 is a float&
+};
+#+end_src
+
+#+begin_src c++
+int x;
+[x=42.0]<decltype(x) a> // float
+(decltype((x)) b) // float&
+-> decltype((x)) // const float&
+#+end_src
+
 CWG, straw-poll, C++23, plenary-approved

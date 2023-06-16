@@ -2,4 +2,29 @@
 :PROPERTIES:
 :CUSTOM_ID: p2582-wording-for-class-template-argument-deduction-from-inherited-constructors-timur-doumler
 :END:
+#+begin_quote
+This paper provides wording for class template argument deduction from inherited constructors.
+#+end_quote
+From [[https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1021r6.html][P1021R6]]
+
+** Before:
+#+begin_src c++
+template<class T>
+struct Point { T x; T y; };
+
+// Aggregate: Cannot deduce
+Point<double> p{3.0, 4.0};
+Point<double> p2{.x = 3.0, .y = 4.0};
+#+end_src
+
+** After:
+#+begin_src c++
+
+template<class T>
+struct Point { T x; T y; };
+
+// Proposed: Aggregates deduce
+Point p{3.0, 4.0};
+Point p2{.x = 3.0, .y = 4.0};
+#+end_src
 CWG, straw-poll, C++23, plenary-approved

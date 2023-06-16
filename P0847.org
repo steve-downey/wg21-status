@@ -1,0 +1,48 @@
+* [[https://wg21.link/p0847][P0847]] Deducing this (Gašper Ažman, Sy Brand, Ben Deane, Barry Revzin)
+:PROPERTIES:
+:CUSTOM_ID: p0847-deducing-this-gašper-ažman-simon-brand-ben-deane-barry-revzin
+:END:
+#+begin_quote
+We propose a new mechanism for specifying or deducing the value category of an instance of a class — in other words, a way to tell from within a member function whether the object it’s invoked on is an lvalue or an rvalue; whether it is const or volatile; and the object’s type.
+#+end_quote
+
+#+begin_quote
+A non-static member function can be declared to take as its first parameter an explicit object parameter, denoted with the prefixed keyword this. Once we elevate the object parameter to a proper function parameter, it can be deduced following normal function template deduction rules:
+
+#+end_quote
+
+** Example
+#+begin_src c++
+struct X {
+    void foo(this X const& self, int i);
+
+    template <typename Self>
+    void bar(this Self&& self);
+};
+
+struct D : X {};
+
+void ex(X& x, D const& d) {
+    x.foo(42);     // 'self' is bound to 'x', 'i' is 42
+    x.bar();       // deduces Self as X&, calls X::bar<X&>
+    move(x).bar(); // deduces Self as X, calls X::bar<X>
+
+    d.foo(17); // 'self' is bound to 'd'
+    d.bar();   // deduces Self as D const&, calls X::bar<D const&>
+}
+#+end_src
+
+** Example
+#+begin_src c++
+vector captured = {1, 2, 3, 4};
+[captured](this auto&& self) -> decltype(auto) {
+  return forward_like<decltype(self)>(captured);
+}
+
+[captured]<class Self>(this Self&& self) -> decltype(auto) {
+  return forward_like<Self>(captured);
+}
+#+end_src
+
+
+CWG, C++23, plenary-approved

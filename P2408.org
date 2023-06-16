@@ -2,4 +2,7 @@
 :PROPERTIES:
 :CUSTOM_ID: p2408-ranges-views-as-inputs-to-non-ranges-algorithms-david-olsen
 :END:
+#+begin_quote
+Change the iterator requirements for non-Ranges algorithms. For forward iterators and above that are constant iterators, instead of requiring that iterators meet certain /Cpp17...Iterator/ requirements, require that the iterators model certain iterator concepts. This makes iterators from several standard views usable with non-Ranges algorithms that require forward iterators or above, such as the parallel overloads of most algorithms.
+#+end_quote
 LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved

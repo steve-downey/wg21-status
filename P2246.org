@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2246-character-encoding-of-diagnostic-text-aaron-ballman
 :END:
+#+begin_quote
+The standard provides a few mechanisms that suggest an implementation issues a diagnostic based on
+text written in the source code. However, the standard does not uniformly address what should happen
+if the execution character set of the compiler cannot represent the text in the source character set.
+#+end_quote
+
+#+begin_quote
+Because the display of diagnostic messages should be merely a matter of Quality of Implementation, the
+proposal is to place no character set related requirements on the diagnostic output with the
+understanding that implementations will do what makes the most sense for their situation when issuing
+diagnostics in terms of which characters need to be escaped or otherwise handled in a special way.
+#+end_quote
 CWG, C++23, plenary-approved

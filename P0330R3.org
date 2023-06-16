@@ -1,5 +1,0 @@
-* [[https://wg21.link/p0330r3][P0330R3]] Literal Suffixes for ptrdiff_t and size_t (JeanHeyd Meneide, Rein Halbersma)
-:PROPERTIES:
-:CUSTOM_ID: p0330r3-literal-suffixes-for-ptrdiff_t-and-size_t-jeanheyd-meneide-rein-halbersma
-:END:
-C++23, plenary-approved

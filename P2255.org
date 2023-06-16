@@ -2,4 +2,19 @@
 :PROPERTIES:
 :CUSTOM_ID: p2255-a-type-trait-to-detect-reference-binding-to-temporary-tim-song
 :END:
-LWG, C++23, IS, size - small, plenary-approved, expedited-library-evolution-electronic-poll
+#+begin_quote
+This paper proposes adding two new type traits with compiler support to detect when the initialization of a reference would bind it to a lifetime-extended temporary, and changing several standard library components to make such binding ill-formed when it would inevitably produce a dangling reference.
+#+end_quote
+** Before
+#+begin_src c++
+std::tuple<const std::string&>      x("hello");            // dangling
+std::function<const std::string&()> f = [] { return ""; }; // OK
+
+f(); // dangling
+#+end_src
+** After
+#+begin_src c++
+std::tuple<const std::string&>      x("hello");            // ill-formed
+std::function<const std::string&()> f = [] { return ""; }; // ill-formed
+#+end_src
+LWG, C++23, IS, small, plenary-approved, expedited-library-evolution-electronic-poll

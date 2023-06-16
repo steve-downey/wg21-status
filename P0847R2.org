@@ -1,5 +1,0 @@
-* [[https://wg21.link/p0847r2][P0847R2]] Deducing this (Gašper Ažman, Simon Brand, Ben Deane, Barry Revzin)
-:PROPERTIES:
-:CUSTOM_ID: p0847r2-deducing-this-gašper-ažman-simon-brand-ben-deane-barry-revzin
-:END:
-CWG, C++23, plenary-approved

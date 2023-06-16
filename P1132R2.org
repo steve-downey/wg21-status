@@ -1,5 +1,0 @@
-* [[https://wg21.link/p1132r2][P1132R2]] out_ptr - a scalable output pointer abstraction (JeanHeyd Meneide, Todor Buyukliev, Isabell...
-:PROPERTIES:
-:CUSTOM_ID: p1132r2-out_ptr---a-scalable-output-pointer-abstraction-jeanheyd-meneide-todor-buyukliev-isabell
-:END:
-LWG, C++23, IS, plenary-approved

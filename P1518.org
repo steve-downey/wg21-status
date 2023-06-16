@@ -2,4 +2,8 @@
 :PROPERTIES:
 :CUSTOM_ID: p1518-stop-overconstraining-allocators-in-container-deduction-guides-arthur-odwyer-mike-spertus
 :END:
+#+begin_quote
+Discussion of flatmap’s deduction guides revealed that the deduction guides for sequence containers and container adaptors are needlessly overconstrained, making use cases such as pmr containers unnecessarily difficult.
+#+end_quote
+
 LWG, C++23, IS, size - small, plenary-approved

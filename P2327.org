@@ -1,5 +1,15 @@
-* [[https://wg21.link/p2327][P2327]] De-deprecating volatile compound assignment (Paul Bendixen, Jens Maurer, Arthur O'Dwyer, Be...
+* [[https://wg21.link/p2327][P2327]] De-deprecating volatile compound assignment (Paul Bendixen, Jens Maurer, Arthur O'Dwyer, Ben Saks)
 :PROPERTIES:
 :CUSTOM_ID: p2327-de-deprecating-volatile-compound-assignment-paul-bendixen-jens-maurer-arthur-odwyer-be
 :END:
+#+begin_quote
+The C++ 20 standard deprecated many functionalities of the volatile keyword. This was due to
+P1152[Bastien, 2019]. The reasoning is given in the R0 version of the paper[Bastien, 2018].
+
+The deprecation was not received too well in the embedded community as volatile is commonly
+used for communicating with peripheral devices in microcontrollers[van Ooijen, 2020].
+
+The purpose of this paper is to give a solution that will not undo what was achieved with
+P1152, and still keep the parts that are critical to the embedded community.
+#+end_quote
 CWG, straw-poll, C++23, plenary-approved

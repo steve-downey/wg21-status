@@ -2,4 +2,26 @@
 :PROPERTIES:
 :CUSTOM_ID: p2652-disallow-user-specialization-of-allocator_traits-pablo-halpern
 :END:
+
+#+begin_quote
+The allocator_traits class template was introduced in C++11 with two goals in mind:
+
+1) Provide default implementations for allocator types and operations, thus minimizing the requirements on allocators [allocator.requirements], and
+
+2) provide a mechanism by which future standards could extend the allocator interface without changing allocator requirements and thus obsoleting existing allocators.
+
+The latter goal is undermined, however, by the standard currently allowing
+user-defined specializations of std::allocator_traits. Although the standard
+requires that any such specialization conform to the standard interface, it is
+not practical to change the standard interface – even by extending it – without
+breaking any existing user specializations. Indeed, the Sep 2022 C++23 CD,
+N4919 contains an extension, allocate_at_least, that logically belongs in
+std:::allocator_traits, but is expressed as an unrelated function because of
+the problem of potential user-defined specializations.
+
+This paper proposes that the standard remove the user’s latitude for specializing std::allocator_traits.
+
+This paper is the proposed resolution to a US NB comment having the same title; it is targeted for C++23.
+
+#+end_quote
 LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

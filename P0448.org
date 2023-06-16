@@ -1,0 +1,26 @@
+* [[https://wg21.link/p0448][P0448]] A strstream replacement using span<charT> as buffer (Peter Sommerlad)
+:PROPERTIES:
+:CUSTOM_ID: p0448r2-a-strstream-replacement-using-spanchart-as-buffer-peter-sommerlad
+:END:
+#+begin_quote
+This paper proposes a class template basic_spanbuf and the corresponding stream
+class templates to enable the use of streams on externally provided memory
+buffers. No ownership or re-allocation support is given. For those features we
+have string-based streams
+#+end_quote
+**** Example
+#+begin_src c++
+char        input[] = "10 20 30";
+ispanstream is{span<char>{input}};
+int         i;
+is >> i;
+ASSERT_EQUAL(10, i);
+is >> i;
+ASSERT_EQUAL(20, i);
+is >> i;
+ASSERT_EQUAL(30, i);
+is >> i;
+ASSERT(!is);
+#+end_src
+
+LWG, C++23, size - large, plenary-approved

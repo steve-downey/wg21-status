@@ -2,9 +2,28 @@
 :PROPERTIES:
 :CUSTOM_ID: p2301-add-a-pmr-alias-for-stdstacktrace-steve-downey
 :END:
-LWG, C++23, size - tiny, plenary-approved
-* [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
-:PROPERTIES:
-:CUSTOM_ID: p2301-add-a-pmr-alias-for-stdstacktrace-steve-downey
-:END:
-LWG, C++23, size - tiny, plenary-approved
+#+begin_quote
+This paper proposes to add an alias in the pmr namespace defaulting the allocator used by the std::basic_stacktrace template to pmr::allocator. No changes to the api of std::stacktrace are necessary.
+#+end_quote
+** Before
+#+begin_src c++
+char buffer[1024];
+
+std::pmr::monotonic_buffer_resource pool{
+    std::data(buffer), std::size(buffer)};
+
+std::basic_stacktrace<
+    std::pmr::polymorphic_allocator<std::stacktrace_entry>>
+    trace{&pool};
+#+end_src
+** After
+#+begin_src c++
+char buffer[1024];
+
+std::pmr::monotonic_buffer_resource pool{
+    std::data(buffer), std::size(buffer)};
+
+std::pmr::stacktrace trace{&pool};
+#+end_src
+
+LWG, C++23, tiny, plenary-approved

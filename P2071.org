@@ -1,5 +1,22 @@
-* [[https://wg21.link/p2071][P2071]] Named universal character escapes (Tom Honermann, Peter Bindels)
+* [[https://wg21.link/p2071][P2071]] Named universal character escapes (Tom Honermann, R. Martinho Fernandes, Peter Bindels, Corentin Jabot, Steve Downey)
 :PROPERTIES:
 :CUSTOM_ID: p2071-named-universal-character-escapes-tom-honermann-peter-bindels
 :END:
+#+begin_quote
+A proposal to extend universal character names from hexadecimal sequences to include the official names and formal aliases of Unicode codepoints.
+#+end_quote
+** Before/After Table
+*** Before:
+#+begin_src c++
+// UTF-32 character literal with U+0100 {LATIN CAPITAL LETTER A WITH MACRON}
+U'\u0100'
+// UTF-8 string literal with U+0100 {LATIN CAPITAL LETTER A WITH MACRON} U+0300 {COMBINING GRAVE ACCENT}
+u8"\u0100\u0300"
+#+end_src
+*** After:
+#+begin_src c++
+U'\N{LATIN CAPITAL LETTER A WITH MACRON}' // Equivalent to U'\u0100'
+u8"\N{LATIN CAPITAL LETTER A WITH MACRON}\N{COMBINING GRAVE ACCENT}" // Equivalent to u8"\u0100\u0300"
+#+end_src
+
 CWG, straw-poll, C++23, plenary-approved

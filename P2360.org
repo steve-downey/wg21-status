@@ -2,4 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p2360-extend-init-statement-to-allow-alias-declaration-jens-maurer
 :END:
+** Before:
+#+begin_src c++
+  for (typedef int T; T e : v)
+    /* something */;
+#+end_src
+** After:
+#+begin_src c++
+  for (using T = int; T e : v)
+    /* something */;
+#+end_src
 CWG, C++23, plenary-approved

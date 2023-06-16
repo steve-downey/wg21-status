@@ -2,4 +2,21 @@
 :PROPERTIES:
 :CUSTOM_ID: p2273-making-stdunique_ptr-constexpr-andreas-fertig
 :END:
+#+begin_quote
+std::unique_ptr is currently not constexpr friendly. With the loosening of requirements on
+constexpr in [P0784R10] and the ability to use new and delete in a constexpr­context, we should
+also provide a constexpr std::unique_ptr.
+#+end_quote
+** Example
+#+begin_src c++
+constexpr auto fun() {
+    auto p = std::make_unique<int>(4);
+    return *p;
+}
+int main() {
+    constexpr auto i = fun();
+    static_assert(4 == i);
+}
+#+end_src
+
 LWG, C++23, B2 - improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll

@@ -2,4 +2,15 @@
 :PROPERTIES:
 :CUSTOM_ID: p2467-support-exclusive-mode-for-fstreams-jonathan-wakely
 :END:
+#+begin_quote
+Historically, C++ iostreams libraries had a ~noreplace~ open mode that corresponded to the ~O_EXCL~ flag for POSIX ~open~. That mode was not included in the C++98 standard, presumably for portability reasons, because it wasn't in ISO C90.
+
+Since then, ISO C added support for "exclusive" mode to ~fopen~, so now C++'s ~<fstream>~ is missing a feature that is present in both ISO C and POSIX. We should fix this for C++23.
+#+end_quote
 LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved, expedited-library-evolution-electronic-poll
+
+# Local Variables:
+# org-html-htmlize-output-type: inline-css
+# org-html-head: ""
+# org-link-descriptive: nil
+# End:

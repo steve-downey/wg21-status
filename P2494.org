@@ -2,4 +2,11 @@
 :PROPERTIES:
 :CUSTOM_ID: p2494-relaxing-range-adaptors-to-allow-for-move-only-types-michał-dominiak
 :END:
+#+begin_quote
+Currently, many range adaptors require that the user-provided types they store must be copy constructible, which is also required by the assignment wrapper they use, copyable-box.
+#+end_quote
+
+#+begin_quote
+Similarly to how [P2325R3] turned semiregular-box into copyable-box, this paper proposes to turn copyable-box into movable-box. This name is probably not ideal, because it still turns types that happen to be copy constructible into copyable types, but it follows from the prior changes to the wrapper.
+#+end_quote
 LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved

@@ -1,5 +1,4 @@
-* [[https://wg21.link/p0009r9][P0009R9]] mdspan: A Non-Owning Multidimensional Array Reference (H. Carter Edwards, Bryce Adelstein
-L...
+* [[https://wg21.link/p0009][P0009]] mdspan: A Non-Owning Multidimensional Array Reference (H. Carter Edwards, Bryce Adelstein
 :PROPERTIES:
 :CUSTOM_ID: p0009r9-mdspan-a-non-owning-multidimensional-array-reference-h.-carter-edwards-bryce-adelstein-l
 :END:

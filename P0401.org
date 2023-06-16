@@ -3,3 +3,11 @@
 :CUSTOM_ID: p0401r1-providing-size-feedback-in-the-allocator-interface-chris-kennelly-jonathan-wakely
 :END:
 LWG, C++23, size - small, plenary-approved
+*** [[https://wg21.link/p0401][P0401]] Providing size feedback in the Allocator interface (Chris Kennelly, Jonathan Wakely)
+#+begin_quote
+Utilize size feedback from Allocator to reduce spurious reallocations
+#+end_quote
+
+LWG, C++23, small, plenary-approved
+
+18 papers

@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p1847-make-declaration-order-layout-mandated-pal-balog
 :END:
+#+begin_quote
+The current rules allow implementations freedom to reorder members in the layout if they have different
+access control. To our knowledge no implementation actually used that freedom. We propose to fix this
+established industry practice in the standard as mandatory.
+#+end_quote
 CWG, C++23, plenary-approved

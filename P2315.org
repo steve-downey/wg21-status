@@ -3,8 +3,3 @@
 :CUSTOM_ID: p2315-c-standard-library-issues-to-be-moved-in-virtual-plenary-feb.-2021-jonathan-wakely
 :END:
 LWG, info, C++23, plenary-approved
-* [[https://wg21.link/p2315][P2315]] C++ Standard Library Issues to be moved in Virtual Plenary, Feb. 2021 (Jonathan Wakely)
-:PROPERTIES:
-:CUSTOM_ID: p2315-c-standard-library-issues-to-be-moved-in-virtual-plenary-feb.-2021-jonathan-wakely
-:END:
-LWG, info, C++23, plenary-approved

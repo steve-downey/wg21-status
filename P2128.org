@@ -1,5 +1,35 @@
-* [[https://wg21.link/p2128][P2128]] Multidimensional subscript operator (Corentin Jabot, Isabella Muerte, Daisy Hollman, Christ...
+* [[https://wg21.link/p2128][P2128]] Multidimensional subscript operator (Corentin Jabot, Isabella Muerte, Daisy Hollman, Christian Trott, Mark Hoemmen)
 :PROPERTIES:
 :CUSTOM_ID: p2128-multidimensional-subscript-operator-corentin-jabot-isabella-muerte-daisy-hollman-christ
 :END:
+#+begin_quote
+We propose that user-defined types can define a subscript operator with multiple arguments
+to better support multi-dimensional containers and views.
+#+end_quote
+** Before
+#+begin_src c++
+template <class ElementType, class Extents>
+class mdspan {
+    template <class... IndexType>
+    constexpr reference operator()(IndexType...);
+};
+int main() {
+    int  buffer[2 * 3 * 4] = {};
+    auto s                 = mdspan<int, extents<2, 3, 4>>(buffer);
+    s(1, 1, 1)             = 42;
+}
+#+end_src
+** After
+#+begin_src c++
+template <class ElementType, class Extents>
+ class mdspan {
+    template <class... IndexType>
+    constexpr reference operator[](IndexType...);
+};
+int main() {
+    int  buffer[2 * 3 * 4] = {};
+    auto s                 = mdspan<int, extents<2, 3, 4>>(buffer);
+    s[1, 1, 1]             = 42;
+}
+#+end_src
 CWG, C++23, plenary-approved

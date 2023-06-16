@@ -2,9 +2,22 @@
 :PROPERTIES:
 :CUSTOM_ID: p2324-labels-at-the-end-of-compound-statements-c-compatibility-martin-uecker
 :END:
-CWG, straw-poll, C++23, size - small, plenary-approved
-* [[https://wg21.link/p2324][P2324]] Labels at the end of compound statements (C compatibility) (Martin Uecker)
-:PROPERTIES:
-:CUSTOM_ID: p2324-labels-at-the-end-of-compound-statements-c-compatibility-martin-uecker
-:END:
+#+begin_quote
+WG14 adopted a change for C2X that allows placement of labels everywhere inside a compound
+statement (N2508). While this improves compatibility with C++ which previously diverged from C
+by allowing labels in front of declarations, there is still a remaining incompatibility: C now does
+allow labels at the end of a compound statement, while C++ does not. It is proposed to change the
+C++ grammar to remove this remaining difference.
+#+end_quote
+** Example
+#+begin_src c++
+void foo(void)
+{
+first: // allowed in C++, now also allowed in C
+int x;
+second: // allowed in both C++ and C
+x = 1;
+last: // not allowed in C++, but now allowed in C
+}
+#+end_src
 CWG, straw-poll, C++23, size - small, plenary-approved

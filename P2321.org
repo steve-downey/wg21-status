@@ -2,9 +2,21 @@
 :PROPERTIES:
 :CUSTOM_ID: p2321-zip-tim-song
 :END:
-LWG, ranges, C++23, IS, B3 - addition, plenary-approved
-* [[https://wg21.link/p2321][P2321]] zip (Tim Song)
-:PROPERTIES:
-:CUSTOM_ID: p2321-zip-tim-song
-:END:
+#+begin_quote
+This paper proposes
+- four views, zip, zip_transform, adjacent, and adjacent_transform,
+- changes to tuple and pair necessary to make them usable as proxy references (necessary for zip and adjacent), and
+- changes to vector<bool>::reference to make it usable as a proxy reference for writing,
+#+end_quote
+cccgs** Example
+#+begin_src c++
+std::vector v1 = {1, 2};
+std::vector v2 = {'a', 'b', 'c'};
+std::vector v3 = {3, 4, 5};
+
+fmt::print("{}\n", std::views::zip(v1, v2));                              // {(1, 'a'), (2, 'b')}
+fmt::print("{}\n", std::views::zip_transform(std::multiplies(), v1, v3)); // {3, 8}
+fmt::print("{}\n", v2 | std::views::pairwise);                            // {('a', 'b'), ('b', 'c')}
+fmt::print("{}\n", v3 | std::views::pairwise_transform(std::plus()));     // {7, 9}
+#+end_src
 LWG, ranges, C++23, IS, B3 - addition, plenary-approved

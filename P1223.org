@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1223][P1223]] find_backward (Zach Laine)
+:PROPERTIES:
+:CUSTOM_ID: p1223-find_backward-zach-laine
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

@@ -2,3 +2,7 @@
 :PROPERTIES:
 :CUSTOM_ID: p2788-linkage-for-modular-constants-s.-davis-herring
 :END:
+
+#+begin_quote
+National body comment US 8-036 points out an unfortunate interaction between C++98 linkage rules and C++20 modules. This paper explains the interaction in more detail, motivates a choice among the suggestions offered by the comment, and provides wording for that choice.
+#+end_quote

@@ -2,5 +2,32 @@
 :PROPERTIES:
 :CUSTOM_ID: p2549-stdunexpected-should-have-error-as-member-accessor-yihe-li
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
+** Before change:
+
+#+begin_src c++
+void fun()
+{
+    using namespace std::literals;
+    using ET = std::expected<int, std::string>;
+    auto unex = std::unexpected("Oops"s);
+    auto wrapped = unex.value(); // okay, get "Oops"
+    auto ex = ET(unex); // implicit, can also happen in parameter passing, etc.
+    auto wrapped2 = ex.value(); // throws!
+}
+#+end_src
+
+** After change:
+#+begin_src c++
+void fun()
+{
+    using namespace std::literals;
+    using ET = std::expected<int, std::string>;
+    auto unex = std::unexpected("Oops"s);
+    auto wrapped = unex.error(); // okay, get "Oops"
+    auto ex = ET(unex); // implicit, can also happen in parameter passing, etc.
+    auto wrapped2 = ex.error(); // okay, get "Oops" too.
+}
+#+end_src
+
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved

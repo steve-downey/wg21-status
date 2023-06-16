@@ -2,4 +2,10 @@
 :PROPERTIES:
 :CUSTOM_ID: p2387-pipe-support-for-user-defined-range-adaptors-barry-revzin
 :END:
+#+begin_quote
+Walter Brown made an excellent observation: if we gave users the tools to write their own range adaptors that would properly inter-operate with standard library adaptors (as well as other users’ adaptors), then it becomes less important to provide more adaptors in the standard library.
+
+The goal of this paper is provide that functionality: provide a standard customization mechanism for range adaptors, so that everybody can write their own adaptors.
+#+end_quote
+
 LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved

@@ -2,5 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p1899-stride_view-christopher-di-bella
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved,
-expedited-library-evolution-electronic-poll
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

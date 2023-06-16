@@ -2,4 +2,17 @@
 :PROPERTIES:
 :CUSTOM_ID: p0849-autox-decay_copy-in-the-language-zhihao-yuan
 :END:
+#+begin_quote
+This paper proposes auto(x) and auto{x} for transforming x into a prvalue with the same value as-if passed as a function argument by value. When users asked for this functionality, we claimed that the DECAY_COPY notion in the standard serves such purpose, but it is for exposition only.
+#+end_quote
+** Example
+#+begin_src c++
+// instead of:
+auto subparser = parser;
+subparser.add_option(...);
+
+// you can write:
+auto subparser = auto(parser).add_option(...);
+#+end_src
+
 CWG, LWG, C++23, IS, plenary-approved

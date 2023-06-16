@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2223-trimming-whitespaces-before-line-splicing-corentin-jabot
 :END:
+#+begin_quote
+We propose to make trailing whitespaces after \ non-significant.
+#+end_quote
+#+begin_src c++
+int main() {
+int i = 1
+// \
++ 42
+;
+return i;
+}
+#+end_src
 CWG, C++23, SG22, plenary-approved

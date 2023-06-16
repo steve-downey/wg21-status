@@ -1,0 +1,518 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:2 \n:nil ^:nil arch:headline author:nil
+#+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:nil e:t
+#+OPTIONS: email:nil f:t inline:t num:2 p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:nil title:nil toc:2 todo:t |:t
+#+TITLE: C++ 23 Status Report
+#+AUTHOR: Steve Downey
+#+EMAIL: sdowney2@bloomberg.net
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER:
+#+LATEX_HEADER_EXTRA:
+#+KEYWORDS:
+#+DESCRIPTION:
+#+SUBTITLE:
+#+LATEX_COMPILER: pdflatex
+#+DATE:
+#+STARTUP: showeverything
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:nil html-preamble:t
+#+OPTIONS: html-scripts:t html-style:t html5-fancy:nil tex:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS:
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE:
+#+INFOJS_OPT:
+
+#+OPTIONS: reveal_width:1600 reveal_height:900
+#+REVEAL_TRANS: fade
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./vivendi-tinted.css" />
+
+#+REVEAL_MATHJAX_URL: https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#+REVEAL_EXTRA_CSS: ./vivendi-tinted.css
+#+REVEAL_THEME: ./my_theme.css
+#+REVEAL_EXTRA_CSS: ./footer.css
+#+REVEAL_TITLE_SLIDE_BACKGROUND:
+
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_VERSION: 4
+
+#+REVEAL_HLEVEL: 2
+#+REVEAL_EXPORT_NOTES_TO_PDF: separate-page
+
+
+* C++ 23 Features
+
+
+#+INCLUDE:  P0009.org :only-contents t
+
+#+INCLUDE:  P0288.org :only-contents t
+
+#+INCLUDE:  P0323.org :only-contents t
+
+#+INCLUDE:  P0330.org :only-contents t
+
+#+INCLUDE:  P0401.org :only-contents t
+
+#+INCLUDE:  P0429.org :only-contents t
+
+#+INCLUDE:  P0448.org :only-contents t
+
+#+INCLUDE:  P0533.org :only-contents t
+
+#+INCLUDE:  P0627.org :only-contents t
+
+#+INCLUDE:  P0798.org :only-contents t
+
+#+INCLUDE:  P0847.org :only-contents t
+
+#+INCLUDE:  P0943.org :only-contents t
+
+#+INCLUDE:  P1048.org :only-contents t
+
+#+INCLUDE:  P1072.org :only-contents t
+
+#+INCLUDE:  P1102.org :only-contents t
+
+#+INCLUDE:  P1132.org :only-contents t
+
+#+INCLUDE:  P1147.org :only-contents t
+
+#+INCLUDE:  P1169.org :only-contents t
+
+#+INCLUDE:  P1206.org :only-contents t
+
+#+INCLUDE:  P1222.org :only-contents t
+
+#+INCLUDE:  P1223.org :only-contents t
+
+#+INCLUDE:  P1264.org :only-contents t
+
+#+INCLUDE:  P1272.org :only-contents t
+
+#+INCLUDE:  P1328.org :only-contents t
+
+#+INCLUDE:  P1401.org :only-contents t
+
+#+INCLUDE:  P1413.org :only-contents t
+
+#+INCLUDE:  P1425.org :only-contents t
+
+#+INCLUDE:  P1467.org :only-contents t
+
+#+INCLUDE:  P1518.org :only-contents t
+
+#+INCLUDE:  P1642.org :only-contents t
+
+#+INCLUDE:  P1659.org :only-contents t
+
+#+INCLUDE:  P1675.org :only-contents t
+
+#+INCLUDE:  P1679.org :only-contents t
+
+#+INCLUDE:  P1682.org :only-contents t
+
+#+INCLUDE:  P1774.org :only-contents t
+
+#+INCLUDE:  P1787.org :only-contents t
+
+#+INCLUDE:  P1847.org :only-contents t
+
+#+INCLUDE:  P1899.org :only-contents t
+
+#+INCLUDE:  P1938.org :only-contents t
+
+#+INCLUDE:  P1949.org :only-contents t
+
+#+INCLUDE:  P1951.org :only-contents t
+
+#+INCLUDE:  P1989.org :only-contents t
+
+#+INCLUDE:  P2017.org :only-contents t
+
+#+INCLUDE:  P2029.org :only-contents t
+
+#+INCLUDE:  P2036.org :only-contents t
+
+#+INCLUDE:  P2071.org :only-contents t
+
+#+INCLUDE:  P2077.org :only-contents t
+
+#+INCLUDE:  P2093.org :only-contents t
+
+#+INCLUDE:  P2096.org :only-contents t
+
+#+INCLUDE:  P2128.org :only-contents t
+
+#+INCLUDE:  P2136.org :only-contents t
+
+#+INCLUDE:  P2156.org :only-contents t
+
+#+INCLUDE:  P2160.org :only-contents t
+
+#+INCLUDE:  P2162.org :only-contents t
+
+#+INCLUDE:  P2164.org :only-contents t
+
+#+INCLUDE:  P2165.org :only-contents t
+
+#+INCLUDE:  P2166.org :only-contents t
+
+#+INCLUDE:  P2167.org :only-contents t
+
+#+INCLUDE:  P2173.org :only-contents t
+
+#+INCLUDE:  P2186.org :only-contents t
+
+#+INCLUDE:  P2201.org :only-contents t
+
+#+INCLUDE:  P2210.org :only-contents t
+
+#+INCLUDE:  P2212.org :only-contents t
+
+#+INCLUDE:  P2216.org :only-contents t
+
+#+INCLUDE:  P2223.org :only-contents t
+
+#+INCLUDE:  P2227.org :only-contents t
+
+#+INCLUDE:  P2231.org :only-contents t
+
+#+INCLUDE:  P2236.org :only-contents t
+
+#+INCLUDE:  P2238.org :only-contents t
+
+#+INCLUDE:  P2242.org :only-contents t
+
+#+INCLUDE:  P2246.org :only-contents t
+
+#+INCLUDE:  P2251.org :only-contents t
+
+#+INCLUDE:  P2255.org :only-contents t
+
+#+INCLUDE:  P2259.org :only-contents t
+
+#+INCLUDE:  P2266.org :only-contents t
+
+#+INCLUDE:  P2273.org :only-contents t
+
+#+INCLUDE:  P2278.org :only-contents t
+
+#+INCLUDE:  P2280.org :only-contents t
+
+#+INCLUDE:  P2281.org :only-contents t
+
+#+INCLUDE:  P2286.org :only-contents t
+
+#+INCLUDE:  P2290.org :only-contents t
+
+#+INCLUDE:  P2291.org :only-contents t
+
+#+INCLUDE:  P2295.org :only-contents t
+
+#+INCLUDE:  P2301.org :only-contents t
+
+#+INCLUDE:  P2302.org :only-contents t
+
+#+INCLUDE:  P2313.org :only-contents t
+
+#+INCLUDE:  P2314.org :only-contents t
+
+#+INCLUDE:  P2315.org :only-contents t
+
+#+INCLUDE:  P2316.org :only-contents t
+
+#+INCLUDE:  P2321.org :only-contents t
+
+#+INCLUDE:  P2322.org :only-contents t
+
+#+INCLUDE:  P2324.org :only-contents t
+
+#+INCLUDE:  P2325.org :only-contents t
+
+#+INCLUDE:  P2327.org :only-contents t
+
+#+INCLUDE:  P2328.org :only-contents t
+
+#+INCLUDE:  P2334.org :only-contents t
+
+#+INCLUDE:  P2340.org :only-contents t
+
+#+INCLUDE:  P2360.org :only-contents t
+
+#+INCLUDE:  P2362.org :only-contents t
+
+#+INCLUDE:  P2367.org :only-contents t
+
+#+INCLUDE:  P2372.org :only-contents t
+
+#+INCLUDE:  P2374.org :only-contents t
+
+#+INCLUDE:  P2385.org :only-contents t
+
+#+INCLUDE:  P2386.org :only-contents t
+
+#+INCLUDE:  P2387.org :only-contents t
+
+#+INCLUDE:  P2393.org :only-contents t
+
+#+INCLUDE:  P2401.org :only-contents t
+
+#+INCLUDE:  P2404.org :only-contents t
+
+#+INCLUDE:  P2408.org :only-contents t
+
+#+INCLUDE:  P2415.org :only-contents t
+
+#+INCLUDE:  P2417.org :only-contents t
+
+#+INCLUDE:  P2418.org :only-contents t
+
+#+INCLUDE:  P2419.org :only-contents t
+
+#+INCLUDE:  P2432.org :only-contents t
+
+#+INCLUDE:  P2437.org :only-contents t
+
+#+INCLUDE:  P2438.org :only-contents t
+
+#+INCLUDE:  P2440.org :only-contents t
+
+#+INCLUDE:  P2441.org :only-contents t
+
+#+INCLUDE:  P2442.org :only-contents t
+
+#+INCLUDE:  P2443.org :only-contents t
+
+#+INCLUDE:  P2445.org :only-contents t
+
+#+INCLUDE:  P2446.org :only-contents t
+
+#+INCLUDE:  P2448.org :only-contents t
+
+#+INCLUDE:  P2450.org :only-contents t
+
+#+INCLUDE:  P2460.org :only-contents t
+
+#+INCLUDE:  P2462.org :only-contents t
+
+#+INCLUDE:  P2465.org :only-contents t
+
+#+INCLUDE:  P2467.org :only-contents t
+
+#+INCLUDE:  P2468.org :only-contents t
+
+#+INCLUDE:  P2474.org :only-contents t
+
+#+INCLUDE:  P2493.org :only-contents t
+
+#+INCLUDE:  P2494.org :only-contents t
+
+#+INCLUDE:  P2499.org :only-contents t
+
+#+INCLUDE:  P2502.org :only-contents t
+
+#+INCLUDE:  P2505.org :only-contents t
+
+#+INCLUDE:  P2508.org :only-contents t
+#+begin_comment
+:Tags: LWG,format
+#+end_comment
+
+#+INCLUDE:  P2513.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P2517.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2520.org :only-contents t
+#+begin_comment
+:Tags: LWG,ranges
+#+end_comment
+
+#+INCLUDE:  P2539.org :only-contents t
+#+begin_comment
+:Tags: LWG,format
+#+end_comment
+
+#+INCLUDE:  P2540.org :only-contents t
+#+begin_comment
+:Tags: LWG,ranges
+#+end_comment
+
+#+INCLUDE:  P2549.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2553.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan
+#+end_comment
+
+#+INCLUDE:  P2554.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan
+#+end_comment
+
+#+INCLUDE:  P2564.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P2579.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P2582.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P2585.org :only-contents t
+#+begin_comment
+:Tags: LWG,format
+#+end_comment
+
+#+INCLUDE:  P2588.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2590.org :only-contents t
+#+begin_comment
+:Tags: CWG,LWG
+#+end_comment
+
+#+INCLUDE:  P2599.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan
+#+end_comment
+
+#+INCLUDE:  P2602.org :only-contents t
+#+begin_comment
+:Tags: LWG,ranges
+#+end_comment
+
+#+INCLUDE:  P2604.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan
+#+end_comment
+
+#+INCLUDE:  P2609.org :only-contents t
+#+begin_comment
+:Tags: LWG,ranges
+#+end_comment
+
+#+INCLUDE:  P2613.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan
+#+end_comment
+
+#+INCLUDE:  P2614.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2644.org :only-contents t
+#+begin_comment
+:Tags: CWG,Major
+#+end_comment
+
+#+INCLUDE:  P2652.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2655.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2674.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2675.org :only-contents t
+#+begin_comment
+:Tags: ISSUE
+#+end_comment
+
+#+INCLUDE:  P2679.org :only-contents t
+#+begin_comment
+:Tags: ISSUE
+#+end_comment
+
+#+INCLUDE:  P2693.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2711.org :only-contents t
+#+begin_comment
+:Tags: ISSUE
+#+end_comment
+
+#+INCLUDE:  P2713.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2736.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2763.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2770.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2787.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2788.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2789.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2790.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2796.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment
+
+#+INCLUDE:  P2797.org :only-contents t
+#+begin_comment
+:Tags: NB
+#+end_comment

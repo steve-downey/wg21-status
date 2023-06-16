@@ -2,4 +2,28 @@
 :PROPERTIES:
 :CUSTOM_ID: p1147-printing-volatile-pointers-bryce-adelstein-lelbach
 :END:
+#+begin_quote
+Printing pointers to volatile types with standard library output streams has unexpected results. Consider the following code:
+#+end_quote
+** Example
+#+begin_src c++
+#include <iostream>
+
+int main() {
+    int*          p0 = reinterpret_cast<int*>(0xdeadbeef);
+    volatile int* p1 = reinterpret_cast<volatile int*>(0xdeadbeef);
+
+    std::cout << p0 << std::endl;
+    std::cout << p1 << std::endl;
+}
+#+end_src
+#+begin_quote
+This produces the following output:
+
+#+begin_example
+0xdeadbeef
+#+end_example
+
+1
+#+end_quote
 LWG, C++23, IS, plenary-approved

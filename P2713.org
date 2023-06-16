@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p2713-escaping-improvements-in-stdformat-victor-zverovich
 :END:
+
+#+begin_quote
+This paper provides wording for the resolution of national body comments [US38-098] and [FR005-134] per direction voted in SG16 Unicode and LEWG.
+#+end_quote
+
 LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -small, plenary-approved, format

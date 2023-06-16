@@ -2,9 +2,7 @@
 :PROPERTIES:
 :CUSTOM_ID: p2322-rangesfold-barry-revzin
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
-* [[https://wg21.link/p2322][P2322]] ranges::fold (Barry Revzin)
-:PROPERTIES:
-:CUSTOM_ID: p2322-rangesfold-barry-revzin
-:END:
+#+begin_quote
+While we do have an iterator-based version of fold in the standard library, it is currently named accumulate, defaults to performing + on its operands, and is found in the header <numeric>. But fold is much more than addition, so as described in the linked paper, it’s important to give it the more generic name and to avoid a default operator.
+#+end_quote
 LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

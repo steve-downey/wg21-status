@@ -2,4 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p2443-viewschunk_by-tim-song
 :END:
+#+begin_quote
+This paper proposes the range adaptor views::chunk_by as described in section 4.3 of [P2214R1].
+#+end_quote
+#+begin_src c++
+std::vector v = {1, 2, 2, 3, 0, 4, 5, 2};
+fmt::print("{}\n", v | std::views::chunk_by(ranges::less_equal{}));   // [[1, 2, 2, 3], [0, 4, 5], [2]]
+#+end_src
+
 LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

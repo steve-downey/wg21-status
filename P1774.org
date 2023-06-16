@@ -2,4 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p1774-portable-optimisation-hints-timur-doumler
 :END:
+#+begin_quote
+We propose a standard facility providing the semantics of existing compiler intrinsics such as
+~__builtin_assume~ (Clang) and ~__assume~ (MSVC, Intel) that tell the compiler to assume a
+given C++ expression without evaluating it, and to optimise based on this assumption. This is
+very useful for high-performance and low-latency applications in order to generate both faster
+and smaller code.
+#+end_quote
+
 CWG, straw-poll, C++23, plenary-approved

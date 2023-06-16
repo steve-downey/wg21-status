@@ -2,9 +2,21 @@
 :PROPERTIES:
 :CUSTOM_ID: p2325-views-should-not-be-required-to-be-default-constructible-barry-revzin
 :END:
-LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
-* [[https://wg21.link/p2325][P2325]] Views should not be required to be default constructible (Barry Revzin)
-:PROPERTIES:
-:CUSTOM_ID: p2325-views-should-not-be-required-to-be-default-constructible-barry-revzin
-:END:
+#+begin_quote
+Currently, the view concept is defined in 24.4.4 [range.view] as:
+#+end_quote
+#+begin_src
+template <class T>
+concept view =
+    range<T> &&
+    movable<T> &&
+    default_initializable<T> &&
+    enable_view<T>;
+#+end_src
+** Discussion
+#+begin_quote
+Three of these four criteria, I understand. A view clearly needs to be a range, and it’s important that they be movable for various operations to work. And the difference between a view and range is largely semantic, and so there needs to be an explicit opt-in in the form of enable_view.
+
+But why does a view need to be default_initializable?
+#+end_quote
 LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

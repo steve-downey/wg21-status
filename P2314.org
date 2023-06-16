@@ -2,9 +2,23 @@
 :PROPERTIES:
 :CUSTOM_ID: p2314-character-sets-and-encodings-jens-maurer
 :END:
-CWG, C++23, plenary-approved
-* [[https://wg21.link/p2314][P2314]] Character sets and encodings (Jens Maurer)
-:PROPERTIES:
-:CUSTOM_ID: p2314-character-sets-and-encodings-jens-maurer
-:END:
+#+begin_quote
+This paper implements the following changes:
+- Switch C++ to a modified "model C" approach for universal-character-names as described in the C99 Rationale v5.10, section 5.2.1.
+- Introduce the term "literal encoding". For purposes of the C++ specification, the actual set of characters is not relevant, but the sequence of code units (i.e. the encoding) specified by a given character or string literal are. The terms "execution (wide) character set" are retained to describe the locale-dependent runtime character set used by functions such as isalpha.
+- (Not a wording change) Do not attempt to treat all string literals the same; their treatment depends on (phase 7) context.
+#+end_quote
+** Before/After Table
+Before:
+#+begin_src c++
+#define S(x) # x
+const char * s1 = S(Köppe);       // "K\\u00f6ppe"
+const char * s2 = S(K\u00f6ppe);  // "K\\u00f6ppe"
+#+end_src
+After:
+#+begin_src c++
+#define S(x) # x
+const char * s1 = S(Köppe);       // "Köppe"
+const char * s2 = S(K\u00f6ppe);  // "Köppe"
+#+end_src
 CWG, C++23, plenary-approved

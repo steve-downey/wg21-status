@@ -2,4 +2,11 @@
 :PROPERTIES:
 :CUSTOM_ID: p2493-missing-feature-test-macros-for-c20-core-papers-barry-revzin
 :END:
+#+begin_quote
+As Jonathan Wakely pointed out on the SG10 mailing list, neither [P0848R3] (Conditionally Trivial Special Member Functions) nor [P1330R0] ( Changing the active member of a union inside constexpr) provided a feature-test macro.
+#+end_quote
+
+#+begin_quote
+This paper proposes Richard’s second suggestion: bump __cpp_concepts and __cpp_constexpr to 202002L
+#+end_quote
 CWG, straw-poll, C++23, plenary-approved

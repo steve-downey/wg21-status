@@ -1,5 +1,15 @@
-* [[https://wg21.link/p2468][P2468]] The Equality Operator You Are Looking For (Barry Revzin, Bjarne Stroustrup, Cameron DaCamar...
+* [[https://wg21.link/p2468][P2468]] The Equality Operator You Are Looking For (Barry Revzin, Bjarne Stroustrup, Cameron DaCamara, Daveed Vandevoorde, Gabriel Dos Reis, Herb Sutter, Jason Merrill, Jonathan Caves, Richard Smith, Ville Voutilainen)
 :PROPERTIES:
 :CUSTOM_ID: p2468-the-equality-operator-you-are-looking-for-barry-revzin-bjarne-stroustrup-cameron-dacamar
 :END:
+#+begin_quote
+This paper details some changes to make rewriting equality in expressions less of a breaking change
+#+end_quote
+#+begin_quote
+- If you want an operator== that is used for rewrites (automatically reversed, and != automatically generated), write only an operator==, and make sure its return type is bool.
+
+- If you want an operator== that is not used for rewrites, write both an operator== and a matching operator!=.
+
+- operator<=> is always used for rewrites (from <, <=, >, >=); if you don’t want rewrites, don’t write an operator<=>.
+#+end_quote
 CWG, straw-poll, C++23, plenary-approved

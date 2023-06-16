@@ -2,5 +2,38 @@
 :PROPERTIES:
 :CUSTOM_ID: p2655-common_reference_t-of-reference_wrapper-should-be-a-reference-type-hui-xie-s.-levent-yilmaz
 :END:
-LWG, C++23, IS, B2 - improvement, size - small, plenary-approved
 
+#+begin_quote
+This paper proposes a fix that makes the ~common_reference_t<T&,reference_wrapper<T>>~ a reference type ~T&~.
+#+end_quote
+
+** Before
+#+begin_src c++
+static_assert(same_as<
+              common_reference_t<int&, reference_wrapper<int>>,
+              int>);
+
+static_assert(same_as<
+              common_reference_t<int&, reference_wrapper<int>&>,
+              int>);
+
+static_assert(same_as<
+              common_reference_t<int&, const reference_wrapper<int>&>,
+              const int&>);
+#+end_src
+
+** After
+#+begin_src c++
+static_assert(same_as<
+              common_reference_t<int&, reference_wrapper<int>>,
+              int&>);
+
+static_assert(same_as<
+              common_reference_t<int&, reference_wrapper<int>&>,
+              int&>);
+
+static_assert(same_as<
+              common_reference_t<int&, const reference_wrapper<int>&>,
+              int&>);
+#+end_src
+LWG, C++23, IS, B2 - improvement, size - small, plenary-approved

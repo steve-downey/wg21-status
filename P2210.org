@@ -2,4 +2,28 @@
 :PROPERTIES:
 :CUSTOM_ID: p2210-superior-string-splitting-barry-revzin
 :END:
+** Proposal Part 1
+#+begin_quote
+This paper proposes the following:
+Rename the existing ~views::split~ / ~ranges::split_view~ to ~views::lazy_split~ / ~ranges::lazy_split_view~. Add ~base()~ member functions to the ~inner-iterator~ type to get back to the adapted range’s iterators.
+#+end_quote
+
+** Proposal Part 2
+#+begin_quote
+1.  Introduce a new range adapter under the name ~views::split~ / ~ranges::split_view~ with the following design:
+
+    1. It can only support splitting forward-or-better ranges.
+    1. Splitting a ~V~ will yield ~subrange<iterator_t<V>>~s, ensuring that the adapted range’s category is preserved. Splitting a bidirectional range gives out bidirectional subranges. Spltiting a contiguous range gives out contiguous subranges.
+    1. ~views::split~ will not be ~const~-iterable.
+#+end_quote
+** Example
+#+begin_src c++
+auto ip = "127.0.0.1"s;
+auto parts = ip | std::views::split('.')
+                | std::views::transform([](std::span<char const> s){
+                      int i;
+                      std::from_chars(s.data(), s.data() + s.size(), i);
+                      return i;
+                  });
+#+end_src
 LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

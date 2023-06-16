@@ -2,4 +2,11 @@
 :PROPERTIES:
 :CUSTOM_ID: p2036-changing-scope-for-lambda-trailing-return-type-barry-revzin
 :END:
+#+begin_quote
+This paper proposes that name lookup in the trailing-return-type of a lambda
+first consider that lambda’s captures before looking further outward. We may
+not know at the time of parsing the return type which names actually are
+captured, so this paper proposes to treat all capturable entities as if they
+were captured.
+#+end_quote
 CWG, C++23, plenary-approved

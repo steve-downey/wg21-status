@@ -2,4 +2,18 @@
 :PROPERTIES:
 :CUSTOM_ID: p2362-make-obfuscating-wide-character-literals-ill-formed-peter-brett-corentin-jabot
 :END:
+#+begin_quote
+C++ currently permits writing a wide character literal with multiple characters or characters that
+cannot fit into a single ~wchar_t~ codeunit. For example:
+#+end_quote
+** Example
+#+begin_src c++
+wchar_t a = L'🤦'; // \u{1F926}
+wchar_t b = L'ab';
+wchar_t c = L'é'; // \u{65}\u{301};
+#+end_src
+#+begin_quote
+Make these literals ill-formed.
+#+end_quote
+
 CWG, straw-poll, C++23, plenary-approved

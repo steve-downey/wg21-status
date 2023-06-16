@@ -2,4 +2,29 @@
 :PROPERTIES:
 :CUSTOM_ID: p2609-relaxing-ranges-just-a-smidge-john-eivind-helset
 :END:
+
+#+begin_quote
+Ranges algorithms that take a function and a projection should, in the unary case, constrain the function to enable:
+#+end_quote
+
+#+begin_src c++
+iter_value_t<It> x = *it;
+f(proj(x));
+#+end_src
+
+#+begin_quote
+Instead they are constrained to allow:
+#+end_quote
+
+#+begin_src c++
+iter_value_t<projected<I,Proj>> u = proj(*it);
+f(u);
+#+end_src
+
+#+begin_quote
+And likewise in the binary case. This is caused by the composition of indirect callable concepts with projected, seen for example in the constraints of ranges::for_each as indirect_unary_invocable<projected<I,P>>.
+
+A fix is proposed that introduces a type-trait and makes a slight change to the definitions of the indirect callable concepts, as well as iter_common_reference_t. The fix is a slight relaxation of the algorithmic constraints in ranges that does not break ABI.
+#+end_quote
+
 LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

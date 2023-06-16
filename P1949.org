@@ -2,4 +2,36 @@
 :PROPERTIES:
 :CUSTOM_ID: p1949-c-identifier-syntax-using-unicode-standard-annex-31-steve-downey
 :END:
+#+begin_quote
+Adopt Unicode Annex 31 as part of C++ 23.
+
+- That C++ identifiers match the pattern (XID_Start + _ ) + XID_Continue*.
+- That portable source is required to be normalized as NFC.
+- That using unassigned code points be ill-formed.
+
+In addition adopt this proposal as a Defect Report against C++ 20 and earlier.
+#+end_quote
+** Examples
+#+begin_src c++
+bool 👷 = true; //  Construction Worker
+bool 👷‍♀ = false; // Woman Construction Worker ({Construction Worker}{ZWJ}{Female Sign})
+int ⏰ = 0; //not valid
+int 🕐 = 0;
+
+int ☠ = 0; //not valid
+int 💀 = 0;
+
+int ✋ = 0; //not valid
+int 👊 = 0;
+
+int ✈ = 0; //not valid
+int 🚀 = 0;
+
+int ☹ = 0; //not valid
+int 😀 = 0;
+
+#+end_src
+
+All Invalid After p1949
+
 CWG, C++23, plenary-approved

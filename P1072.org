@@ -1,0 +1,24 @@
+* [[https://wg21.link/p1072][P1072]] basic_string::resize_default_init (Chris Kennelly, Mark Zeren)
+:PROPERTIES:
+:CUSTOM_ID: p1072r2-basic_stringresize_default_init-chris-kennelly-mark-zeren
+:END:
+#+begin_quote
+Allow access to default initialized elements of basic_string.
+#+end_quote
+**** Example
+#+begin_src c++
+std::string GeneratePattern(const std::string& pattern, size_t count) {
+    std::string ret;
+
+    const auto step = pattern.size();
+    // GOOD: No initialization
+    ret.resize_default_init(step * count);
+    for (size_t i = 0; i < count; i++) {
+        // GOOD: No bookkeeping
+        memcpy(ret.data() + i * step, pattern.data(), step);
+    }
+
+    return ret;
+}
+#+end_src
+LWG, C++23, IS, plenary-approved

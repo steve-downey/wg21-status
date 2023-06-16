@@ -1,0 +1,24 @@
+* [[https://wg21.link/p0533][P0533]] constexpr for <cmath> and <cstdlib> (Edward J. Rosten, Oliver J. Rosten)
+:PROPERTIES:
+:CUSTOM_ID: p0533r4-constexpr-for-cmath-and-cstdlib-edward-j.-rosten-oliver-j.-rosten
+:END:
+
+#+begin_quote
+We propose simple criteria for selecting functions in <cmath> which should be
+declared constexpr.  There is a small degree of overlap with <cstdlib>. The aim
+is to transparently select a sufficiently large portion of <cmath> in order to
+be useful but without placing too much burden on compiler vendors.
+#+end_quote
+
+** Example
+#+begin_src c++
+constexpr int foo(float x) {
+int a{}; int* pa{&a};
+std::frexpr(x, pa);
+return a;
+}
+
+constexpr int i{foo(0.5f)}.
+#+end_src
+
+CWG, LWG, C++23, IS, B3 - addition, size - medium, plenary-approved, constexpr

@@ -2,5 +2,18 @@
 :PROPERTIES:
 :CUSTOM_ID: p2438-stdstringsubstr-federico-kircheis-tomasz-kamiński
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
 
+#+begin_src c++
+auto foo() -> std::string;
+
+auto b = foo().substr(/* */);
+#+end_src
+Before:
+#+begin_quote
+foo() returns a temporary std::string. .substr creates a new string and copies the relevant content. At last, the temporary string returned by foo is released.
+#+end_quote
+After:
+#+begin_quote
+foo() returns a std::string. .substr implementation can reuse the storage of the string returned by foo and leave it in a valid but unspecified state. At last, the temporary string returned by foo() is released.
+#+end_quote
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

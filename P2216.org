@@ -2,4 +2,13 @@
 :PROPERTIES:
 :CUSTOM_ID: p2216-stdformat-improvements-victor-zverovich
 :END:
+#+begin_quote
+This paper proposes the following improvements to the C++20 formatting facility:
+- Improving safety via compile-time format string checks
+- Reducing binary code size of format_to
+#+end_quote
+#+begin_src c++
+std::string s = std::format("{:d}", "I am not a number");
+#+end_src
+Becomes ill-formed
 LWG, C++23, IS, plenary-approved

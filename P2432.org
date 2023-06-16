@@ -2,4 +2,19 @@
 :PROPERTIES:
 :CUSTOM_ID: p2432-fix-istream_view-nicolai-josuttis
 :END:
+#+begin_quote
+This paper fixes a fundamental design problem with the current helper function
+std::ranges::istream_view<>() that cause multiple inconsistences and unnecessary code
+overhead when declaring istream_view objects
+#+end_quote
+Before:
+#+begin_src c++
+std::ranges::istream_view<int> v{mystream}
+ // ERROR
+#+end_src
+After:
+#+begin_src c++
+std::ranges::istream_view<int> v{mystream}
+ // OK
+#+end_src
 LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

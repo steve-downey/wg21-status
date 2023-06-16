@@ -2,9 +2,13 @@
 :PROPERTIES:
 :CUSTOM_ID: p2316-consistent-character-literal-encoding-corentin-jabot
 :END:
-CWG, C++23, plenary-approved
-* [[https://wg21.link/p2316][P2316]] Consistent character literal encoding (Corentin Jabot)
-:PROPERTIES:
-:CUSTOM_ID: p2316-consistent-character-literal-encoding-corentin-jabot
-:END:
+#+begin_quote
+Character literals in preprocessor conditional should behave like they do in C++ expression.
+#+end_quote
+#+begin_src c++
+#if 'A' == '\x41'
+//...
+#endif
+if ('A' == 0x41){}
+#+end_src
 CWG, C++23, plenary-approved

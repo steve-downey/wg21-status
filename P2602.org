@@ -2,4 +2,21 @@
 :PROPERTIES:
 :CUSTOM_ID: p2602-poison-pills-are-too-toxic-barry-revzin
 :END:
+
+Given the following declarations:
+
+#+begin_src c++
+struct A {
+    friend auto begin(A const&) -> int const*;
+    friend auto end(A const&)   -> int const*;
+};
+
+struct B {
+    friend auto begin(B&) -> int*;
+    friend auto end(B&) -> int*;
+};
+#+end_src
+
+B and const A satisfy std::ranges::range, but A does not. The goal of this paper is that both of these should count as ranges.
+
 LWG, ranges, C++23, IS, B2 - improvement, size - small, plenary-approved

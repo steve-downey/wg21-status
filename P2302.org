@@ -2,9 +2,23 @@
 :PROPERTIES:
 :CUSTOM_ID: p2302-prefer-stdrangescontains-over-stdbasic_string_viewcontains-christopher-di-bella
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
-* [[https://wg21.link/p2302][P2302]] Prefer std::ranges::contains over std::basic_string_view::contains (Christopher Di Bella)
-:PROPERTIES:
-:CUSTOM_ID: p2302-prefer-stdrangescontains-over-stdbasic_string_viewcontains-christopher-di-bella
-:END:
+#+begin_quote
+P2302 proposes two algorithms: one that checks whether or not a range contains an element, and one that checks whether or not a range contains a subrange
+#+end_quote
+Before:
+#+begin_src c++
+namespace stdr = std::ranges;
+stdr::find(haystack.begin(), haystack.end(), 'o') != haystack.end()
+stdr::find(haystack, 'o') != stdr::end(haystack)
+not stdr::search(haystack, long_needle).empty()
+not stdr::search(haystack, long_needle, bind_back(std::modulo(), 4)).empty()
+#+end_src
+After:
+#+begin_src c++
+namespace stdr = std::ranges;
+stdr::contains(haystack.begin(), haystack.end(), 'o')
+stdr::contains(haystack, 'o')
+stdr::contains_subrange(haystack, long_needle)
+stdr::contains_subrange(haystack, long_needle, bind_back(std::modulo(), 4))
+#+end_src
 LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

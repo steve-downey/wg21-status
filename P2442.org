@@ -2,4 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p2442-windowing-range-adaptors-viewschunk-and-viewsslide-tim-song
 :END:
+#+begin_quote
+This paper proposes two range adaptors, views::chunk and views::slide, as described in section 3.5 of [P2214R0].
+#+end_quote
+#+begin_src c++
+std::vector v = {1, 2, 3, 4, 5};
+fmt::print("{}\n", v | std::views::chunk(2));   // [[1, 2], [3, 4], [5]]
+fmt::print("{}\n", v | std::views::slide(2));   // [[1, 2], [2, 3], [3, 4], [4, 5]]
+#+end_src
 LWG, ranges, C++23, IS, B3 - addition, size - medium, plenary-approved

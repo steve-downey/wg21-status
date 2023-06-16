@@ -1,5 +1,0 @@
-* [[https://wg21.link/p0448r2][P0448R2]] A strstream replacement using span<charT> as buffer (Peter Sommerlad)...
-:PROPERTIES:
-:CUSTOM_ID: p0448r2-a-strstream-replacement-using-spanchart-as-buffer-peter-sommerlad
-:END:
-LWG, C++23, size - large, plenary-approved

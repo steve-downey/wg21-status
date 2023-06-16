@@ -2,4 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p1413-a-safer-interface-for-stdaligned_storage-cj-johnson
 :END:
+#+begin_quote
+[] the standard library should provided two more symbols in the form of
+typedefs that take in a single template type parameter and, on behalf of the
+user, deduce the size and alignment of that type, passing in the values to
+std::aligned_storage. The symbols should be ~std::aligned_storage_for~ and
+~std::aligned_storage_for_t~. Like ~std::aligned_storage~ and
+~std::aligned_storage_t~, they should be available in the ~<type_traits>~ header
+of the standard library.
+#+end_quote
+
 LWG, C++23, plenary-approved

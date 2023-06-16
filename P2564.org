@@ -2,4 +2,17 @@
 :PROPERTIES:
 :CUSTOM_ID: p2564-consteval-needs-to-propagate-up-barry-revzin
 :END:
+
+#+begin_quote
+This paper proposes avoiding the consteval coloring problem (or, at least, mitigating its annoyances) by allowing certain existing constexpr functions to implicitly become consteval functions when those functions can already only be invoked during compile time anyway.
+
+Specifically, these three rules:
+
+1. If a constexpr function contains a call to an immediate function outside of an immediate function context, and that call itself isn’t a constant expression, said constexpr function implicitly becomes a consteval function. This is intended to include lambdas, function template specializations, special member functions, and should cover member initializers as well.
+
+2. If an expression-id designates a consteval function without it being an immediate call in such a context, it also makes the context implicitly consteval. Such expression-id’s are also allowed in contexts that are manifestly constant evaluated.
+
+3. Other manifestly constant evaluated contexts (like constant-expression and the condition of a constexpr if statement) are now considered to be immediate function contexts.
+#+end_quote
+
 CWG, straw-poll, C++23, nb-comment, plenary-approved

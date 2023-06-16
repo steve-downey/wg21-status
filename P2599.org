@@ -2,4 +2,10 @@
 :PROPERTIES:
 :CUSTOM_ID: p2599-mdspansize_type-should-be-index_type-nevin-liber
 :END:
+
+#+begin_quote
+With the adoption of P2553R1, ~mdspan::size_type~ may now be a signed type.
+~size_type~ is no longer an appropriate name for this type and it should be changed to ~index_type~.
+#+end_quote
+
 LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

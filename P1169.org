@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1169][P1169]] static operator() (Barry Revzin, Casey Carter)
+:PROPERTIES:
+:CUSTOM_ID: p1169-static-operator-barry-revzin-casey-carter
+:END:
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, expedited-library-...

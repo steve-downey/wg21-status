@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p2446-viewsmove-barry-revzin
 :END:
+#+begin_quote
+~as_rvalue_view~ presents a view of an underlying sequence with the same behavior as the underlying sequence except that its elements are rvalues. Some generic algorithms can be called with a as_rvalue_view to replace copying with moving.
+
+The name views::as_rvalue denotes a range adaptor object ([range.adaptor.object]).
+#+end_quote
 LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

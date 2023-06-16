@@ -2,4 +2,25 @@
 :PROPERTIES:
 :CUSTOM_ID: p1659-starts_with-and-ends_with-christopher-di-bella
 :END:
+#+begin_quote
+This proposal seeks to add std::ranges::starts_with and std::ranges::ends_with, which would work on arbitrary ranges, and also answer questions such as "are the starting elements of `r1` less than the elements of `r2`?" and "are the final elements of `r1` greater than the elements of `r2`?"
+#+end_quote
+** Before/After Table
+Before:
+#+begin_src c++
+auto some_ints      = view::iota(0, 50);
+auto some_more_ints = view::iota(0, 30);
+if (ranges::mismatch(some_ints, some_more_ints).in2 == end(some_more_ints)) {
+    // do something
+}
+#+end_src
+After:
+#+begin_src c++
+auto some_ints      = view::iota(0, 50);
+auto some_more_ints = view::iota(0, 30);
+if (ranges::starts_with(some_ints, some_more_ints)) {
+    // do something
+}
+#+end_src
+
 LWG, C++23, IS, size - small, plenary-approved

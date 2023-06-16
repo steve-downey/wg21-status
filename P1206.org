@@ -1,0 +1,20 @@
+* [[https://wg21.link/p1206][P1206]] ranges::to: A function to convert any range to a container (Corentin Jabot, Eric Niebler, Casey Carter)
+:PROPERTIES:
+:CUSTOM_ID: p1206r1-rangesto-a-function-to-convert-any-range-to-a-container-corentin-jabot-eric-niebler-c
+:END:
+#+begin_quote
+We propose a function to copy or materialize any range (containers and views alike) to a container.
+#+end_quote
+** Before/After Table
+Before:
+#+begin_src c++
+std::map<int, widget>                           map = get_widgets_map();
+std::vector<typename decltype(map)::value_type> vec;
+vec.reserve(map.size());
+ranges::move(map, std::back_inserter(vec));
+#+end_src
+After:
+#+begin_src c++
+auto vec = get_widgets_map() | ranges::to<vector>
+#+end_src
+LWG, ranges, C++23, IS, plenary-approved

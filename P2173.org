@@ -2,4 +2,13 @@
 :PROPERTIES:
 :CUSTOM_ID: p2173-attributes-on-lambda-expressions-daveed-vandevoorde-inbal-levi-ville-voutilainen
 :END:
+#+begin_quote
+This paper proposes a fix for
+[[http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#2097][Core Issue 2097]],
+to allow attributes for lambdas, those attributes appertaining to the function
+call operator of the lambda.
+#+end_quote
+#+begin_src c++
+auto lm = [] [[nodiscard, vendor::attr]] () -> int { return 42; };
+#+end_src
 CWG, straw-poll, C++23, plenary-approved

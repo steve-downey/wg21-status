@@ -2,5 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p2585-improving-default-container-formatting-barry-revzin
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
 
+#+begin_quote
+[P2286R8] adds support for formatting any range whose underlying type is formattable. Additionally, it adds support for different kinds of formatting that users can opt into, while also providing a default choice for associating containers that is more suited to what those containers represent.
+#+end_quote
+
+#+begin_quote
+However, this distinction is a result of [P2286R8] explicitly providing formatters for all the standard library map and set containers, and applying those changes to them. This is something that users can do for their own containers as well, but which also means that it is something users have to do - if this is the behavior they want.
+
+#+end_quote
+
+LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved

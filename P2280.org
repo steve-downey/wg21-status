@@ -2,4 +2,20 @@
 :PROPERTIES:
 :CUSTOM_ID: p2280-using-unknown-references-in-constant-expressions-barry-revzin
 :END:
+#+begin_src c++
+template <typename T, size_t N>
+constexpr auto array_size(T (&)[N]) -> size_t {
+    return N;
+}
+
+void check(int const (&param)[3]) {
+    int            local[] = {1, 2, 3};
+    constexpr auto s0      = array_size(local); // ok
+    constexpr auto s1      = array_size(param); // error
+}
+#+end_src
+#+begin_quote
+The proposal is to allow all these cases to just work. That is, if during constant evaluation, we run into a reference with unknown origin, this is still okay, we keep going. Similarly, if we run into a pointer with unknown origin, we allow indirecting through it.
+#+end_quote
+
 CWG, straw-poll, C++23, plenary-approved

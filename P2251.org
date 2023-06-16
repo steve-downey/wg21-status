@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p2251-require-span-basic_string_view-to-be-trivially-copyable-nevin-liber
 :END:
+#+begin_quote
+Given its definition, it is strongly implied that span & basic_string_view are
+trivially copyable, but that is not yet a requirement.
+#+end_quote
+
 LWG, C++23, IS, plenary-approved

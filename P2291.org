@@ -1,10 +1,14 @@
-* [[https://wg21.link/p2291][P2291]] Add Constexpr Modifiers to Functions =to_chars= and =from_chars= for Integral Types in `<ch...
+* [[https://wg21.link/p2291][P2291]] Add Constexpr Modifiers to Functions =to_chars= and =from_chars= for Integral Types in =<charconv>= Header (Daniil Goncharov, Karaev Alexander)
 :PROPERTIES:
 :CUSTOM_ID: p2291-add-constexpr-modifiers-to-functions-to_chars-and-from_chars-for-integral-types-in-ch
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evol...
-* [[https://wg21.link/p2291][P2291]] Add Constexpr Modifiers to Functions =to_chars= and =from_chars= for Integral Types in `<ch...
-:PROPERTIES:
-:CUSTOM_ID: p2291-add-constexpr-modifiers-to-functions-to_chars-and-from_chars-for-integral-types-in-ch
-:END:
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evol...
+#+begin_quote
+There is currently no standard way to make conversion between numbers and strings /at compile time/.
+
+~std::to_chars~ and ~std::from_chars~ are fundamental blocks for parsing and
+formatting being localeindependent and non-throwing without memory allocation,
+so they look like natural candidates for constexpr string conversions. The
+paper proposes to make ~std::to_chars~ and ~std::from_chars~ functions for *integral
+types* usable in constexpr context.
+#+end_quote
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evolution-electronic-poll

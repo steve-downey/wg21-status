@@ -1,5 +1,24 @@
-* [[https://wg21.link/p2412][P2465]] Standard Library Modules std and std.all (Stephan T. Lavavej, Gabriel Dos Reis, Bjarne Stro...
+* [[https://wg21.link/p2412][P2465]] Standard Library Modules std and std.all (Stephan T. Lavavej, Gabriel Dos Reis, Bjarne Stroustrup, Jonathan Wakely)
 :PROPERTIES:
 :CUSTOM_ID: p2465-standard-library-modules-std-and-std.all-stephan-t.-lavavej-gabriel-dos-reis-bjarne-stro
 :END:
+#+begin_quote
+Header files are a major source of complexity, errors caused by dependencies, and slow compilation.
+Modules address all three problems, but are currently hard to use because the standard library is not
+offered in a module form. This note presents logical arguments and a few measurements that
+demonstrates that *import std* of a module *std* presenting all of the standard library can compile many
+times faster than plain old *#include <iostream>*.
+#+end_quote
+** As adopted
+#+begin_quote
+This paper provides Standardese for two named modules: ~std~ and ~std.compat~.
+
+~import std;~ imports everything in namespace std from C++ headers (e.g.
+~std::sort~ from ~<algorithm>~) and C wrapper headers (e.g. ~std::fopen~ from
+~<cstdio>~). It also imports ~::operator new~ etc. from ~<new>~.
+
+~import std.compat;~ imports all of the above, plus the global namespace
+counterparts for the C wrapper headers (e.g. ~::fopen~).
+#+end_quote
+
 CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, modular-standard-library, size - large, plenary-approved

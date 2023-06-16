@@ -2,4 +2,10 @@
 :PROPERTIES:
 :CUSTOM_ID: p1951-default-arguments-for-pairs-forwarding-constructor-logan-r.-smith
 :END:
+#+begin_quote
+This paper proposes defaulting the template arguments U1 and U2 in pair's forwarding constructor to T1 and T2 respectively, so that braced initializers may be used as constructor arguments to it.
+#+end_quote
+#+begin_src c++
+std::pair<std::string, std::vector<std::string>> p("hello", {});
+#+end_src
 LWG, C++23, IS, plenary-approved

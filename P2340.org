@@ -2,4 +2,7 @@
 :PROPERTIES:
 :CUSTOM_ID: p2340-clarifying-the-status-of-the-c-headers-thomas-köppe
 :END:
+#+begin_quote
+We propose to move the specification of “[depr.c.headers] C headers” from Annex D into the main document, and changing those headers’ status from “deprecated” to an explicitly discussed state “for foreign-language interoperability only”.
+#+end_quote
 LWG, C++23, policy, IS, B2 - improvement, size - small, plenary-approved

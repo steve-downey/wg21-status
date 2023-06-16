@@ -1,6 +1,9 @@
-* [[https://wg21.link/p2588][P2588]] Relax std::barrier phase completion step guarantees (Gonzalo Brito, Eric A Niebler, Anthony...
+* [[https://wg21.link/p2588][P2588]] Relax std::barrier phase completion step guarantees (Gonzalo Brito Gadeschi, Eric Niebler, Anthony Williams, Thomas Rodgers)
 :PROPERTIES:
 :CUSTOM_ID: p2588-relax-stdbarrier-phase-completion-step-guarantees-gonzalo-brito-eric-a-niebler-anthony
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+#+begin_quote
+Unintended consequences of ~std::barrier~ ’s specification constrain implementations to run the ~CompletionFunction~ on the last thread that arrives at the barrier during the phase. This prevents ~std::barrier~ from benefiting from hardware acceleration for thread synchronization. Removing these constraints is a _breaking change_. This paper aims to find a sweet spot for the barrier specification that delivers the functionality that applications need while allowing efficient implementations.
+#+end_quote
 
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

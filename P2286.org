@@ -2,9 +2,97 @@
 :PROPERTIES:
 :CUSTOM_ID: p2286-formatting-ranges-barry-revzin
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved
-* [[https://wg21.link/p2286][P2286]] Formatting Ranges (Barry Revzin)
-:PROPERTIES:
-:CUSTOM_ID: p2286-formatting-ranges-barry-revzin
-:END:
+#+begin_quote
+[LWG3478] addresses the issue of what happens when you split a string and the last character in the string is the delimiter that you are splitting on. One of the things I wanted to look at in research in that issue is: what do other languages do here?
+
+For most languages, this is a pretty easy proposition. Do the split, print the results. This is usually only a few lines of code.
+#+end_quote
+** Python
+#+begin_src python
+print("xyx".split("x"))
+#+end_src
+
+#+begin_example
+['', 'y', '']
+#+end_example
+
+** Java
+#+begin_src java
+import java.util.Arrays;
+
+class Main {
+  public static void main(String args[]) {
+    System.out.println("xyx".split("x"));
+    System.out.println(Arrays.toString("xyx".split("x")));
+  }
+}
+#+end_src
+
+#+begin_example
+[Ljava.lang.String;@76ed5528
+[, y]
+#+end_example
+** rust
+#+begin_src rust
+use itertools::Itertools;
+
+fn main() {
+    println!("{:?}", "xyx".split('x'));
+    println!("[{}]", "xyx".split('x').format(", "));
+    println!("{:?}", "xyx".split('x').collect::<Vec<_>>());
+}
+#+end_src
+
+#+begin_example
+Split(SplitInternal { start: 0, end: 3, matcher: CharSearcher { haystack: "xyx", finger: 0, finger_back: 3, needle: 'x', utf8_size: 1, utf8_encoded: [120, 0, 0, 0] }, allow_trailing_empty: true, finished: false })
+[, y, ]
+["", "y", ""]
+#+end_example
+
+** C++
+#+begin_src c++
+#include <iostream>
+#include <string>
+#include <ranges>
+
+int main() {
+    // need to predeclare this because we can't split an rvalue string
+    std::string s     = "xyx";
+    auto        parts = s | std::views::split('x');
+
+    std::cout << "[";
+    char const* delim = "";
+    for (auto part : parts) {
+        std::cout << delim;
+        // this finally works
+        for (char c : part) {
+            std::cout << c;
+        }
+        delim = ", ";
+    }
+    std::cout << "]\n";
+}
+#+end_src
+#+begin_example
+[, y, ]
+#+end_example
+** lib fmt
+#+begin_src c++
+#include <ranges>
+#include <string>
+#include <fmt/ranges.h>
+
+int main() {
+    std::string s = "xyx";
+    auto parts = s | std::views::split('x');
+
+    fmt::print("{}\n", parts);
+    fmt::print("<<{}>>\n", fmt::join(parts, "--"));
+}
+#+end_src
+#+begin_example
+[[], ['y'], []]
+<<[]--['y']--[]>>
+#+end_example
+
 LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

@@ -1,0 +1,18 @@
+* [[https://wg21.link/p0627][P0627]] Function to mark unreachable code (Melissa Mears)
+:PROPERTIES:
+:CUSTOM_ID: p0627r3-function-to-mark-unreachable-code-melissa-mears
+:END:
+#+begin_quote
+This proposal introduces a new standard library function, std::unreachable, for
+marking locations in code execution as being known by the programmer to be
+unreachable.
+#+end_quote
+
+**** Example
+#+begin_src c++
+[[noreturn]] void kill_self() {
+    kill(getpid(), SIGKILL);
+    std::unreachable();
+}
+#+end_src
+LWG, C++23, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-electronic-poll

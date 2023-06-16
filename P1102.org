@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1102][P1102]] Down with ()! (Alex Christensen, JF Bastien)
+:PROPERTIES:
+:CUSTOM_ID: p1102-down-with-alex-christensen-jf-bastien
+:END:
+C++23, IS, plenary-approved

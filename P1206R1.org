@@ -1,5 +1,0 @@
-* [[https://wg21.link/p1206r1][P1206R1]] ranges::to: A function to convert any range to a container (Corentin Jabot, Eric Niebler, C...
-:PROPERTIES:
-:CUSTOM_ID: p1206r1-rangesto-a-function-to-convert-any-range-to-a-container-corentin-jabot-eric-niebler-c
-:END:
-LWG, ranges, C++23, IS, plenary-approved

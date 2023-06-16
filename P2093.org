@@ -2,5 +2,25 @@
 :PROPERTIES:
 :CUSTOM_ID: p2093-formatted-output-victor-zverovich
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition,
-plenary-approved
+#+begin_quote
+
+A new I/O-agnostic text formatting library was introduced in C++20 ([FORMAT]). This paper proposes integrating it with standard I/O facilities via a simple and intuitive API achieving the following goals:
+
+- Usability
+
+- Unicode support
+
+- Good performance
+
+- Small binary footprint
+#+end_quote
+** Before/After Table
+*** Before:
+#+begin_src c++
+std::cout << std::format("Hello, {}!", name);
+#+end_src
+*** After:
+#+begin_src c++
+std::print("Hello, {}!", name);
+#+end_src
+LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

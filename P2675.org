@@ -1,5 +1,13 @@
-* [[https://wg21.link/p2675][P2675]] LWG3780: The Paper (format's width estimation is too approximate and not forward compatible...
+* [[https://wg21.link/p2675][P2675]] LWG3780: The Paper
 :PROPERTIES:
 :CUSTOM_ID: p2675-lwg3780-the-paper-formats-width-estimation-is-too-approximate-and-not-forward-compatible
 :END:
+
+format's width estimation is too approximate and not forward compatible
+
+#+begin_quote
+LWG3780 describes an issue with width in std::format estimation. This paper
+offers more information
+#+end_quote
+
 LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, format

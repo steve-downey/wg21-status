@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p1675-rethrow_exception-must-be-allowed-to-copy-billy-oneal
 :END:
+#+begin_quote
+The ~current_exception~ wording was carefully written to allow both ABIs like
+MSVC++’s where the exception objects are generally constructed on the stack,
+and ABIs like the Itanium C++ ABI where the exception objects are generally
+constructed on the heap (and possibly reference counted).  Implementations are
+given the freedom they need to (possibly) copy the exception object into the
+memory held by the exception_ptr, and similar. See
+http://eel.is/c++draft/propagation#8.
+
+Unfortunately, such care was not taken for ~rethrow_exception~.
+#+end_quote
+
 CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved

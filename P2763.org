@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p2763-layout_stride-static-extents-default-constructor-fix-christian-trott-damien-lebrun-gran
 :END:
+
+#+begin_quote
+During work on the padded layouts project an oversight in the layout_stride definition was discovered for a corner case. Specifically, the default constructor of a layout_stride with fully static extents will produce an invalid mapping.
+#+end_quote
+
 LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size-small, plenary-approved, mdspan

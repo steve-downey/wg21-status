@@ -2,4 +2,10 @@
 :PROPERTIES:
 :CUSTOM_ID: p2334-add-support-for-preprocessing-directives-elifdef-and-elifndef-melanie-blower
 :END:
+#+begin_quote
+This paper is being submitted as a liaison activity from WG14 C Language Working Group. The proposal
+was discussed in the March 2021 meeting and approved (15 in favor, 1 opposed, 4 abstentions) for
+inclusion into C23. This paper is being proposed to WG21 to avoid preprocessor incompatibilities with C
+and because the utility is valuable to C++ users of the preprocessor.
+#+end_quote
 CWG, C++23, plenary-approved

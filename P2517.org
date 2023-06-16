@@ -2,5 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2517-add-a-conditional-noexcept-specification-to-stdapply-hewill-kang
 :END:
+
+#+begin_quote
+This paper proposes to add a noexcept-specification to ~std::apply~.
+#+end_quote
+
+#+begin_quote
+~invoke(f, args...)~ should be completely equivalent to ~apply(f,
+forward_as_tuple(args...))~, adding ~noexcept~ to ~apply~ can easily achieve
+this and make it more consistent with ~invoke~.
+#+end_quote
+
 LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
 plenary-approved

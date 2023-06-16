@@ -2,5 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p1467-extended-floating-point-types-michał-dominiak-david-olsen
 :END:
-CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 -
-addition, plenary-approved
+#+begin_quote
+This paper introduces the notion of _extended floating-point types_, modeled
+after extended integer types. To accomodate them, this paper also attempts to
+rewrite the current rules for floating-point types, to enable well-defined
+interactions between all the floating-point types. The end goal of this paper,
+together with [P1468], is to have a language to enable ~<cstdint>~-like aliases
+for implementation specific floating point types, that can model more binary
+layouts than just a single fundamental type (the previously proposed short
+float) can provide for
+#+end_quote
+CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

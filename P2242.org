@@ -2,4 +2,25 @@
 :PROPERTIES:
 :CUSTOM_ID: p2242-non-literal-variables-and-labels-and-gotos-in-constexpr-functions-ville-voutilainen
 :END:
+#+begin_quote
+This paper proposes to strike the restriction that a constexpr function cannot contain a definition of a variable of non-literal type (or of static or thread storage duration), or a goto statement, or an identifier label. The rationale is briefly that the mere presence of the aforementioned things in a function is not in and of itself problematic; we can allow them to be present, as long as constant evaluation doesn't evaluate them.
+#+end_quote
+** Example
+#+begin_src c++
+template <typename T>
+constexpr bool f() {
+    if (std::is_constant_evaluated()) {
+        // ...
+        return true;
+    } else {
+        T t;
+        // ...
+        return true;
+    }
+}
+struct nonliteral {
+    nonliteral();
+};
+static_assert(f<nonliteral>());
+#+end_src
 CWG, C++23, plenary-approved

@@ -2,4 +2,15 @@
 :PROPERTIES:
 :CUSTOM_ID: p1401-narrowing-contextual-conversions-to-bool-andrzej-krzemienski
 :END:
+#+begin_quote
+This paper proposes to allow narrowing conversions in *contextually converted constant expressions of type `bool`*.
+#+end_quote
+
+| Today                                     | If accepted                         |
+|-------------------------------------------+-------------------------------------|
+| ~if constexpr(bool(flags & Flags::Exec))~ | ~if constexpr(flags & Flags::Exec)~ |
+| ~if constexpr(flags & Flags::Exec != 0)~  | ~if constexpr(flags & Flags::Exec)~ |
+| ~static_assert(N % 4 != 0);~              | ~static_assert(N % 4);~             |
+| ~static_assert(bool(N));~                 | ~static_assert(N);~                 |
+
 CWG, C++23, plenary-approved

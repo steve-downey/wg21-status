@@ -2,4 +2,29 @@
 :PROPERTIES:
 :CUSTOM_ID: p2644-get-fix-of-broken-range-based-for-loop-finally-done-nicolai-josuttis
 :END:
+
+#+begin_quote
+This paper summarizes the fix for the still open issues cwg900, cwg1498,
+ewg120. The issue is a bug that is 13 years old now, applies to one of the most
+important control structures of Modern C++, and leads to confusion and
+ill-formed programs due to unexpected undefined behavior and effort for
+teaching and training.
+#+end_quote
+
+
+|                                                    | Before | After |
+|----------------------------------------------------+--------+-------|
+| ~for (auto e : getTmp().getRef())~                 | BROKEN | OK    |
+| ~for (auto e : getVector()[0])~                    | BROKEN | OK    |
+| ~for (auto valueElem : getMap()["key"])~           | BROKEN | OK    |
+| ~for (auto e : get<0>(getTuple()))~                | BROKEN | OK    |
+| ~for (auto e : getOptionalColl().value())~         | BROKEN | OK    |
+| ~for (char c : get<string>(getVariant()))~         | BROKEN | OK    |
+| ~for (auto s : std::span{arrOfConst()}.last(2))~   | BROKEN | OK    |
+| ~for (auto e : std::span(getVector().data(), 2))~  | BROKEN | OK    |
+| ~for (auto e: co_await coroReturningRef())~        | BROKEN | OK    |
+| ~// assume getValue() returns value by reference:~ |        |       |
+| ~for (char c : getData().value)~                   | OK     | OK    |
+| ~for (char c : getData().getValue())~              | BROKEN | OK    |
+
 CWG, C++23, plenary-approved

@@ -2,4 +2,10 @@
 :PROPERTIES:
 :CUSTOM_ID: p2418-add-support-for-stdgenerator-like-types-to-stdformat-victor-zverovich
 :END:
+#+begin_quote
+Unfortunately we cannot make std::generator formattable because it is neither const-iterable nor copyable and std::format takes arguments by const&.
+#+end_quote
+#+begin_quote
+This paper proposes solving the issue by making std::format and other formatting functions take arguments by forwarding references.
+#+end_quote
 LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved

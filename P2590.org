@@ -2,4 +2,15 @@
 :PROPERTIES:
 :CUSTOM_ID: p2590-explicit-lifetime-management-timur-doumler-richard-smith
 :END:
+
+#+begin_quote
+This paper proposes a new standard library facility
+~std::start_lifetime_as~. For objects of sufficiently trivial types, this
+facility can be used to efficiently create objects and start their lifetime to
+give programs defined behaviour, without running any constructor code. This
+proposal completes the functionality proposed in [P0593R6] and adopted for
+C++20 by providing the standard library portion of that paper (only the core
+language portion of that paper made it into C++20).
+#+end_quote
+
 CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved

@@ -2,4 +2,7 @@
 :PROPERTIES:
 :CUSTOM_ID: p2401-add-a-conditional-noexcept-specification-to-stdexchange-giuseppe-dangelo
 :END:
+#+begin_quote
+We propose to add a noexcept-specification to std::exchange , which is currently lacking one.
+#+end_quote
 LWG, C++23, IS, plenary-approved

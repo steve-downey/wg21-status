@@ -1,5 +1,29 @@
-* [[https://wg21.link/P2372][P2372]] Fixing locale handling in chrono formatters (Victor Zverovich, Corentin ...
+* [[https://wg21.link/P2372][P2372]] Fixing locale handling in chrono formatters (Victor Zverovich, Corentin Jabot)
 :PROPERTIES:
 :CUSTOM_ID: p2372-fixing-locale-handling-in-chrono-formatters-victor-zverovich-corentin
 :END:
+#+begin_quote
+In C++20 "Extending <chrono> to Calendars and Time Zones" ([P0355]) and "Text Formatting" ([P0645]) proposals were integrated ([P1361]). Unfortunately during this integration a design issue was missed: std::format is locale-independent by default and provides control over locale via format specifiers but the new formatter specializations for chrono types are localized by default and don’t provide such control.
+#+end_quote
+** Solution
+#+begin_quote
+We propose fixing this issue by making chrono formatters locale-independent by default and providing the L specifier to opt into localized formatting in the same way as it is done for all other standard formatters (format.string.std).
+#+end_quote
+** Before:
+#+begin_src c++
+auto s = std::format("{:%S}", sec(4.2));
+// s == "04,200"
+
+auto s = std::format("{:L%S}", sec(4.2));
+// throws format_error
+#+end_src
+** After:
+#+begin_src c++
+auto s = std::format("{:%S}", sec(4.2));
+// s == "04.200"
+
+auto s = std::format("{:L%S}", sec(4.2));
+// s == "04,200"
+#+end_src
+
 LWG, C++23, IS, plenary-approved

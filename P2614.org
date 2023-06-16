@@ -2,6 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p2614-deprecate-numeric_limitshas_denorm-matthias-kretz
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size -
-small, plenary-approved
 
+#+begin_quote
+Since C is intent on obsoleting the ~*_HAS_SUBNORM~ macros, we should consider
+the analogue change in C++: the deprecation of ~numeric_limits::has_denorm~. In
+general, compile-time constants that describe floating-point behavior are
+problematic, since behavior might change at runtime. Let’s also deprecate
+~numeric_limits::has_denorm_loss~ while we’re at it.
+#+end_quote
+LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

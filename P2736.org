@@ -2,4 +2,11 @@
 :PROPERTIES:
 :CUSTOM_ID: p2736-referencing-the-unicode-standard-corentin-jabot
 :END:
+
+#+begin_quote
+We propose to reference The Unicode Standard instead of ISO 10646. This
+proposal has no impact on implementations. This resolves NB comments FR-010-133
+and FR-021-013
+#+end_quote
+
 CWG, LWG, C++23, nb-comment, plenary-approved

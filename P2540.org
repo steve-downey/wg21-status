@@ -2,5 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p2540-empty-product-for-certain-views-steve-downey
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
+#+begin_quote
+This paper argues that the Cartesian product of no ranges should be a single
+empty tuple, which is the identity element for Cartesian products. Other
+product-like views, however, should not automatically have their identity be
+the result, and in particular for zip, as it would introduce unsound
+inconsistencies.
+#+end_quote
+
+
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

@@ -2,5 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p1642-freestanding-library-easy-utilities-ben-craig
 :END:
-CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS,
-B2 - improvement, size - medium, plenary-approved
+CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS, B2 - improvement, size - medium, plenary-approved

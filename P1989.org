@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p1989-range-constructor-for-stdstring_view-2-constrain-harder-corentin-jabot
 :END:
+#+begin_src c++
+template<class R>
+basic_string_view(R&&)
+-> basic_string_view<ranges::range_value_t<R>>;
+#+end_src
 LWG, ranges, C++23, plenary-approved

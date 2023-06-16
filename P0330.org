@@ -1,0 +1,34 @@
+* [[https://wg21.link/p0330][P0330]] Literal Suffixes for ptrdiff_t and size_t (JeanHeyd Meneide, Rein Halbersma)
+:PROPERTIES:
+:CUSTOM_ID: p0330r3-literal-suffixes-for-ptrdiff_t-and-size_t-jeanheyd-meneide-rein-halbersma
+:END:
+
+#+begin_quote
+This paper proposes core language suffixes for size_t and its associated signed type.
+#+end_quote
+
+**** Before
+#+begin_src c++
+std::vector<int> v{0, 1, 2, 3};
+for (auto i = 0u, s = v.size(); i < s; ++i) {
+	/* use both i and v[i] */
+}
+⚠️ - Compiles on 32-bit, truncates (maybe with warnings) on 64-bit
+std::vector<int> v{0, 1, 2, 3};
+for (auto i = 0, s = v.size(); i < s; ++i) {
+	/* use both i and v[i] */
+}
+❌ - Compilation error
+
+#+end_src
+**** After
+#+begin_src c++
+std::vector<int> v{0, 1, 2, 3};
+for (auto i = 0uz, s = v.size(); i < s; ++i) {
+	/* use both i and v[i] */
+}
+#+end_src
+LWG, C++23, tiny, plenary-approved
+
+
+C++23, plenary-approved

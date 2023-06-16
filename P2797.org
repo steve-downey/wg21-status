@@ -1,0 +1,12 @@
+* [[https://wg21.link/p2797][P2797]] Proposed resolution for CWG2692 Static and explicit object member functions with the same parameter-type-lists (Gašper Ažman, Barry Revzin)
+:PROPERTIES:
+:EXPORT_FILE_NAME: P2797.org
+:CUSTOM_ID: p2797-proposed-resolution-for-cwg2692-static-and-explicit-object-member-functions-with-the-same-p
+:END:
+
+#+begin_quote
+This document proposes a resolution to [CWG2692]. This also touches the proposed resolution to [CWG2687].
+#+end_quote
+
+
+CWG, C++23, plenary-approved

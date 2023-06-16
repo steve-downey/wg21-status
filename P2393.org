@@ -2,4 +2,7 @@
 :PROPERTIES:
 :CUSTOM_ID: p2393-cleaning-up-integer-class-types-tim-song
 :END:
+#+begin_quote
+This paper revamps the specification and use of integer-class types to resolve a number of issues, including [LWG3366], [LWG3376], and [LWG3575].
+#+end_quote
 LWG, C++23, plenary-approved

@@ -1,5 +1,0 @@
-* [[https://wg21.link/p0323r5][P0323R5]] std::expected (Vicente Botet, JF Bastien)...
-:PROPERTIES:
-:CUSTOM_ID: p0323r5-stdexpected-vicente-botet-jf-bastien
-:END:
-LWG, C++23, IS, B3 - addition, size - large, plenary-approved

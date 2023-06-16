@@ -31,15 +31,22 @@
 #+HTML_HEAD_EXTRA:
 #+SUBTITLE:
 #+INFOJS_OPT:
-#+OPTIONS: reveal_width:1600 reveal_height:900
-#+REVEAL_THEME: black
-#+REVEAL_MATHJAX_URL: https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-#+REVEAL_EXTRA_CSS: ./vivendi.css
-#+REVEAL_TITLE_SLIDE_BACKGROUND: ./C++23-status.svg
+#+OPTIONS: reveal_width:1600 reveal_height:900
+#+REVEAL_TRANS: fade
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./vivendi-tinted.css" />
+
+#+REVEAL_MATHJAX_URL: https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#+REVEAL_EXTRA_CSS: ./vivendi-tinted.css
+#+REVEAL_THEME: ./my_theme.css
+#+REVEAL_EXTRA_CSS: ./footer.css
+#+REVEAL_TITLE_SLIDE_BACKGROUND:
 
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_VERSION: 4
+
+#+REVEAL_HLEVEL: 2
+#+REVEAL_EXPORT_NOTES_TO_PDF: separate-page
 
 * C++ 23 Status Report
 This is a summary of what has already been approved for C++23 or has been forwarded to plenary for final vote, which means consensus and is unlikely to not pass.
@@ -1555,4 +1562,5 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 # Local Variables:
 # org-html-htmlize-output-type: inline-css
 # org-html-head: ""
+# org-link-descriptive: nil
 # End:

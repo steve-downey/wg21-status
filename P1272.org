@@ -1,5 +1,12 @@
-* [[https://wg21.link/p1272][P1272]] Byteswapping for fun&&nuf (Isabella Muerte)...
+* [[https://wg21.link/p1272][P1272]] Byteswapping for fun&&nuf (Isabella Muerte)
 :PROPERTIES:
 :CUSTOM_ID: p1272-byteswapping-for-funnuf-isabella-muerte
 :END:
+#+begin_src c++
+namespace std {
+    template <class IntegerType>
+    constexpr IntegerType byteswap (IntegerType value) noexcept;
+}
+// Where std::is_integral_v<IntegerType> is true.
+#+end_src
 CWG, LWG, C++23, plenary-approved

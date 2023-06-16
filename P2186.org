@@ -2,4 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p2186-removing-garbage-collection-support-jf-bastien-alisdair-meredith
 :END:
+#+begin_quote
+We propose removing (not deprecating) C++'s Garbage Collection support. Specifically, these five library functions:
+- declare_reachable
+- undeclare_reachable
+- declare_no_pointers
+- undeclare_no_pointers
+- get_pointer_safety
+
+As well as the pointer_safety enum, the \_\_STDCPP_STRICT_POINTER_SAFETY\_\_ macro, and the Core Language wording.
+#+end_quote
 CWG, LWG, C++23, IS, plenary-approved

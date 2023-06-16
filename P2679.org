@@ -2,4 +2,13 @@
 :PROPERTIES:
 :CUSTOM_ID: p2679-fixing-stdstart_lifetime_as-for-arrays-timur-doumler-arthur-odwyer-richard-smith
 :END:
+
+#+begin_quote
+std::start_lifetime_as and std::start_lifetime_as_array, facilities to
+explicitly start the lifetime of an object of implicit-lifetime type inside a
+block of suitably aligned storage, was introduced in [P2590R2] and voted into
+C++23. We propose to fix some remaining issues before C++23 ships. We also
+discuss possible changes to the API that were considered but rejected.
+#+end_quote
+
 CWG, LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

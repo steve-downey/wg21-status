@@ -2,9 +2,13 @@
 :PROPERTIES:
 :CUSTOM_ID: p2290-delimited-escape-sequences-corentin-jabot
 :END:
-CWG, straw-poll, C++23, plenary-approved
-* [[https://wg21.link/p2290][P2290]] Delimited escape sequences (Corentin Jabot)
-:PROPERTIES:
-:CUSTOM_ID: p2290-delimited-escape-sequences-corentin-jabot
-:END:
+#+begin_quote
+We propose an additional, clearly delimited syntax for octal, hexadecimal and universal
+character name escape sequences.
+#+end_quote
+#+begin_quote
+We propose new syntaxes \u{}, \o{}, \x{} usable in places where \u, \x, \nnn currently are.
+\o{} accepts an arbitrary number of octal digits while \u{} and \x{} accept an arbitrary number
+of hexadecimal digit.
+#+end_quote
 CWG, straw-poll, C++23, plenary-approved

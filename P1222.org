@@ -1,0 +1,5 @@
+* [[https://wg21.link/p1222][P1222]] A Standard flatset (Zach Laine)
+:PROPERTIES:
+:CUSTOM_ID: p1222-a-standard-flatset-zach-laine
+:END:
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved

@@ -2,5 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p2604-mdspan-rename-pointer-and-contiguous-christian-trott
 :END:
-LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+#+begin_quote
+During LWG review a few members of classes in the mdspan proposals were identified as problematic, this paper proposes renaming those members.
+#+end_quote
 
+** ~pointer~ to ~data_handle_type~
+** ~data()~ to ~data_handle()~
+** ~contiguous~ to ~exhaustive~
+
+LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

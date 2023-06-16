@@ -2,5 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p1264-revising-the-wording-of-stream-input-operations-louis-dionne
 :END:
-LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium,
-plenary-approved, lwg-wording-only
+LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium, plenary-approved, lwg-wording-only

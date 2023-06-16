@@ -2,5 +2,22 @@
 :PROPERTIES:
 :CUSTOM_ID: p2502-stdgenerator-synchronous-coroutine-generator-for-ranges-casey-carter
 :END:
-LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
 
+#+begin_quote
+We propose a standard library type std::generator which implements a coroutine generator
+that models std::ranges::input_range.
+#+end_quote
+** Example
+#+begin_src c++
+std::generator<int> fib() {
+    auto a = 0, b = 1;
+    while (true) {
+        co_yield std::exchange(a, std::exchange(b, a + b));
+    }
+}
+int answer_to_the_universe() {
+    auto rng = fib() | std::views::drop(6) | std::views::take(3);
+    return std::ranges::fold_left(std::move(range), 0, std::plus{});
+}
+#+end_src
+LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved

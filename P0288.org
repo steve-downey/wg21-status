@@ -1,0 +1,10 @@
+* [[https://wg21.link/p0288][P0288]] any_invocable (Ryan McDougall, Matt Calabrese)
+:PROPERTIES:
+:CUSTOM_ID: p0288r4-any_invocable-ryan-mcdougall-matt-calabrese
+:END:
+#+begin_quote
+This paper proposes a conservative, move-only equivalent of std::function.
+#+end_quote
+
+
+LWG, C++23, IS, large, plenary-approved

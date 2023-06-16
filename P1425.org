@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p1425-iterators-pair-constructors-for-stack-and-queue-corentin-jabot
 :END:
+#+begin_quote
+This paper proposes to add iterators-pair constructors to ~std::stack~ and ~std::queue~
+#+end_quote
+** Example
+
+| Before                                     | After                               |
+|--------------------------------------------+-------------------------------------|
+| ~std::vector<int> v(42);~                  | ~std::vector<int> v(42);~           |
+| ~std::stack<int> s({v.begin(), v.end()});~ | ~std::stack s(v.begin(), v.end());~ |
+| ~std::queue<int> q({v.begin(), v.end()});~ | ~std::queue q(v.begin(), v.end());~ |
+
+
 LWG, C++23, B2 - improvement, size - small, plenary-approved

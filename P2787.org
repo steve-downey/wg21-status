@@ -2,4 +2,28 @@
 :PROPERTIES:
 :CUSTOM_ID: p2787-pmrgenerator---promise-types-are-not-values-steve-downey
 :END:
+
+#+begin_quote
+The type returned from a coroutine is not a value semantic container. It
+nonetheless can satisfy the requirements for supporting pmr generators. It is
+useful to provide a pmr alias to make the requirement to use pmr allocators
+visible in the typesystem
+#+end_quote
+
+** Before
+#+begin_src c++
+std::pmr::monotonic_buffer_resource                          mbr;
+std::pmr::polymorphic_allocator<>                            pa{&mbr};
+std::generator<int, void, std::pmr::polymorphic_allocator<>> g =
+    pmr_requiring_coroutine(std::allocator_arg, pa);
+#+end_src
+
+** After
+#+begin_src c++
+std::pmr::monotonic_buffer_resource mbr;
+std::pmr::polymorphic_allocator<>   pa{&mbr};
+
+std::pmr::generator<int> g = pmr_requiring_coroutine(std::allocator_arg, pa);
+#+end_src
+
 LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

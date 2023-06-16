@@ -2,4 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p2674-a-trait-for-implicit-lifetime-types-timur-doumler-vittorio-romeo
 :END:
+#+begin_quote
+C++20 introduced the notion of implicit-lifetime types. There are certain
+operations that are only valid for such types. We therefore need a way to check
+whether a type is implicit-lifetime, and constrain on this property. This paper
+proposes a new type trait std::is_implicit_lifetime to achieve this.
+#+end_quote
+
+
 LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved

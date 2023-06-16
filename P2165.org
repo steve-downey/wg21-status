@@ -2,5 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2165-comparing-pair-and-tuples-corentin-jabot
 :END:
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview,
-B2 - improvement, size - medium, plenary-approved
+LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved

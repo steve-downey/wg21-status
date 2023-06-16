@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2508-exposing-stdbasic-format-string-barry-revzin
 :END:
+#+begin_quote
+In 20.20.1 [format.syn], replace the exposition-only names basic-format-string, format-string, and wformat-string with the non-exposition-only names basic_format_string, format_string, and wformat_string.
+#+end_quote
+** Example
+#+begin_src c++
+template <typename... Args>
+void log(std::format_string<Args...> s, Args&&... args) {
+    if (logging_enabled) {
+        log_raw(std::format(s, std::forward<Args>(args)...));
+    }
+}
+#+end_src
 LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, plenary-approved

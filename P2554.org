@@ -1,5 +1,12 @@
-* [[https://wg21.link/p2554][P2554]] C-Array Interoperability of MDSpan (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K...
+* [[https://wg21.link/p2554][P2554]] C-Array Interoperability of MDSpan (Christian Trott, Damien Lebrun-Grandie, Mark Hoemmen, K. R. Walker, Daniel Sunderland)
 :PROPERTIES:
 :CUSTOM_ID: p2554-c-array-interoperability-of-mdspan-christian-trott-damien-lebrun-grandie-mark-hoemmen-k
 :END:
+
+#+begin_quote
+We cannot currently fix the multidimensional c-array construction, since it is UB to alias a nested C-Array with a element type pointer - per discussion on the C++ committee reflector in January 2022. However, in practice it works (on the compilers we tested e.g. clang-based and gcc) - and it may be something the committee changes in the future - i.e. make it not-UB. We propotyped this capability, which requires an additional constructor from c-array and a few deduction guides.
+
+What we can fix today is the deduction from 1D c-array, by adding a deduction guide from c-array constraint to rank-1 arrays.
+#+end_quote
+
 LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

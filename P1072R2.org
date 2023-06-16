@@ -1,5 +1,0 @@
-* [[https://wg21.link/p1072r2][P1072R2]] basic_string::resize_default_init (Chris Kennelly, Mark Zeren)
-:PROPERTIES:
-:CUSTOM_ID: p1072r2-basic_stringresize_default_init-chris-kennelly-mark-zeren
-:END:
-LWG, C++23, IS, plenary-approved

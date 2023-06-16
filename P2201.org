@@ -2,4 +2,11 @@
 :PROPERTIES:
 :CUSTOM_ID: p2201-mixed-string-literal-concatenation-jens-maurer
 :END:
+#+begin_quote
+String concatenation involving string-literals with encoding-prefixes mixing L"", u8"", u"", and U"" is currently conditionally-supported with implementation-defined behavior.
+[...]
+No meaningful use-case for such mixed concatenations is known.
+
+This paper makes such mixed concatenations ill-formed.
+#+end_quote
 CWG, C++23, plenary-approved
