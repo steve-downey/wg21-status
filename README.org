@@ -918,6 +918,18 @@ int main() {
 ***** tags: LWG, C++23, B2 - improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2278][P2278]] cbegin should always return a constant iterator (Barry Revzin)
+#+begin_quote
+~cbegin~ should always return a constant iterator.
+#+end_quote
+
+*** Proposal
+#+begin_quote
+We can resolve this by extending ~std::ranges::cbegin~ and ~std::ranges::cend~
+to conditionally wrap their provided range’s iterator/sentinel pairs to ensure
+that the result is a constant iterator, and use these tools to build up a
+views::as_const range adapter. This completely solves the problem without any
+imposed boilerplate per range.
+#+end_quote
 ***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2280][P2280]] Using unknown references in constant expressions (Barry Revzin)
@@ -1075,7 +1087,10 @@ types* usable in constexpr context.
 #+end_quote
 ***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
 
-** [[https://wg21.link/p2295][P2295]] Correct UTF-8 handling during phase 1 of translation (Corentin Jabot)
+** [[https://wg21.link/p2295][P2295]] Correct UTF-8 handling during phase 1 of translation (Corentin Jabot, Peter Brett)
+#+begin_quote
+We propose that UTF-8 source files should be supported by all C++ compilers.
+#+end_quote
 ***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
@@ -1218,7 +1233,7 @@ last: // not allowed in C++, but now allowed in C
 #+begin_quote
 Currently, the view concept is defined in 24.4.4 [range.view] as:
 #+end_quote
-#+begin_src
+#+begin_src c++
 template <class T>
 concept view =
     range<T> &&
@@ -1335,7 +1350,29 @@ auto s = std::format("{:L%S}", sec(4.2));
 
 ***** tags: LWG, C++23, IS, plenary-approved
 
-** [[https://wg21.link/p2374][P2374]] views::cartesian_product (Sy Brand)
+** [[https://wg21.link/p2374][P2374]] views::cartesian_product (Sy Brand, Michał Dominiak )
+#+begin_quote
+This paper proposes std::ranges::cartesian_product_view for taking the cartesian product of multiple forward ranges.
+#+end_quote
+
+*** Before
+#+begin_src c++
+std::vector<int> a,b,c;
+for (auto&& ea : a) {
+    for (auto&& eb : b) {
+        for (auto&& ec : c) {
+            use(ea,eb,ec);
+        }
+    }
+}
+#+end_src
+*** After
+#+begin_src c++
+std::vector<int> a,b,c;
+for (auto&& [ea,eb,ec] : std::views::cartesian_product(a,b,c)) {
+    use(ea,eb,ec);
+}
+#+end_src
 ***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/p2385][P2385]] C++ Standard Library Issues to be moved in Virtual Plenary, June 2021 (Jonathan Wakely)
@@ -1366,6 +1403,17 @@ We propose to add a noexcept-specification to std::exchange , which is currently
 ***** tags: LWG, C++23, IS, plenary-approved
 
 ** [[https://wg21.link/p2404][P2404]] Relaxing equality_comparable_with's and three_way_comparable_with's common reference requir...
+#+begin_quote
+None of ~equality_comparable_with~, ~totally_ordered_with~, or
+~three_way_comparable_with~ support move-only types. For move-only types, these
+concept’s common reference requirement currently ends up requiring that the two
+types ~const T&~ and ~const U&~ can be converted to the non-reference
+~common_reference_t~, meaning that it requires ~T~ and ~U~ to be copyable. This
+common reference requirement should be relaxed to support these move-only
+types, effectively turning the common reference requirement into a common
+_supertype_ requirement, as the original reason to require formable references
+no longer exists.
+#+end_quote
 ***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
 
 ** [[https://wg21.link/p2408][P2408]] Ranges views as inputs to non-Ranges algorithms (David Olsen)
@@ -1381,6 +1429,17 @@ Once upon a time, a view was a cheaply copyable, non-owning range. We’ve alrea
 ***** tags: LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2417][P2417]] A more constexpr bitset (Daniil Goncharov)
+#+begin_quote
+constexpr bitset will allow to naturally use them as flags-mask in
+constexpr/consteval functions. It's add, without limitations, new high-level
+and more user-friendly class for bit mask in embedded developing.
+#+end_quote
+
+*** Proposal
+
+#+begin_quote
+Mark every member function except iostream operators. Make all of bitset::reference constexpr.
+#+end_quote
 ***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, constexpr, expedited-library-evolut...
 
 ** [[https://wg21.link/p2418][P2418]] Add support for std::generator-like types to std::format (Victor Zverovich)
@@ -1393,6 +1452,14 @@ This paper proposes solving the issue by making std::format and other formatting
 ***** tags: LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved
 
 ** [[https://wg21.link/p2419][P2419]] Clarify handling of encodings in localized formatting of chrono types (Victor Zverovich)
+#+begin_quote
+C++20 added formatting of chrono types with std::format but left unspecified what happens during localized formatting when the locale and literal encodings do not match ([LWG3565]).
+#+end_quote
+
+*** Proposal
+#+begin_quote
+We propose clarifying the specification to prevent mojibake when possible by allowing implementation do transcoding or substituting the locale so that the result is in a consistent encoding.
+#+end_quote
 ***** tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved
 
 ** [[https://wg21.link/P2432][P2432]] Fix istream_view (Nicolai Josuttis)
@@ -1415,24 +1482,28 @@ std::ranges::istream_view<int> v{mystream}
 
 ** [[https://wg21.link/p2437][P2437]] Support for #warning (Aaron Ballman)
 #+begin_quote
-Almost all major C++ compilers support the #warning preprocessing directive to generate a diagnostic
-message from the preprocessor without stopping translation, as #error does, which can be useful for
-code authors who want to warn consumers of the code about non-fatal concerns. C
+Almost all major C++ compilers support the #warning preprocessing directive to
+generate a diagnostic message from the preprocessor without stopping
+translation, as ~#error~ does, which can be useful for code authors who want to
+warn consumers of the code about non-fatal concerns.
 #+end_quote
+
 #+begin_quote
-WG14 considered a similar proposal as part of WG14 N2686 at our Sept 2021 meeting and adopted the
-feature into C23 (straw poll results were: 17 in favor, 0 oppose, 1 abstain). The WG21 proposal is
-functionally identical to the WG14 proposal, with the only difference being due to existing variance in
-specification around how #error causes translation to stop.
+WG14 considered a similar proposal as part of WG14 N2686 at our Sept 2021
+meeting and adopted the feature into C23 (straw poll results were: 17 in favor,
+0 oppose, 1 abstain). The WG21 proposal is functionally identical to the WG14
+proposal, with the only difference being due to existing variance in
+specification around how ~#error~ causes translation to stop.
 #+end_quote
 ***** tags: CWG, straw-poll, C++23, size - tiny, plenary-approved
 
-** [[https://wg21.link/p2438][P2438]] std::string::substr() && (Federico Kircheis, Tomasz Kamiński)
+** [[https://wg21.link/p2438][P2438]] ~std::string::substr() &&~ (Federico Kircheis, Tomasz Kamiński)
 #+begin_src c++
 auto foo() -> std::string;
 
 auto b = foo().substr(/* */);
 #+end_src
+
 Before:
 #+begin_quote
 foo() returns a temporary std::string. .substr creates a new string and copies the relevant content. At last, the temporary string returned by foo is released.
@@ -1513,6 +1584,14 @@ There are two rules about constexpr programming that make code ill-formed or ill
 ***** tags: LWG, C++23, plenary-approved
 
 ** [[https://wg21.link/p2460][P2460]] Relax requirements on wchar_t to match existing practices (Corentin Jabot)
+#+begin_quote
+We propose to remove the constraints put on the encoding associated with ~wchar_t~ in the core wording.
+#+end_quote
+
+*** Proposal
+Type wchar_t is a distinct type that has an implementation-defined signed or unsigned integer type as its underlying type. +The values of type wchar_t can represent distinct codes for all members of the largest extended character set
+specified among the supported locales.+
+
 ***** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved, ...
 
 ** [[https://wg21.link/p2462][P2462]] Core Language Working Group “ready” issues for the October, 2021 meeting (Willi...
@@ -1562,6 +1641,10 @@ This paper details some changes to make rewriting equality in expressions less o
 ***** tags: CWG, straw-poll, C++23, plenary-approved
 
 ** [[https://wg21.link/p2474][P2474]] views::repeat (Michał Dominiak)
+#+begin_quote
+This paper proposes a new range factory, views::repeat, which creates a range that repeats the same value either infinitely, or a specified number of times.
+#+end_quote
+
 ***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - small, plenary-approved, expedited-library-evolution-...
 
 ** [[https://wg21.link/p2493][P2493]] Missing feature test macros for C++20 core papers (Barry Revzin)
@@ -1585,6 +1668,9 @@ Similarly to how [P2325R3] turned semiregular-box into copyable-box, this paper 
 ***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, plenary-approved
 
 ** [[https://wg21.link/p2499][P2499]] string_view range constructor should be explicit (James Touton)
+#+begin_quote
+P1989R2 added a new constructor to ~basic_string_view~ that allows for implicit conversion from any contiguous range of the corresponding character type. This implicit conversion relies on the premise that a range of ~char~ is inherently string-like. While that premise holds in some situations, it is hardly universally true, and the implicit conversion is likely to cause problems. This paper proposes making the conversion explicit instead of implicit in order to avoid misleading programmers.
+#+end_quote
 ***** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
 
 ** [[https://wg21.link/P2502][P2502]] std::generator: Synchronous Coroutine Generator for Ranges (Casey Carter)
@@ -1608,6 +1694,21 @@ int answer_to_the_universe() {
 ***** tags: LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1 - focus, plenary-approved
 
 ** [[https://wg21.link/p2505][P2505]] Monadic Functions for std::expected (Jeff Garland)
+#+begin_quote
+With the final plenary vote of P0798 Monadic Functions for std::optional complete, we now have an design inconsistency with std::expected. P0323 std::expected has now also been voted into the working draft for C++23. This proposal corrects the inconsistency by adding 4 functions to std::expected and is targeted at C++23. The author believes this should be treated as a consistency/bug fix still in scope for C++23.
+#+end_quote
+
+*** Proposal
+The following 3 functions are added to std::optional, but are currently not part of std::expected.
+
+- ~and_then~ :: compose a chain of functions returning an expected
+- ~or_else~ :: returns if it has a value, otherwise it calls a function with the error type
+- ~transform~ :: apply a function to change the value (and possibly the type)
+
+After feedback, this draft also proposes the addition of two additional functions for expected to facilitate additional cases:
+
+- ~transform_error~ :: apply a function to change the value, otherwise call a function with error type
+- ~error_or~ :: a value to return when there is not an error
 ***** tags: LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved
 
 ** [[https://wg21.link/p2508][P2508]] Exposing std::basic-format-string (Barry Revzin)
