@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2417-a-more-constexpr-bitset-daniil-goncharov
 :END:
+
+#+begin_quote
+constexpr bitset will allow to naturally use them as flags-mask in
+constexpr/consteval functions. It's add, without limitations, new high-level
+and more user-friendly class for bit mask in embedded developing.
+#+end_quote
+
+** Proposal
+
+#+begin_quote
+Mark every member function except iostream operators. Make all of bitset::reference constexpr.
+#+end_quote
 **** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, constexpr, expedited-library-evolut...

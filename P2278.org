@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2278-cbegin-should-always-return-a-constant-iterator-barry-revzin
 :END:
+#+begin_quote
+~cbegin~ should always return a constant iterator.
+#+end_quote
+
+** Proposal
+#+begin_quote
+We can resolve this by extending ~std::ranges::cbegin~ and ~std::ranges::cend~
+to conditionally wrap their provided range’s iterator/sentinel pairs to ensure
+that the result is a constant iterator, and use these tools to build up a
+views::as_const range adapter. This completely solves the problem without any
+imposed boilerplate per range.
+#+end_quote
 **** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

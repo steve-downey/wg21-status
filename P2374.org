@@ -1,5 +1,28 @@
-* [[https://wg21.link/p2374][P2374]] views::cartesian_product (Sy Brand)
+* [[https://wg21.link/p2374][P2374]] views::cartesian_product (Sy Brand, Michał Dominiak )
 :PROPERTIES:
 :CUSTOM_ID: p2374-viewscartesian_product-sy-brand
 :END:
+
+#+begin_quote
+This paper proposes std::ranges::cartesian_product_view for taking the cartesian product of multiple forward ranges.
+#+end_quote
+
+** Before
+#+begin_src c++
+std::vector<int> a,b,c;
+for (auto&& ea : a) {
+    for (auto&& eb : b) {
+        for (auto&& ec : c) {
+            use(ea,eb,ec);
+        }
+    }
+}
+#+end_src
+** After
+#+begin_src c++
+std::vector<int> a,b,c;
+for (auto&& [ea,eb,ec] : std::views::cartesian_product(a,b,c)) {
+    use(ea,eb,ec);
+}
+#+end_src
 **** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

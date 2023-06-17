@@ -3,14 +3,17 @@
 :CUSTOM_ID: p2437-support-for-warning-aaron-ballman
 :END:
 #+begin_quote
-Almost all major C++ compilers support the #warning preprocessing directive to generate a diagnostic
-message from the preprocessor without stopping translation, as #error does, which can be useful for
-code authors who want to warn consumers of the code about non-fatal concerns. C
+Almost all major C++ compilers support the #warning preprocessing directive to
+generate a diagnostic message from the preprocessor without stopping
+translation, as ~#error~ does, which can be useful for code authors who want to
+warn consumers of the code about non-fatal concerns.
 #+end_quote
+
 #+begin_quote
-WG14 considered a similar proposal as part of WG14 N2686 at our Sept 2021 meeting and adopted the
-feature into C23 (straw poll results were: 17 in favor, 0 oppose, 1 abstain). The WG21 proposal is
-functionally identical to the WG14 proposal, with the only difference being due to existing variance in
-specification around how #error causes translation to stop.
+WG14 considered a similar proposal as part of WG14 N2686 at our Sept 2021
+meeting and adopted the feature into C23 (straw poll results were: 17 in favor,
+0 oppose, 1 abstain). The WG21 proposal is functionally identical to the WG14
+proposal, with the only difference being due to existing variance in
+specification around how ~#error~ causes translation to stop.
 #+end_quote
 **** tags: CWG, straw-poll, C++23, size - tiny, plenary-approved

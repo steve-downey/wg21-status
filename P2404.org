@@ -2,4 +2,16 @@
 :PROPERTIES:
 :CUSTOM_ID: p2404-relaxing-equality_comparable_withs-and-three_way_comparable_withs-common-reference-requir
 :END:
+
+#+begin_quote
+None of ~equality_comparable_with~, ~totally_ordered_with~, or
+~three_way_comparable_with~ support move-only types. For move-only types, these
+concept’s common reference requirement currently ends up requiring that the two
+types ~const T&~ and ~const U&~ can be converted to the non-reference
+~common_reference_t~, meaning that it requires ~T~ and ~U~ to be copyable. This
+common reference requirement should be relaxed to support these move-only
+types, effectively turning the common reference requirement into a common
+_supertype_ requirement, as the original reason to require formable references
+no longer exists.
+#+end_quote
 **** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

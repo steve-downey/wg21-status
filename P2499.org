@@ -2,4 +2,8 @@
 :PROPERTIES:
 :CUSTOM_ID: p2499-string_view-range-constructor-should-be-explicit-james-touton
 :END:
+
+#+begin_quote
+P1989R2 added a new constructor to ~basic_string_view~ that allows for implicit conversion from any contiguous range of the corresponding character type. This implicit conversion relies on the premise that a range of ~char~ is inherently string-like. While that premise holds in some situations, it is hardly universally true, and the implicit conversion is likely to cause problems. This paper proposes making the conversion explicit instead of implicit in order to avoid misleading programmers.
+#+end_quote
 **** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

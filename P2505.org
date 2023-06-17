@@ -2,4 +2,20 @@
 :PROPERTIES:
 :CUSTOM_ID: p2505-monadic-functions-for-stdexpected-jeff-garland
 :END:
+
+#+begin_quote
+With the final plenary vote of P0798 Monadic Functions for std::optional complete, we now have an design inconsistency with std::expected. P0323 std::expected has now also been voted into the working draft for C++23. This proposal corrects the inconsistency by adding 4 functions to std::expected and is targeted at C++23. The author believes this should be treated as a consistency/bug fix still in scope for C++23.
+#+end_quote
+
+** Proposal
+The following 3 functions are added to std::optional, but are currently not part of std::expected.
+
+- ~and_then~ :: compose a chain of functions returning an expected
+- ~or_else~ :: returns if it has a value, otherwise it calls a function with the error type
+- ~transform~ :: apply a function to change the value (and possibly the type)
+
+After feedback, this draft also proposes the addition of two additional functions for expected to facilitate additional cases:
+
+- ~transform_error~ :: apply a function to change the value, otherwise call a function with error type
+- ~error_or~ :: a value to return when there is not an error
 **** tags: LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved

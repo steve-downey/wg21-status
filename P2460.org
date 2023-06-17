@@ -2,4 +2,13 @@
 :PROPERTIES:
 :CUSTOM_ID: p2460-relax-requirements-on-wchar_t-to-match-existing-practices-corentin-jabot
 :END:
+
+#+begin_quote
+We propose to remove the constraints put on the encoding associated with ~wchar_t~ in the core wording.
+#+end_quote
+
+** Proposal
+Type wchar_t is a distinct type that has an implementation-defined signed or unsigned integer type as its underlying type. +The values of type wchar_t can represent distinct codes for all members of the largest extended character set
+specified among the supported locales.+
+
 **** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved, ...

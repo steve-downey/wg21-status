@@ -1,4 +1,4 @@
-* [[https://wg21.link/p2438][P2438]] std::string::substr() && (Federico Kircheis, Tomasz Kamiński)
+* [[https://wg21.link/p2438][P2438]] ~std::string::substr() &&~ (Federico Kircheis, Tomasz Kamiński)
 :PROPERTIES:
 :CUSTOM_ID: p2438-stdstringsubstr-federico-kircheis-tomasz-kamiński
 :END:
@@ -8,6 +8,7 @@ auto foo() -> std::string;
 
 auto b = foo().substr(/* */);
 #+end_src
+
 Before:
 #+begin_quote
 foo() returns a temporary std::string. .substr creates a new string and copies the relevant content. At last, the temporary string returned by foo is released.

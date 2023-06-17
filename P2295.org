@@ -1,5 +1,9 @@
-* [[https://wg21.link/p2295][P2295]] Correct UTF-8 handling during phase 1 of translation (Corentin Jabot)
+* [[https://wg21.link/p2295][P2295]] Correct UTF-8 handling during phase 1 of translation (Corentin Jabot, Peter Brett)
 :PROPERTIES:
 :CUSTOM_ID: p2295-correct-utf-8-handling-during-phase-1-of-translation-corentin-jabot
 :END:
+
+#+begin_quote
+We propose that UTF-8 source files should be supported by all C++ compilers.
+#+end_quote
 **** tags: CWG, straw-poll, C++23, plenary-approved

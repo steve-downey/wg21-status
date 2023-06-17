@@ -5,7 +5,7 @@
 #+begin_quote
 Currently, the view concept is defined in 24.4.4 [range.view] as:
 #+end_quote
-#+begin_src
+#+begin_src c++
 template <class T>
 concept view =
     range<T> &&
