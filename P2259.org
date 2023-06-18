@@ -2,4 +2,21 @@
 :PROPERTIES:
 :CUSTOM_ID: p2259-repairing-input-range-adaptors-and-counted_iterator-tim-song
 :END:
+
+#+begin_quote
+This paper proposes fixes for several issues with iterator_category for range and iterator adaptors. This resolves [LWG3283], [LWG3289], and [LWG3408].
+#+end_quote
+
+
+#+begin_quote
+This code does not compile:
+#+end_quote
+
+#+begin_src c++
+std::vector<int> vec = {42};
+auto r = vec | std::views::transform([](int c) { return std::views::single(c);})
+             | std::views::join
+             | std::views::filter([](int c) { return c > 0; });
+r.begin();
+#+end_src
 **** tags: C++23, IS, plenary-approved

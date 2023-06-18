@@ -183,26 +183,59 @@
 #+INCLUDE:  P2223.org :only-contents t
 
 #+INCLUDE:  P2227.org :only-contents t
+#+begin_comment
+:Tags: info
+#+end_comment
 
 #+INCLUDE:  P2231.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2236.org :only-contents t
+#+begin_comment
+:Tags: info
+#+end_comment
 
 #+INCLUDE:  P2238.org :only-contents t
+#+begin_comment
+:Tags: info
+#+end_comment
 
 #+INCLUDE:  P2242.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2246.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2251.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2255.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2259.org :only-contents t
+#+begin_comment
+:Tags: CWG, issues
+#+end_comment
 
 #+INCLUDE:  P2266.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2273.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2278.org :only-contents t
 #+begin_comment
