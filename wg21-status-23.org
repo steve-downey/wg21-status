@@ -188,20 +188,10 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 
 ** Other CWG
 20 Papers
-*** [[https://wg21.link/p0849][P0849]] auto(x): DECAY_COPY in the language (Zhihao Yuan)
-#+begin_quote
-This paper proposes auto(x) and auto{x} for transforming x into a prvalue with the same value as-if passed as a function argument by value. When users asked for this functionality, we claimed that the DECAY_COPY notion in the standard serves such purpose, but it is for exposition only.
-#+end_quote
-**** Example
-#+begin_src c++
-// instead of:
-auto subparser = parser;
-subparser.add_option(...);
-
-// you can write:
-auto subparser = auto(parser).add_option(...);
-#+end_src
-CWG, LWG, C++23, IS, plenary-approved
+#+INCLUDE:  P0849.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1272.org :only-contents t
 #+begin_comment
@@ -308,272 +298,113 @@ CWG, LWG, C++23, IS, plenary-approved
 * Library Working Group Proposals
 ** Ranges
 21 Papers + 2 from "Major"
-*** [[https://wg21.link/p1659][P1659]] starts_with and ends_with (Christopher Di Bella)
-#+begin_quote
-This proposal seeks to add std::ranges::starts_with and std::ranges::ends_with, which would work on arbitrary ranges, and also answer questions such as "are the starting elements of `r1` less than the elements of `r2`?" and "are the final elements of `r1` greater than the elements of `r2`?"
-#+end_quote
-**** Before/After Table
-Before:
-#+begin_src c++
-auto some_ints      = view::iota(0, 50);
-auto some_more_ints = view::iota(0, 30);
-if (ranges::mismatch(some_ints, some_more_ints).in2 == end(some_more_ints)) {
-    // do something
-}
-#+end_src
-After:
-#+begin_src c++
-auto some_ints      = view::iota(0, 50);
-auto some_more_ints = view::iota(0, 30);
-if (ranges::starts_with(some_ints, some_more_ints)) {
-    // do something
-}
-#+end_src
-LWG, C++23, IS, small, plenary-approved
+#+INCLUDE:  P1659.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
-*** [[https://wg21.link/p1989][P1989]] Range constructor for std::string_view 2: Constrain Harder (Corentin Jabot)
-#+begin_src c++
-template<class R>
-basic_string_view(R&&)
--> basic_string_view<ranges::range_value_t<R>>;
-#+end_src
-LWG, ranges, C++23, plenary-approved
+#+INCLUDE:  P1989.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2321][P2321]] zip (Tim Song)
-#+begin_quote
-This paper proposes
-- four views, zip, zip_transform, adjacent, and adjacent_transform,
-- changes to tuple and pair necessary to make them usable as proxy references (necessary for zip and adjacent), and
-- changes to vector<bool>::reference to make it usable as a proxy reference for writing,
-#+end_quote
-**** Example
-#+begin_src c++
-std::vector v1 = {1, 2};
-std::vector v2 = {'a', 'b', 'c'};
-std::vector v3 = {3, 4, 5};
+#+INCLUDE:  P2321.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-fmt::print("{}\n", std::views::zip(v1, v2));                              // {(1, 'a'), (2, 'b')}
-fmt::print("{}\n", std::views::zip_transform(std::multiplies(), v1, v3)); // {3, 8}
-fmt::print("{}\n", v2 | std::views::pairwise);                            // {('a', 'b'), ('b', 'c')}
-fmt::print("{}\n", v3 | std::views::pairwise_transform(std::plus()));     // {7, 9}
-#+end_src
-LWG, ranges, C++23, IS, B3: Addition, plenary-approved
+#+INCLUDE:  P2302.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2302][P2302]] Prefer std::ranges::contains over std::basic_string_view::contains (Christopher Di Bella)
-#+begin_quote
-P2302 proposes two algorithms: one that checks whether or not a range contains an element, and one that checks whether or not a range contains a subrange
-#+end_quote
-Before:
-#+begin_src c++
-namespace stdr = std::ranges;
-stdr::find(haystack.begin(), haystack.end(), 'o') != haystack.end()
-stdr::find(haystack, 'o') != stdr::end(haystack)
-not stdr::search(haystack, long_needle).empty()
-not stdr::search(haystack, long_needle, bind_back(std::modulo(), 4)).empty()
-#+end_src
-After:
-#+begin_src c++
-namespace stdr = std::ranges;
-stdr::contains(haystack.begin(), haystack.end(), 'o')
-stdr::contains(haystack, 'o')
-stdr::contains_subrange(haystack, long_needle)
-stdr::contains_subrange(haystack, long_needle, bind_back(std::modulo(), 4))
-#+end_src
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3: Addition
+#+INCLUDE:  P2322.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2322][P2322]] ranges::fold (Barry Revzin)
-#+begin_quote
-While we do have an iterator-based version of fold in the standard library, it is currently named accumulate, defaults to performing + on its operands, and is found in the header <numeric>. But fold is much more than addition, so as described in the linked paper, it’s important to give it the more generic name and to avoid a default operator.
-#+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3: Addition
+#+INCLUDE:  P2387.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2387][P2387]] Pipe support for user-defined range adaptors (Barry Revzin)
-#+begin_quote
-Walter Brown made an excellent observation: if we gave users the tools to write their own range adaptors that would properly inter-operate with standard library adaptors (as well as other users’ adaptors), then it becomes less important to provide more adaptors in the standard library.
+#+INCLUDE:  P2325.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-The goal of this paper is provide that functionality: provide a standard customization mechanism for range adaptors, so that everybody can write their own adaptors.
-#+end_quote
-LWG, ranges, C++23, IS, B2: Improvement, medium, plenary-approved
+#+INCLUDE:  P2367.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
-*** [[https://wg21.link/p2325][P2325]] Views should not be required to be default constructible (Barry Revzin)
-#+begin_quote
-Currently, the view concept is defined in 24.4.4 [range.view] as:
-#+end_quote
-#+begin_src
-template <class T>
-concept view =
-    range<T> &&
-    movable<T> &&
-    default_initializable<T> &&
-    enable_view<T>;
-#+end_src
-**** Discussion
-#+begin_quote
-Three of these four criteria, I understand. A view clearly needs to be a range, and it’s important that they be movable for various operations to work. And the difference between a view and range is largely semantic, and so there needs to be an explicit opt-in in the form of enable_view.
 
-But why does a view need to be default_initializable?
-#+end_quote
-LWG, ranges, C++23, IS, B2: Improvement, plenary-approved
+#+INCLUDE:  P2432.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2367][P2367]] Remove misuses of list-initialization from Clause 24 (Tim Song)
-#+begin_quote
-This paper provides wording for [LWG3524] and resolves related issues caused by the erroneous use of list-initialization in ranges wording.
-#+end_quote
 
-#+begin_quote
-As discussed in [LWG3524], the use of list-initialization in the ranges specification implies ordering guarantees that are unintended and unimplementable in ordinary C++, as well as narrowing checks that are unnecessary and sometimes unimplementable.
-#+end_quote
-LWG, C++23, plenary-approved
+#+INCLUDE:  P2415.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/P2432][P2432]] Fix istream_view (Nicolai Josuttis)
-#+begin_quote
-This paper fixes a fundamental design problem with the current helper function
-std::ranges::istream_view<>() that cause multiple inconsistences and unnecessary code
-overhead when declaring istream_view objects
-#+end_quote
-Before:
-#+begin_src c++
-std::ranges::istream_view<int> v{mystream}
- // ERROR
-#+end_src
-After:
-#+begin_src c++
-std::ranges::istream_view<int> v{mystream}
- // OK
-#+end_src
-LWG, ranges, C++23, IS, B2: Improvement, small, plenary-approved
 
-*** [[https://wg21.link/p2415][P2415]] What is a view? (Barry Revzin, Tim Song)
-#+begin_quote
-Once upon a time, a view was a cheaply copyable, non-owning range. We’ve already somewhat lost the “cheaply copyable” requirement since views don’t have to be copyable, and now this paper is suggesting that we also lose the non-owning part.
-#+end_quote
-LWG, ranges, C++23, IS, B2: Improvement, medium, plenary-approved
+#+INCLUDE:  P2408.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2408][P2408]] Ranges views as inputs to non-Ranges algorithms (David Olsen)
-#+begin_quote
-Change the iterator requirements for non-Ranges algorithms. For forward iterators and above that are constant iterators, instead of requiring that iterators meet certain /Cpp17...Iterator/ requirements, require that the iterators model certain iterator concepts. This makes iterators from several standard views usable with non-Ranges algorithms that require forward iterators or above, such as the parallel overloads of most algorithms.
-#+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2: Improvement
+#+INCLUDE:  P2210.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2210][P2210]] Superior String Splitting (Barry Revzin)
-**** Proposal Part 1
-#+begin_quote
-This paper proposes the following:
-Rename the existing ~views::split~ / ~ranges::split_view~ to ~views::lazy_split~ / ~ranges::lazy_split_view~. Add ~base()~ member functions to the ~inner-iterator~ type to get back to the adapted range’s iterators.
-#+end_quote
+#+INCLUDE:  P2440.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-**** Proposal Part 2
-#+begin_quote
-1.  Introduce a new range adapter under the name ~views::split~ / ~ranges::split_view~ with the following design:
+#+INCLUDE:  P2443.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-    1. It can only support splitting forward-or-better ranges.
-    1. Splitting a ~V~ will yield ~subrange<iterator_t<V>>~s, ensuring that the adapted range’s category is preserved. Splitting a bidirectional range gives out bidirectional subranges. Spltiting a contiguous range gives out contiguous subranges.
-    1. ~views::split~ will not be ~const~-iterable.
-#+end_quote
-**** Example
-#+begin_src c++
-auto ip = "127.0.0.1"s;
-auto parts = ip | std::views::split('.')
-                | std::views::transform([](std::span<char const> s){
-                      int i;
-                      std::from_chars(s.data(), s.data() + s.size(), i);
-                      return i;
-                  });
-#+end_src
-LWG, ranges, C++23, IS, B2: Improvement, plenary-approved
+#+INCLUDE:  P2328.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2440][P2440]] ranges::iota, ranges::shift_left, and ranges::shift_right (Tim Song)
-#+begin_quote
-This paper proposes adding the algorithms ranges::iota, ranges::shift_left, and ranges::shift_right, to match their std counterparts.
-#+end_quote
-LWG, ranges, C++23, IS, B3: Addition, medium, plenary-approved
+#+INCLUDE:  P2442.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2443][P2443]] views::chunk_by (Tim Song)
-#+begin_quote
-This paper proposes the range adaptor views::chunk_by as described in section 4.3 of [P2214R1].
-#+end_quote
-#+begin_src c++
-std::vector v = {1, 2, 2, 3, 0, 4, 5, 2};
-fmt::print("{}\n", v | std::views::chunk_by(ranges::less_equal{}));   // [[1, 2, 2, 3], [0, 4, 5], [2]]
-#+end_src
-LWG, ranges, C++23, IS, B3: Addition, medium, plenary-approved
+#+INCLUDE:  P2441.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/P2328][P2328]] join_view should join all views of ranges (Tim Song)
-#+begin_quote
-This paper proposes relaxing the constraint on join_view to support joining ranges of prvalue non-view ranges.
-#+end_quote
-LWG, ranges, C++23, IS, B2: Improvement, plenary-approved
+#+INCLUDE:  P2446.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
-*** [[https://wg21.link/p2442][P2442]] Windowing range adaptors:views::chunk and views::slide (Tim Song)
-#+begin_quote
-This paper proposes two range adaptors, views::chunk and views::slide, as described in section 3.5 of [P2214R0].
-#+end_quote
-#+begin_src c++
-std::vector v = {1, 2, 3, 4, 5};
-fmt::print("{}\n", v | std::views::chunk(2));   // [[1, 2], [3, 4], [5]]
-fmt::print("{}\n", v | std::views::slide(2));   // [[1, 2], [2, 3], [3, 4], [4, 5]]
-#+end_src
-LWG, ranges, C++23, IS, B3: Addition, medium, plenary-approved
+#+INCLUDE:  P2494.org :only-contents t
+#+begin_comment
+:Tags: LWG,ranges
+#+end_comment
 
-*** [[https://wg21.link/p2441][P2441]] views::join_with (Barry Revzin)
-#+begin_quote
-The behavior of ~views::join_with~ is an inverse of ~views::split~. That is, given a range ~r~ and a pattern ~p~, ~r | views::split(p) | views::join_with(p)~ should yield a range consisting of the same elements as ~r~.
-#+end_quote
-LWG, ranges, C++23, IS, plenary-approved
+#+INCLUDE:  P2502.org :only-contents t
+#+begin_comment
+:Tags: LWG,ranges
+#+end_comment
 
-*** [[https://wg21.link/p2446][P2446]] views::move (Barry Revzin)
-#+begin_quote
-~as_rvalue_view~ presents a view of an underlying sequence with the same behavior as the underlying sequence except that its elements are rvalues. Some generic algorithms can be called with a as_rvalue_view to replace copying with moving.
-
-The name views::as_rvalue denotes a range adaptor object ([range.adaptor.object]).
-#+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3: Addition, medium
-
-*** [[https://wg21.link/p2494][P2494]] Relaxing range adaptors to allow for move only types (Michał Dominiak)
-#+begin_quote
-Currently, many range adaptors require that the user-provided types they store must be copy constructible, which is also required by the assignment wrapper they use, copyable-box.
-#+end_quote
-
-#+begin_quote
-Similarly to how [P2325R3] turned semiregular-box into copyable-box, this paper proposes to turn copyable-box into movable-box. This name is probably not ideal, because it still turns types that happen to be copy constructible into copyable types, but it follows from the prior changes to the wrapper.
-#+end_quote
-LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B2: Improvement
-
-*** [[https://wg21.link/p2502][P2502]] std::generator: Synchronous Coroutine Generator for Ranges (Casey Carter)
-#+begin_quote
-We propose a standard library type std::generator which implements a coroutine generator
-that models std::ranges::input_range.
-#+end_quote
-**** Example
-#+begin_src c++
-std::generator<int> fib() {
-    auto a = 0, b = 1;
-    while (true) {
-        co_yield std::exchange(a, std::exchange(b, a + b));
-    }
-}
-int answer_to_the_universe() {
-    auto rng = fib() | std::views::drop(6) | std::views::take(3);
-    return std::ranges::fold_left(std::move(range), 0, std::plus{});
-}
-#+end_src
-LWG, coroutines, ranges, C++23, tentatively-ready-for-plenary, IS, B1:Focus
-
-*** [[https://wg21.link/p2281][P2281]] Clarifying range adaptor objects (Tim Song)
-#+begin_quote
-The wording below clarifies that the partial application performed by range adaptor objects is essentially identical to that performed by bind_front. (Indeed, it is effectively a limited version of bind_back.) In particular, this means that the bound arguments are captured by copy or move, and never by reference. Invocation of the pipeline then either copies or moves the bound entities, depending on the value category of the pipeline.
-#+end_quote
-**** Example
-#+begin_src c++
-auto c = /* some range */;
-auto f = /* expensive-to-copy function object */;
-c | transform(f); // copies f and then move it into the view
-
-auto t = transform(f); // copies f
-c | t;                 // copies f again from t
-c | std::move(t);      // moves f from t
-#+end_src
-LWG, C++23, plenary-approved
+#+INCLUDE:  P2281.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 ** Output
 4 papers + 1 from majors
@@ -1089,10 +920,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG, CWG
 #+end_comment
 
-#+INCLUDE:  P1659.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P1679.org :only-contents t
 #+begin_comment
@@ -1127,10 +954,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P1989.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 #+INCLUDE:  P2017.org :only-contents t
 #+begin_comment
@@ -1197,10 +1020,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 
 
 
-#+INCLUDE:  P2210.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 #+INCLUDE:  P2212.org :only-contents t
 #+begin_comment
@@ -1260,10 +1079,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P2281.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 
 
@@ -1282,10 +1097,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P2302.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 #+INCLUDE:  P2313.org :only-contents t
 #+begin_comment
@@ -1298,26 +1109,10 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P2321.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
-
-#+INCLUDE:  P2322.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 
-#+INCLUDE:  P2325.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
-#+INCLUDE:  P2328.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
+
 
 
 #+INCLUDE:  P2340.org :only-contents t
@@ -1326,11 +1121,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-
-#+INCLUDE:  P2367.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2372.org :only-contents t
 #+begin_comment
@@ -1352,10 +1142,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: CWG, issues, info
 #+end_comment
 
-#+INCLUDE:  P2387.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 #+INCLUDE:  P2393.org :only-contents t
 #+begin_comment
@@ -1372,15 +1158,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG, ranges
 #+end_comment
 
-#+INCLUDE:  P2408.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
-
-#+INCLUDE:  P2415.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 #+INCLUDE:  P2417.org :only-contents t
 #+begin_comment
@@ -1397,46 +1174,21 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG, format
 #+end_comment
 
-#+INCLUDE:  P2432.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
-
 
 #+INCLUDE:  P2438.org :only-contents t
 #+begin_comment
 :Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P2440.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
-#+INCLUDE:  P2441.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
-#+INCLUDE:  P2442.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
-#+INCLUDE:  P2443.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 #+INCLUDE:  P2445.org :only-contents t
 #+begin_comment
 :Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P2446.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
-#+end_comment
 
 
 #+INCLUDE:  P2450.org :only-contents t
@@ -1467,20 +1219,12 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P2494.org :only-contents t
-#+begin_comment
-:Tags: LWG,ranges
-#+end_comment
 
 #+INCLUDE:  P2499.org :only-contents t
 #+begin_comment
 :Tags: LWG,ranges
 #+end_comment
 
-#+INCLUDE:  P2502.org :only-contents t
-#+begin_comment
-:Tags: LWG,ranges
-#+end_comment
 
 #+INCLUDE:  P2505.org :only-contents t
 #+begin_comment
