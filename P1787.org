@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p1787-declarations-and-where-to-find-them-s.-davis-herring
 :END:
+
+#+begin_quote
+The current descriptions of scope and name lookup are confusing, incomplete, and at times incorrect.
+#+end_quote
+
 **** tags: modules, C++23, IS, plenary-approved

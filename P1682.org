@@ -2,4 +2,8 @@
 :PROPERTIES:
 :CUSTOM_ID: p1682-stdto_underlying-jeanheyd-meneide
 :END:
+
+#+begin_quote
+A proposal to add a short utility function to handle going from an enumeration to its underlying integral value for safety and ease of use.
+#+end_quote
 **** tags: C++23, IS, size - small, plenary-approved

@@ -1,5 +1,11 @@
-* [[https://wg21.link/p1264][P1264]] Revising the wording of stream input operations (Louis Dionne)...
+* [[https://wg21.link/p1264][P1264]] Revising the wording of stream input operations (Louis Dionne)
 :PROPERTIES:
 :CUSTOM_ID: p1264-revising-the-wording-of-stream-input-operations-louis-dionne
 :END:
+
+#+begin_quote
+The wording in [istream], [istream.formatted] and [istream.unformatted] is very difficult to
+follow when it comes to exceptions. Some requirements are specified more than once in different
+locations, which makes it ambiguous how requirements should interact with each other.
+#+end_quote
 **** tags: LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium, plenary-approved, lwg-wording-only

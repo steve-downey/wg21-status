@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p1169-static-operator-barry-revzin-casey-carter
 :END:
+
+#+begin_quote
+The proposal is to just allow the ability to make the call operator a static member function, instead of requiring it to be a non-static member function. We have many years of experience with member-less function objects being useful.
+#+end_quote
+
 **** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved, expedited-library-...

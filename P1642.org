@@ -2,4 +2,10 @@
 :PROPERTIES:
 :CUSTOM_ID: p1642-freestanding-library-easy-utilities-ben-craig
 :END:
+
+#+begin_quote
+This paper proposes adding many of the facilities in the ~[utilities]~, ~[ranges]~, and ~[iterators]~ clause to the freestanding subset of C++. The paper will be adding only complete entities, and will not tackle partial classes. For example, classes like ~pair~ and ~tuple~ are being added, but trickier classes like ~optional~, ~variant~, and ~bitset~ will come in another paper.
+
+The ~<memory>~ header depends on facilities in ~<ranges>~ and ~<iterator>~, so those headers (and clauses) are addressed as well.
+#+end_quote
 **** tags: CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS, B2 - improvement, size - medium, plenary-approved

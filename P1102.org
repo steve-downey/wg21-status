@@ -1,5 +1,10 @@
-* [[https://wg21.link/p1102][P1102]] Down with ()! (Alex Christensen, JF Bastien)
+* [[https://wg21.link/p1102][P1102]] Down with ~()~! (Alex Christensen, JF Bastien)
 :PROPERTIES:
 :CUSTOM_ID: p1102-down-with-alex-christensen-jf-bastien
 :END:
+
+#+begin_quote
+A proposal for removing unnecessary ()’s from C++ lambdas.
+#+end_quote
+
 **** tags: C++23, IS, plenary-approved

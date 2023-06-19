@@ -2,4 +2,8 @@
 :PROPERTIES:
 :CUSTOM_ID: p1899-stride_view-christopher-di-bella
 :END:
+
+#+begin_quote
+The ability to use algorithms over an evenly-spaced subset of a range has been missed in the STL for a quarter of a century. Given that there’s no way to compose a strided range adaptor in C++20, this should be adopted for C++23.
+#+end_quote
 **** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

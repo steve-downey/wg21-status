@@ -1,9 +1,9 @@
-* [[https://wg21.link/p0448][P0448]] A strstream replacement using span<charT> as buffer (Peter Sommerlad)
+* [[https://wg21.link/p0448][P0448]] A strstream replacement using ~span<charT>~ as buffer (Peter Sommerlad)
 :PROPERTIES:
 :CUSTOM_ID: p0448r2-a-strstream-replacement-using-spanchart-as-buffer-peter-sommerlad
 :END:
 #+begin_quote
-This paper proposes a class template basic_spanbuf and the corresponding stream
+This paper proposes a class template ~basic_spanbuf~ and the corresponding stream
 class templates to enable the use of streams on externally provided memory
 buffers. No ownership or re-allocation support is given. For those features we
 have string-based streams

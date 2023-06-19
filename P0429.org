@@ -2,4 +2,12 @@
 :PROPERTIES:
 :CUSTOM_ID: p0429r6-a-standard-flatmap-zach-laine
 :END:
+#+begin_quote
+This paper outlines what a (mostly) API-compatible, non-node-based map might
+look like. Rather than presenting a final design, this paper is intended as a
+starting point for discussion and as a basis for future work. Specifically,
+there is no mention of ~multimap~, ~set~, or ~multiset~.
+#+end_quote
+
+The final paper has wording for a map based on contiguous storage of keys and data.
 **** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved

@@ -1,5 +1,13 @@
-* [[https://wg21.link/p2165][P2165]] Comparing pair and tuples (Corentin Jabot)
+* [[https://wg21.link/p2165][P2165]] Compatibility between ~tuple~, ~pair~ and _tuple-like_ objects (Corentin Jabot)
 :PROPERTIES:
 :CUSTOM_ID: p2165-comparing-pair-and-tuples-corentin-jabot
 :END:
+
+#+begin_quote
+We propose to make pair constructible from ~tuple~ and ~std::array~ We mandate
+~tuple_cat~ and friends to be compatible with these types, and associative
+containers more compatible with them. The changes proposed in this paper make
+the use of ~std::pair~ unnecessary in new code
+#+end_quote
+
 **** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved

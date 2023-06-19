@@ -2,4 +2,9 @@
 :PROPERTIES:
 :CUSTOM_ID: p2212-relax-requirements-for-time_pointclock-alexey-dmitriev-howard-hinnant
 :END:
+
+#+begin_quote
+We propose to relax the requirements on the Clock template parameter of std::chrono::time_point.
+#+end_quote
+
 **** tags: C++23, IS, plenary-approved

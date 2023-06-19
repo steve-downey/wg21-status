@@ -2,4 +2,14 @@
 :PROPERTIES:
 :CUSTOM_ID: p1223-find_backward-zach-laine
 :END:
+#+begin_quote
+Consider how finding the last element that is equal to ‘x‘ in a range is typically done (for all the examples below, we assume a valid range of elements [first, last), and an iterator it within that range):
+#+end_quote
+
+#+begin_quote
+Consider this instead:
+~auto it = std::find_last(first, it, x);~
+// Use it here...
+That’s better! It’s a lot less verbose.
+#+end_quote
 **** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

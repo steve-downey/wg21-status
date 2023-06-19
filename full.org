@@ -53,134 +53,329 @@
 
 
 #+INCLUDE:  P0009.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan,major
+#+end_comment
 
 #+INCLUDE:  P0288.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P0323.org :only-contents t
+#+begin_comment
+:Tags: LWG, major
+#+end_comment
 
 #+INCLUDE:  P0330.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P0401.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P0429.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P0448.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P0533.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P0627.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P0798.org :only-contents t
+#+begin_comment
+:Tags: LWG, major
+#+end_comment
 
 #+INCLUDE:  P0847.org :only-contents t
+#+begin_comment
+:Tags: CWG, major
+#+end_comment
 
 #+INCLUDE:  P0943.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1048.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1072.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1102.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P1132.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1147.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1169.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1206.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P1222.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P1223.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1264.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1272.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1328.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1401.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P1413.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1425.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1467.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1518.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1642.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1659.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1675.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1679.org :only-contents t
+#+begin_comment
+:Tags: LWG, text
+#+end_comment
 
 #+INCLUDE:  P1682.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1774.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P1787.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P1847.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P1899.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P1938.org :only-contents t
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
 
 #+INCLUDE:  P1949.org :only-contents t
+#+begin_comment
+:Tags: CWG, text
+#+end_comment
 
 #+INCLUDE:  P1951.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P1989.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P2017.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P2029.org :only-contents t
+#+begin_comment
+:Tags: CWG, issue
+#+end_comment
 
 #+INCLUDE:  P2036.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2071.org :only-contents t
+#+begin_comment
+:Tags: CWG, text
+#+end_comment
 
 #+INCLUDE:  P2077.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2093.org :only-contents t
+#+begin_comment
+:Tags: LWG, format
+#+end_comment
 
 #+INCLUDE:  P2096.org :only-contents t
+#+begin_comment
+:Tags: CWG, issue
+#+end_comment
 
 #+INCLUDE:  P2128.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2136.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2156.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2160.org :only-contents t
+#+begin_comment
+:Tags: LWG, issue
+#+end_comment
 
 #+INCLUDE:  P2162.org :only-contents t
+#+begin_comment
+:Tags: LWG, issue
+#+end_comment
 
 #+INCLUDE:  P2164.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P2165.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P2166.org :only-contents t
+#+begin_comment
+:Tags: LWG, text
+#+end_comment
 
 #+INCLUDE:  P2167.org :only-contents t
+#+begin_comment
+:Tags: LWG, issue
+#+end_comment
 
 #+INCLUDE:  P2173.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
 
 #+INCLUDE:  P2186.org :only-contents t
+#+begin_comment
+:Tags: CWG, LWG
+#+end_comment
 
 #+INCLUDE:  P2201.org :only-contents t
+#+begin_comment
+:Tags: CWG, text
+#+end_comment
 
 #+INCLUDE:  P2210.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
 
 #+INCLUDE:  P2212.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 #+INCLUDE:  P2216.org :only-contents t
+#+begin_comment
+:Tags: LWG, format
+#+end_comment
 
 #+INCLUDE:  P2223.org :only-contents t
+#+begin_comment
+:Tags: CWG, text
+#+end_comment
 
 #+INCLUDE:  P2227.org :only-contents t
 #+begin_comment

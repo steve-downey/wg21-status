@@ -1,5 +1,9 @@
-* [[https://wg21.link/p0323][P0323]] std::expected (Vicente Botet, JF Bastien)...
+* [[https://wg21.link/p0323][P0323]] ~std::expected~ (Vicente Botet, JF Bastien, Jonathan Wakely)
 :PROPERTIES:
 :CUSTOM_ID: p0323-stdexpected-vicente-botet-jf-bastien
 :END:
+
+#+begin_quote
+Class template ~expected<T, E>~ is a vocabulary type which contains an expected value of type ~T~, or an error ~E~. The class skews towards behaving like a ~T~, because its intended use is when the expected type is contained. When something unexpected occurs, more typing is required. When all is good, code mostly looks as if a ~T~ were being handled.
+#+end_quote
 **** tags: LWG, C++23, IS, B3 - addition, size - large, plenary-approved
