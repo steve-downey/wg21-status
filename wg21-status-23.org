@@ -410,140 +410,53 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 4 papers + 1 from majors
 
 (or 2 if you count formatting ranges)
-*** [[https://wg21.link/p1147][P1147]] Printing =volatile= Pointers (Bryce Adelstein Lelbach)
-#+begin_quote
-Printing pointers to volatile types with standard library output streams has unexpected results. Consider the following code:
-#+end_quote
-**** Example
-#+begin_src c++
-#include <iostream>
+#+INCLUDE:  P1147.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
-int main() {
-    int*          p0 = reinterpret_cast<int*>(0xdeadbeef);
-    volatile int* p1 = reinterpret_cast<volatile int*>(0xdeadbeef);
+#+INCLUDE:  P2216.org :only-contents t
+#+begin_comment
+:Tags: LWG, format
+#+end_comment
 
-    std::cout << p0 << std::endl;
-    std::cout << p1 << std::endl;
-}
-#+end_src
-#+begin_quote
-This produces the following output:
+#+INCLUDE:  P2372.org :only-contents t
+#+begin_comment
+:Tags: LWG, format
+#+end_comment
 
-#+begin_example
-0xdeadbeef
-#+end_example
+#+INCLUDE:  P2418.org :only-contents t
+#+begin_comment
+:Tags: LWG, format
+#+end_comment
 
-1
-#+end_quote
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/p2216][P2216]] std::format improvements (Victor Zverovich)
-#+begin_quote
-This paper proposes the following improvements to the C++20 formatting facility:
-- Improving safety via compile-time format string checks
-- Reducing binary code size of format_to
-#+end_quote
-#+begin_src c++
-std::string s = std::format("{:d}", "I am not a number");
-#+end_src
-Becomes ill-formed
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/P2372][P2372]] Fixing locale handling in chrono formatters (Victor Zverovich, Corentin Jabot)
-#+begin_quote
-In C++20 "Extending <chrono> to Calendars and Time Zones" ([P0355]) and "Text Formatting" ([P0645]) proposals were integrated ([P1361]). Unfortunately during this integration a design issue was missed: std::format is locale-independent by default and provides control over locale via format specifiers but the new formatter specializations for chrono types are localized by default and don’t provide such control.
-#+end_quote
-**** Solution
-#+begin_quote
-We propose fixing this issue by making chrono formatters locale-independent by default and providing the L specifier to opt into localized formatting in the same way as it is done for all other standard formatters (format.string.std).
-#+end_quote
-**** Before:
-#+begin_src c++
-auto s = std::format("{:%S}", sec(4.2));
-// s == "04,200"
-
-auto s = std::format("{:L%S}", sec(4.2));
-// throws format_error
-#+end_src
-**** After:
-#+begin_src c++
-auto s = std::format("{:%S}", sec(4.2));
-// s == "04.200"
-
-auto s = std::format("{:L%S}", sec(4.2));
-// s == "04,200"
-#+end_src
-
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/p2418][P2418]] Add support for std::generator-like types to std::format (Victor Zverovich)
-#+begin_quote
-Unfortunately we cannot make std::generator formattable because it is neither const-iterable nor copyable and std::format takes arguments by const&.
-#+end_quote
-#+begin_quote
-This paper proposes solving the issue by making std::format and other formatting functions take arguments by forwarding references.
-#+end_quote
-LWG, C++23, IS, B2: Improvement, medium, plenary-approved
-
-*** [[https://wg21.link/p2508][P2508]] Exposing std::basic-format-string (Barry Revzin)
-#+begin_quote
-In 20.20.1 [format.syn], replace the exposition-only names basic-format-string, format-string, and wformat-string with the non-exposition-only names basic_format_string, format_string, and wformat_string.
-#+end_quote
-**** Example
-#+begin_src c++
-template <typename... Args>
-void log(std::format_string<Args...> s, Args&&... args) {
-    if (logging_enabled) {
-        log_raw(std::format(s, std::forward<Args>(args)...));
-    }
-}
-#+end_src
-LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition
+#+INCLUDE:  P2508.org :only-contents t
+#+begin_comment
+:Tags: LWG,format
+#+end_comment
 
 ** Constexpr
 4 papers
-*** [[https://wg21.link/p1328][P1328]] Making std::type_info::operator== constexpr (Peter Dimov)
-#+begin_quote
-This paper proposes std::type_info::operator== and operator!= be made constexpr, enabling practical, rather than theoretical, use of typeid in constant expressions.
-#+end_quote
-LWG, C++23, IS, B3: Addition, tiny, plenary-approved
+#+INCLUDE:  P1328.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
-*** [[https://wg21.link/p2231][P2231]] Missing =constexpr= in =std::optional= and =std::variant= (Barry Revzin)
-#+begin_quote
-But even though the language provided the tools to make ~std::optional~ and ~std::variant~ completely ~constexpr~-able, there was no such update to the library. This paper seeks to remedy that omission by simply adding ~constexpr~ to all the relevant places.
-#+end_quote
-LWG, C++23, IS, B2: Improvement, plenary-approved
 
-*** [[https://wg21.link/p2273][P2273]] Making std::unique_ptr constexpr (Andreas Fertig)
-#+begin_quote
-std::unique_ptr is currently not constexpr friendly. With the loosening of requirements on
-constexpr in [P0784R10] and the ability to use new and delete in a constexpr­context, we should
-also provide a constexpr std::unique_ptr.
-#+end_quote
-**** Example
-#+begin_src c++
-constexpr auto fun() {
-    auto p = std::make_unique<int>(4);
-    return *p;
-}
-int main() {
-    constexpr auto i = fun();
-    static_assert(4 == i);
-}
-#+end_src
-LWG, C++23, B2: Improvement, plenary-approved, constexpr, expedited-library-evolution-electronic-poll
+#+INCLUDE:  P2231.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
-*** [[https://wg21.link/p2291][P2291]] Add Constexpr Modifiers to Functions =to_chars= and =from_chars= for Integral Types in =<charconv>= Header (Daniil Goncharov, Karaev Alexander)
-#+begin_quote
-There is currently no standard way to make conversion between numbers and strings /at compile time/.
+#+INCLUDE:  P2273.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
-~std::to_chars~ and ~std::from_chars~ are fundamental blocks for parsing and
-formatting being localeindependent and non-throwing without memory allocation,
-so they look like natural candidates for constexpr string conversions. The
-paper proposes to make ~std::to_chars~ and ~std::from_chars~ functions for *integral
-types* usable in constexpr context.
-#+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B2: Improvement, small, constexpr, expedited-library-evolution-electronic-poll
+#+INCLUDE:  P2291.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
 
 ** Other Types and Utilities
 21 papers
@@ -862,10 +775,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P1147.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P1169.org :only-contents t
 #+begin_comment
@@ -888,11 +797,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG
 #+end_comment
 
-
-#+INCLUDE:  P1328.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 #+INCLUDE:  P1413.org :only-contents t
@@ -1026,20 +930,12 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P2216.org :only-contents t
-#+begin_comment
-:Tags: LWG, format
-#+end_comment
 
 #+INCLUDE:  P2227.org :only-contents t
 #+begin_comment
 :Tags: info
 #+end_comment
 
-#+INCLUDE:  P2231.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2236.org :only-contents t
 #+begin_comment
@@ -1068,10 +964,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: CWG, issues
 #+end_comment
 
-#+INCLUDE:  P2273.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2278.org :only-contents t
 #+begin_comment
@@ -1082,10 +974,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 
 
 
-#+INCLUDE:  P2291.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2295.org :only-contents t
 #+begin_comment
@@ -1122,10 +1010,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 
 
 
-#+INCLUDE:  P2372.org :only-contents t
-#+begin_comment
-:Tags: LWG, format
-#+end_comment
 
 #+INCLUDE:  P2374.org :only-contents t
 #+begin_comment
@@ -1164,10 +1048,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P2418.org :only-contents t
-#+begin_comment
-:Tags: LWG, format
-#+end_comment
 
 #+INCLUDE:  P2419.org :only-contents t
 #+begin_comment
@@ -1231,10 +1111,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG,monad
 #+end_comment
 
-#+INCLUDE:  P2508.org :only-contents t
-#+begin_comment
-:Tags: LWG,format
-#+end_comment
 
 #+INCLUDE:  P2513.org :only-contents t
 #+begin_comment
