@@ -129,7 +129,7 @@
 
 #+INCLUDE:  P1132.org :only-contents t
 #+begin_comment
-:Tags: LWG
+:Tags: LWG, major
 #+end_comment
 
 #+INCLUDE:  P1147.org :only-contents t
@@ -144,7 +144,7 @@
 
 #+INCLUDE:  P1206.org :only-contents t
 #+begin_comment
-:Tags: LWG, ranges
+:Tags: LWG, ranges, major
 #+end_comment
 
 #+INCLUDE:  P1222.org :only-contents t
@@ -289,7 +289,7 @@
 
 #+INCLUDE:  P2093.org :only-contents t
 #+begin_comment
-:Tags: LWG, format
+:Tags: LWG, format, major
 #+end_comment
 
 #+INCLUDE:  P2096.org :only-contents t
@@ -299,7 +299,7 @@
 
 #+INCLUDE:  P2128.org :only-contents t
 #+begin_comment
-:Tags: CWG
+:Tags: CWG, major
 #+end_comment
 
 #+INCLUDE:  P2136.org :only-contents t
@@ -684,7 +684,7 @@
 
 #+INCLUDE:  P2465.org :only-contents t
 #+begin_comment
-:Tags: LWG,CWG,modules
+:Tags: LWG,CWG,modules,major
 #+end_comment
 
 #+INCLUDE:  P2467.org :only-contents t
