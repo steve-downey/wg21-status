@@ -59,18 +59,17 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 
 
 * Major (in my opinion)
-9 papers total
+- 10 papers total
+
 #+INCLUDE:  P0323.org :only-contents t
 #+begin_comment
 :Tags: LWG, major
 #+end_comment
 
-
 #+INCLUDE:  P0798.org :only-contents t
 #+begin_comment
 :Tags: LWG, major
 #+end_comment
-
 
 #+INCLUDE:  P0847.org :only-contents t
 #+begin_comment
@@ -105,6 +104,11 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+INCLUDE:  P2128.org :only-contents t
 #+begin_comment
 :Tags: CWG, major
+#+end_comment
+
+#+INCLUDE:  P0009.org :only-contents t
+#+begin_comment
+:Tags: LWG,mdspan,major
 #+end_comment
 
 * Core Working Group Proposals
@@ -461,284 +465,15 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 ** Other Types and Utilities
 21 papers
 
-*** [[https://wg21.link/p0288][P0288]] any_invocable (Ryan McDougall, Matt Calabrese)
-#+begin_quote
-This paper proposes a conservative, move-only equivalent of std::function.
-#+end_quote
-
-LWG, C++23, IS, large, plenary-approved
-
-*** [[https://wg21.link/p0401][P0401]] Providing size feedback in the Allocator interface (Chris Kennelly, Jonathan Wakely)
-#+begin_quote
-Utilize size feedback from Allocator to reduce spurious reallocations
-#+end_quote
-
-LWG, C++23, small, plenary-approved
-
-18 papers
-*** [[https://wg21.link/p0448][P0448]] A strstream replacement using span<charT> as buffer (Peter Sommerlad)
-#+begin_quote
-This paper proposes a class template basic_spanbuf and the corresponding stream
-class templates to enable the use of streams on externally provided memory
-buffers. No ownership or re-allocation support is given. For those features we
-have string-based streams
-#+end_quote
-**** Example
-#+begin_src c++
-char        input[] = "10 20 30";
-ispanstream is{span<char>{input}};
-int         i;
-is >> i;
-ASSERT_EQUAL(10, i);
-is >> i;
-ASSERT_EQUAL(20, i);
-is >> i;
-ASSERT_EQUAL(30, i);
-is >> i;
-ASSERT(!is);
-#+end_src
-
-LWG, C++23, large, plenary-approved
-
-*** [[https://wg21.link/p0627][P0627]] Function to mark unreachable code (Melissa Mears)
-#+begin_quote
-This proposal introduces a new standard library function, std::unreachable, for
-marking locations in code execution as being known by the programmer to be
-unreachable.
-#+end_quote
-**** Example
-#+begin_src c++
-[[noreturn]] void kill_self() {
-    kill(getpid(), SIGKILL);
-    std::unreachable();
-}
-#+end_src
-LWG, C++23, IS, B3: Addition, small, plenary-approved, expedited-library-evolution-electronic-poll
-
-*** [[https://wg21.link/p1072][P1072]] basic_string::resize_default_init (Chris Kennelly, Mark Zeren)
-#+begin_quote
-Allow access to default initialized elements of basic_string.
-#+end_quote
-**** Example
-#+begin_src c++
-std::string GeneratePattern(const std::string& pattern, size_t count) {
-    std::string ret;
-
-    const auto step = pattern.size();
-    // GOOD: No initialization
-    ret.resize_default_init(step * count);
-    for (size_t i = 0; i < count; i++) {
-        // GOOD: No bookkeeping
-        memcpy(ret.data() + i * step, pattern.data(), step);
-    }
-
-    return ret;
-}
-#+end_src
-LWG, C++23, IS, plenary-approved
-
-
-*** [[https://wg21.link/p1413][P1413]] A safer interface for std::aligned_storage (CJ Johnson)
-#+begin_quote
-[] the standard library should provided two more symbols in the form of
-typedefs that take in a single template type parameter and, on behalf of the
-user, deduce the size and alignment of that type, passing in the values to
-std::aligned_storage. The symbols should be ~std::aligned_storage_for~ and
-~std::aligned_storage_for_t~. Like ~std::aligned_storage~ and
-~std::aligned_storage_t~, they should be available in the ~<type_traits>~ header
-of the standard library.
-#+end_quote
-
-LWG, C++23, plenary-approved
-
-*** [[https://wg21.link/p1425][P1425]] Iterators pair constructors for stack and queue (Corentin Jabot)
-#+begin_quote
-This paper proposes to add iterators-pair constructors to ~std::stack~ and ~std::queue~
-#+end_quote
-**** Example
-
-| Before                                     | After                               |
-|--------------------------------------------+-------------------------------------|
-| ~std::vector<int> v(42);~                  | ~std::vector<int> v(42);~           |
-| ~std::stack<int> s({v.begin(), v.end()});~ | ~std::stack s(v.begin(), v.end());~ |
-| ~std::queue<int> q({v.begin(), v.end()});~ | ~std::queue q(v.begin(), v.end());~ |
-
-
-LWG, C++23, B2: Improvement, small, plenary-approved
-
-*** [[https://wg21.link/p1518][P1518]] Stop overconstraining allocators in container deduction guides (Arthur O'Dwyer, Mike Spertus)
-#+begin_quote
-Discussion of flatmap’s deduction guides revealed that the deduction guides for sequence containers and container adaptors are needlessly overconstrained, making use cases such as pmr containers unnecessarily difficult.
-#+end_quote
-
-LWG, C++23, IS, small, plenary-approved
-
-*** [[https://wg21.link/p1951][P1951]] Default Arguments for pair's Forwarding Constructor (Logan R. Smith)
-#+begin_quote
-This paper proposes defaulting the template arguments U1 and U2 in pair's forwarding constructor to T1 and T2 respectively, so that braced initializers may be used as constructor arguments to it.
-#+end_quote
-#+begin_src c++
-std::pair<std::string, std::vector<std::string>> p("hello", {});
-#+end_src
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/p2077][P2077]] Heterogeneous erasure overloads for associative containers (Konstantin Boyarinov, Sergey Vinogradov; Ruslan Arutyunyan)
-#+begin_quote
-The authors propose heterogeneous erasure overloads for ordered and unordered associative containers, which add an ability to erase values or extract nodes without creating a temporary key_type object.
-#+end_quote
-LWG, C++23, IS, B2: Improvement, plenary-approved
-
-*** [[https://wg21.link/p2136][P2136]] invoke<R> (Zhihao Yuan)
-#+begin_quote
-This paper proposes invoke_r, a variant of std::invoke that allows specifying the return type, realizing the semantics of INVOKE<R> rather than INVOKE.
-#+end_quote
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/p2166][P2166]] A Proposal to Prohibit std::basic_string and std::basic_string_view construction from nullptr (Yuriy Chernyshov)
-#+begin_quote
-the behavior of std::basic_string::basic_string(const CharT* s) constructor is undefined if [s, s + Traits::length(s)) is not a valid range (for example, if s is a null pointer)
-#+end_quote
-LWG, C++23, IS, small, plenary-approved
-
-*** [[https://wg21.link/p2251][P2251]] Require span & basic_string_view to be Trivially Copyable (Nevin Liber)
-#+begin_quote
-Given its definition, it is strongly implied that span & basic_string_view are
-trivially copyable, but that is not yet a requirement.
-#+end_quote
-
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/p2255][P2255]] A type trait to detect reference binding to temporary (Tim Song)
-#+begin_quote
-This paper proposes adding two new type traits with compiler support to detect when the initialization of a reference would bind it to a lifetime-extended temporary, and changing several standard library components to make such binding ill-formed when it would inevitably produce a dangling reference.
-#+end_quote
-**** Before
-#+begin_src c++
-std::tuple<const std::string&>      x("hello");            // dangling
-std::function<const std::string&()> f = [] { return ""; }; // OK
-
-f(); // dangling
-#+end_src
-**** After
-#+begin_src c++
-std::tuple<const std::string&>      x("hello");            // ill-formed
-std::function<const std::string&()> f = [] { return ""; }; // ill-formed
-#+end_src
-LWG, C++23, IS, small, plenary-approved, expedited-library-evolution-electronic-poll
-
-*** [[https://wg21.link/p2301][P2301]] Add a pmr alias for std::stacktrace (Steve Downey)
-#+begin_quote
-This paper proposes to add an alias in the pmr namespace defaulting the allocator used by the std::basic_stacktrace template to pmr::allocator. No changes to the api of std::stacktrace are necessary.
-#+end_quote
-**** Before
-#+begin_src c++
-char buffer[1024];
-
-std::pmr::monotonic_buffer_resource pool{
-    std::data(buffer), std::size(buffer)};
-
-std::basic_stacktrace<
-    std::pmr::polymorphic_allocator<std::stacktrace_entry>>
-    trace{&pool};
-#+end_src
-**** After
-#+begin_src c++
-char buffer[1024];
-
-std::pmr::monotonic_buffer_resource pool{
-    std::data(buffer), std::size(buffer)};
-
-std::pmr::stacktrace trace{&pool};
-#+end_src
-LWG, C++23, tiny, plenary-approved
-
-*** [[https://wg21.link/p2340][P2340]] Clarifying the status of the 'C headers' (Thomas Köppe)
-#+begin_quote
-We propose to move the specification of “[depr.c.headers] C headers” from Annex D into the main document, and changing those headers’ status from “deprecated” to an explicitly discussed state “for foreign-language interoperability only”.
-#+end_quote
-LWG, C++23, policy, IS, B2: Improvement, small, plenary-approved
-
-*** [[https://wg21.link/p2393][P2393]] Cleaning up integer-class types (Tim Song)
-#+begin_quote
-This paper revamps the specification and use of integer-class types to resolve a number of issues, including [LWG3366], [LWG3376], and [LWG3575].
-#+end_quote
-LWG, C++23, plenary-approved
-
-*** [[https://wg21.link/p2401][P2401]] Add a conditional noexcept specification to std::exchange (Giuseppe D'Angelo)
-#+begin_quote
-We propose to add a noexcept-specification to std::exchange , which is currently lacking one.
-#+end_quote
-LWG, C++23, IS, plenary-approved
-
-*** [[https://wg21.link/p2438][P2438]] std::string::substr() && (Federico Kircheis, Tomasz Kamiński)
-#+begin_src
-auto foo() -> std::string;
-
-auto b = foo().substr(/* */);
-#+end_src
-Before:
-#+begin_quote
-foo() returns a temporary std::string. .substr creates a new string and copies the relevant content. At last, the temporary string returned by foo is released.
-#+end_quote
-After:
-#+begin_quote
-foo() returns a std::string. .substr implementation can reuse the storage of the string returned by foo and leave it in a valid but unspecified state. At last, the temporary string returned by foo() is released.
-#+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, expedited-library-evolution-electronic-poll
-
-*** [[https://wg21.link/p2445][P2445]] forward_like (Gašper Ažman)
-#+begin_quote
-Deducing This [P0847R7] is expected to land in C++23.
-Its examples use a hypothetical ~std::forward_like<decltype(self)>(variable)~ facility because
-~std::forward<decltype(v)>(v)~ is insufficient. This paper proposes ~std::forward_like~ to cater to
-this scenario.
-#+end_quote
-**** Example
-#+begin_src c++
-auto callback = [m = get_message(), &scheduler](this auto&& self) -> bool {
-    return scheduler.submit(std::forward_like<decltype(self)>(m));
-};
-callback();            // retry(callback)
-std::move(callback)(); // try-or-fail(rvalue)
-#+end_src
-LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, small
-
-*** [[https://wg21.link/P2467][P2467]] Support exclusive mode for fstreams (Jonathan Wakely)
-#+begin_quote
-Historically, C++ iostreams libraries had a ~noreplace~ open mode that corresponded to the ~O_EXCL~ flag for POSIX ~open~. That mode was not included in the C++98 standard, presumably for portability reasons, because it wasn't in ISO C90.
-
-Since then, ISO C added support for "exclusive" mode to ~fopen~, so now C++'s ~<fstream>~ is missing a feature that is present in both ISO C and POSIX. We should fix this for C++23.
-#+end_quote
-LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-evolution-electronic-poll
-
-
-* C++ 23 Features :noexport:
-
-
-#+INCLUDE:  P0009.org :only-contents t
-#+begin_comment
-:Tags: LWG,mdspan,major
-#+end_comment
-
 #+INCLUDE:  P0288.org :only-contents t
 #+begin_comment
 :Tags: LWG
 #+end_comment
 
 
-#+INCLUDE:  P0330.org :only-contents t
-#+begin_comment
-:Tags: CWG
-#+end_comment
-
 #+INCLUDE:  P0401.org :only-contents t
 #+begin_comment
 :Tags: LWG
-#+end_comment
-
-#+INCLUDE:  P0429.org :only-contents t
-#+begin_comment
-:Tags: LWG, ranges
 #+end_comment
 
 #+INCLUDE:  P0448.org :only-contents t
@@ -753,6 +488,115 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
+#+INCLUDE:  P1072.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+
+
+#+INCLUDE:  P1413.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P1425.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+
+#+INCLUDE:  P1518.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P1951.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2077.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2136.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2166.org :only-contents t
+#+begin_comment
+:Tags: LWG, text
+#+end_comment
+
+#+INCLUDE:  P2251.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2255.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2301.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2340.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2393.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2401.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2438.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+#+INCLUDE:  P2445.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+
+#+INCLUDE:  P2467.org :only-contents t
+#+begin_comment
+:Tags: LWG
+#+end_comment
+
+
+
+* Unfiled C++ 23 Features
+
+
+
+
+#+INCLUDE:  P0330.org :only-contents t
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+
+#+INCLUDE:  P0429.org :only-contents t
+#+begin_comment
+:Tags: LWG, ranges
+#+end_comment
+
+
+
 
 #+INCLUDE:  P0943.org :only-contents t
 #+begin_comment
@@ -762,11 +606,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+INCLUDE:  P1048.org :only-contents t
 #+begin_comment
 :Tags: LWG, CWG
-#+end_comment
-
-#+INCLUDE:  P1072.org :only-contents t
-#+begin_comment
-:Tags: LWG
 #+end_comment
 
 #+INCLUDE:  P1102.org :only-contents t
@@ -799,24 +638,10 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 
 
 
-#+INCLUDE:  P1413.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
-
-#+INCLUDE:  P1425.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P1467.org :only-contents t
 #+begin_comment
 :Tags: LWG, CWG
-#+end_comment
-
-#+INCLUDE:  P1518.org :only-contents t
-#+begin_comment
-:Tags: LWG
 #+end_comment
 
 #+INCLUDE:  P1642.org :only-contents t
@@ -853,10 +678,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P1951.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 #+INCLUDE:  P2017.org :only-contents t
@@ -874,10 +695,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: CWG
 #+end_comment
 
-#+INCLUDE:  P2077.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 #+INCLUDE:  P2096.org :only-contents t
@@ -886,10 +703,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P2136.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2160.org :only-contents t
 #+begin_comment
@@ -911,10 +724,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: LWG, ranges
 #+end_comment
 
-#+INCLUDE:  P2166.org :only-contents t
-#+begin_comment
-:Tags: LWG, text
-#+end_comment
 
 #+INCLUDE:  P2167.org :only-contents t
 #+begin_comment
@@ -949,15 +758,7 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 
 
 
-#+INCLUDE:  P2251.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
-#+INCLUDE:  P2255.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2259.org :only-contents t
 #+begin_comment
@@ -980,11 +781,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: CWG
 #+end_comment
 
-#+INCLUDE:  P2301.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
-
 
 #+INCLUDE:  P2313.org :only-contents t
 #+begin_comment
@@ -1002,11 +798,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 
 
 
-
-#+INCLUDE:  P2340.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 
@@ -1027,15 +818,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P2393.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
-
-#+INCLUDE:  P2401.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 #+INCLUDE:  P2404.org :only-contents t
 #+begin_comment
@@ -1055,19 +837,10 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 #+end_comment
 
 
-#+INCLUDE:  P2438.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 
 
-
-#+INCLUDE:  P2445.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 
@@ -1086,11 +859,6 @@ LWG, C++23, tentatively-ready-for-plenary, IS, B3: Addition, expedited-library-e
 :Tags: CWG, issues
 #+end_comment
 
-
-#+INCLUDE:  P2467.org :only-contents t
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 
 #+INCLUDE:  P2474.org :only-contents t
