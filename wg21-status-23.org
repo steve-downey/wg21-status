@@ -1,4 +1,4 @@
-#+OPTIONS: ':nil *:t -:t ::t <:t H:nil \n:nil ^:nil arch:headline author:nil
+#+OPTIONS: ':nil *:t -:t ::t <:t H:4 \n:nil ^:nil arch:headline author:nil
 #+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:nil e:t
 #+OPTIONS: email:nil f:t inline:t num:nil p:nil pri:nil prop:nil stat:t tags:t
 #+OPTIONS: tasks:t tex:t timestamp:nil title:nil toc:nil todo:t |:t
@@ -32,7 +32,7 @@
 #+SUBTITLE:
 #+INFOJS_OPT:
 
-#+OPTIONS: reveal_width:3200 reveal_height:1800
+#+OPTIONS: reveal_width:2400 reveal_height:1350
 #+REVEAL_TRANS: fade
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./vivendi-tinted.css" />
 
@@ -48,8 +48,9 @@
 #+REVEAL_HLEVEL: 4
 #+REVEAL_EXPORT_NOTES_TO_PDF: separate-page
 
+
 * C++ 23 Status Report
-This is a summary of what has already been approved for C++23 or has been forwarded to plenary for final vote, which means consensus and is unlikely to not pass.
+This is a summary of what was approved for C++23.
 
 All of the quoted text and example code is from the papers linked in the headings by the authors of the papers.
 
@@ -61,64 +62,64 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 * Major (in my opinion)
 - 11 papers total
 
-#+INCLUDE:  P2644.org :only-contents t :minlevel 4
+#+INCLUDE:  P2644.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: CWG,Major
 #+end_comment
 
-#+INCLUDE:  P0323.org :only-contents t :minlevel 4
+#+INCLUDE:  P0323.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG, major
 #+end_comment
 
-#+INCLUDE:  P0798.org :only-contents t :minlevel 4
+#+INCLUDE:  P0798.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG, major
 #+end_comment
 
-#+INCLUDE:  P0847.org :only-contents t :minlevel 4
+#+INCLUDE:  P0847.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: CWG, major
 #+end_comment
 
-#+INCLUDE:  P1132.org :only-contents t :minlevel 4
+#+INCLUDE:  P1132.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG, major
 #+end_comment
 
-#+INCLUDE:  P1206.org :only-contents t :minlevel 4
+#+INCLUDE:  P1206.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG, ranges, major
 #+end_comment
 
-#+INCLUDE:  P2286.org :only-contents t :minlevel 4
+#+INCLUDE:  P2286.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG, ranges, major
 #+end_comment
 
-#+INCLUDE:  P2465.org :only-contents t :minlevel 4
+#+INCLUDE:  P2465.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG,CWG,modules,major
 #+end_comment
 
-#+INCLUDE:  P2093.org :only-contents t :minlevel 4
+#+INCLUDE:  P2093.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG, format, major
 #+end_comment
 
-#+INCLUDE:  P2128.org :only-contents t :minlevel 4
+#+INCLUDE:  P2128.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: CWG, major
 #+end_comment
 
-#+INCLUDE:  P0009.org :only-contents t :minlevel 4
+#+INCLUDE:  P0009.org :only-contents t :minlevel 3
 #+begin_comment
 :Tags: LWG,mdspan,major
 #+end_comment
 
-* Core Working Group Proposals
+* Core Working Group Features
 ** constexpr
-5 Papers
+- 5 Papers
 #+INCLUDE:  P0533.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG, CWG
@@ -145,7 +146,7 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+end_comment
 
 ** Text Translation
-9 Papers
+- 12 Papers
 #+INCLUDE:  P1949.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: CWG, text
@@ -155,7 +156,6 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+begin_comment
 :Tags: CWG, text
 #+end_comment
-
 
 
 #+INCLUDE:  P2201.org :only-contents t :minlevel 4
@@ -195,8 +195,24 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 :Tags: CWG, text
 #+end_comment
 
+#+INCLUDE:  P2460.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG, LWG, text
+#+end_comment
+
+#+INCLUDE:  P2295.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+
+#+INCLUDE:  P2513.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
 ** Other CWG
-20 Papers
+- 32 Papers
 #+INCLUDE:  P0849.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG, CWG
@@ -304,9 +320,77 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 :Tags: CWG
 #+end_comment
 
-* Library Working Group Proposals
+#+INCLUDE:  P0330.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P1102.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+
+#+INCLUDE:  P0943.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
+
+#+INCLUDE:  P1048.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
+
+
+
+#+INCLUDE:  P1169.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
+
+
+
+#+INCLUDE:  P1467.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
+
+#+INCLUDE:  P1642.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
+
+
+#+INCLUDE:  P1787.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P1938.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, CWG
+#+end_comment
+
+#+INCLUDE:  P2036.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+
+
+#+INCLUDE:  P2564.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+#+INCLUDE:  P2579.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: CWG
+#+end_comment
+
+* Library Working Group Features
 ** Ranges
-21 Papers + 2 from "Major"
+- 36 Papers + 2 from "Major"
 #+INCLUDE:  P1659.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG
@@ -491,6 +575,7 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+end_comment
 
 ** ~mdspan~
+- 5 Papers + 1
 #+INCLUDE:  P2553.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG,mdspan
@@ -517,9 +602,7 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+end_comment
 
 ** Output
-4 papers + 1 from majors
-
-(or 2 if you count formatting ranges)
+- 8 Papers
 #+INCLUDE:  P1147.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG
@@ -545,8 +628,23 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 :Tags: LWG,format
 #+end_comment
 
+#+INCLUDE:  P2419.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG, format
+#+end_comment
+
+#+INCLUDE:  P2539.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG,format
+#+end_comment
+
+#+INCLUDE:  P2585.org :only-contents t :minlevel 4
+#+begin_comment
+:Tags: LWG,format
+#+end_comment
+
 ** Constexpr
-4 papers
+- 4 papers
 #+INCLUDE:  P1328.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG
@@ -569,7 +667,7 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+end_comment
 
 ** Other Types and Utilities
-21 papers
+35 papers
 
 #+INCLUDE:  P0288.org :only-contents t :minlevel 4
 #+begin_comment
@@ -682,38 +780,30 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+begin_comment
 :Tags: LWG
 #+end_comment
-
-
-
-* Unfiled C++ 23 Features
-
-#+INCLUDE:  P0330.org :only-contents t :minlevel 4
+#+INCLUDE:  P2588.org :only-contents t :minlevel 4
 #+begin_comment
-:Tags: CWG
+:Tags: LWG
 #+end_comment
 
-
-#+INCLUDE:  P0943.org :only-contents t :minlevel 4
+#+INCLUDE:  P2590.org :only-contents t :minlevel 4
 #+begin_comment
-:Tags: LWG, CWG
+:Tags: CWG,LWG
 #+end_comment
 
-#+INCLUDE:  P1048.org :only-contents t :minlevel 4
+#+INCLUDE:  P2614.org :only-contents t :minlevel 4
 #+begin_comment
-:Tags: LWG, CWG
+:Tags: LWG
 #+end_comment
 
-#+INCLUDE:  P1102.org :only-contents t :minlevel 4
+#+INCLUDE:  P2655.org :only-contents t :minlevel 4
 #+begin_comment
-:Tags: CWG
+:Tags: LWG
 #+end_comment
 
-
-#+INCLUDE:  P1169.org :only-contents t :minlevel 4
+#+INCLUDE:  P2674.org :only-contents t :minlevel 4
 #+begin_comment
-:Tags: LWG, CWG
+:Tags: LWG
 #+end_comment
-
 
 #+INCLUDE:  P1223.org :only-contents t :minlevel 4
 #+begin_comment
@@ -723,17 +813,6 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+INCLUDE:  P1264.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG
-#+end_comment
-
-
-#+INCLUDE:  P1467.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG, CWG
-#+end_comment
-
-#+INCLUDE:  P1642.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG, CWG
 #+end_comment
 
 
@@ -748,29 +827,9 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 #+end_comment
 
 
-#+INCLUDE:  P1787.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG
-#+end_comment
-
-#+INCLUDE:  P1938.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG, CWG
-#+end_comment
-
-#+INCLUDE:  P2036.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG
-#+end_comment
-
 #+INCLUDE:  P2212.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG
-#+end_comment
-
-#+INCLUDE:  P2295.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG
 #+end_comment
 
 
@@ -779,49 +838,15 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 :Tags: LWG
 #+end_comment
 
-
-#+INCLUDE:  P2419.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG, format
-#+end_comment
-
-
-
-#+INCLUDE:  P2460.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG, LWG, text
-#+end_comment
-
-
-
-
-
-
-
-
-
 #+INCLUDE:  P2505.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG,monad
-#+end_comment
-
-
-#+INCLUDE:  P2513.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG
 #+end_comment
 
 #+INCLUDE:  P2517.org :only-contents t :minlevel 4
 #+begin_comment
 :Tags: LWG
 #+end_comment
-
-
-#+INCLUDE:  P2539.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG,format
-#+end_comment
-
 
 #+INCLUDE:  P2549.org :only-contents t :minlevel 4
 #+begin_comment
@@ -830,53 +855,6 @@ The "Major" Section is my judgement, influenced by a few friends, about what I t
 
 
 
-#+INCLUDE:  P2564.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG
-#+end_comment
-
-#+INCLUDE:  P2579.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG
-#+end_comment
-
-
-#+INCLUDE:  P2585.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG,format
-#+end_comment
-
-#+INCLUDE:  P2588.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG
-#+end_comment
-
-#+INCLUDE:  P2590.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: CWG,LWG
-#+end_comment
-
-
-
-
-
-
-#+INCLUDE:  P2614.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG
-#+end_comment
-
-
-
-#+INCLUDE:  P2655.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG
-#+end_comment
-
-#+INCLUDE:  P2674.org :only-contents t :minlevel 4
-#+begin_comment
-:Tags: LWG
-#+end_comment
 
 * Misc Issues and Comments :noexport:
 
