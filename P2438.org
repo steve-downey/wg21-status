@@ -17,4 +17,4 @@ After:
 #+begin_quote
 foo() returns a std::string. .substr implementation can reuse the storage of the string returned by foo and leave it in a valid but unspecified state. At last, the temporary string returned by foo() is released.
 #+end_quote
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, expedited-library-evolution-electronic-poll

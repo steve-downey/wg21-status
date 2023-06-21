@@ -8,4 +8,4 @@ Unfortunately we cannot make std::generator formattable because it is neither co
 #+begin_quote
 This paper proposes solving the issue by making std::format and other formatting functions take arguments by forwarding references.
 #+end_quote
-**** tags: LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved
+tags: LWG, C++23, IS, B2 - improvement, size - medium, plenary-approved

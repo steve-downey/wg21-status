@@ -19,4 +19,4 @@ U'\N{LATIN CAPITAL LETTER A WITH MACRON}' // Equivalent to U'\u0100'
 u8"\N{LATIN CAPITAL LETTER A WITH MACRON}\N{COMBINING GRAVE ACCENT}" // Equivalent to u8"\u0100\u0300"
 #+end_src
 
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

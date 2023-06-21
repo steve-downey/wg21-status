@@ -16,4 +16,4 @@ meeting and adopted the feature into C23 (straw poll results were: 17 in favor,
 proposal, with the only difference being due to existing variance in
 specification around how ~#error~ causes translation to stop.
 #+end_quote
-**** tags: CWG, straw-poll, C++23, size - tiny, plenary-approved
+tags: CWG, straw-poll, C++23, size - tiny, plenary-approved

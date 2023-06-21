@@ -21,4 +21,4 @@ This paper provides Standardese for two named modules: ~std~ and ~std.compat~.
 counterparts for the C wrapper headers (e.g. ~::fopen~).
 #+end_quote
 
-**** tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, modular-standard-library, size - large, plenary-approved
+tags: CWG, LWG, straw-poll, C++23, tentatively-ready-for-plenary, IS, modular-standard-library, size - large, plenary-approved

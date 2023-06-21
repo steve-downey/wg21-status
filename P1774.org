@@ -10,4 +10,4 @@ very useful for high-performance and low-latency applications in order to genera
 and smaller code.
 #+end_quote
 
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

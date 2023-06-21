@@ -7,4 +7,4 @@
 We propose to define what it means to include the C ~<stdatomic.h>~ header from C++ code. The goal is to enable "shared" headers that use atomics, and can be included from either C or C++ code.
 
 #+end_quote
-**** tags: C++23, IS, B2 - improvement, size - small, plenary-approved
+tags: C++23, IS, B2 - improvement, size - small, plenary-approved

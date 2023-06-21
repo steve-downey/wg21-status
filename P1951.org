@@ -8,4 +8,4 @@ This paper proposes defaulting the template arguments U1 and U2 in pair's forwar
 #+begin_src c++
 std::pair<std::string, std::vector<std::string>> p("hello", {});
 #+end_src
-**** tags: LWG, C++23, IS, plenary-approved
+tags: LWG, C++23, IS, plenary-approved

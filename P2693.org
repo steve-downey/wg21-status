@@ -8,4 +8,4 @@ This paper provides wording in reply to NB comments suggesting to adopt P1636R2
 (Formatters for library types) and to add formatters for std::stacktrace.
 #+end_quote
 
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved, format
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - medium, plenary-approved, format

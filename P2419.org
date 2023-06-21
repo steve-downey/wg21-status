@@ -10,4 +10,4 @@ C++20 added formatting of chrono types with std::format but left unspecified wha
 #+begin_quote
 We propose clarifying the specification to prevent mojibake when possible by allowing implementation do transcoding or substituting the locale so that the result is in a consistent encoding.
 #+end_quote
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - tiny, plenary-approved

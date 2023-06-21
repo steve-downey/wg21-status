@@ -17,4 +17,4 @@ After:
 #+begin_src c++
 auto vec = get_widgets_map() | ranges::to<vector>
 #+end_src
-**** tags: LWG, ranges, C++23, IS, plenary-approved
+tags: LWG, ranges, C++23, IS, plenary-approved

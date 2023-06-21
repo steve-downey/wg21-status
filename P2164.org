@@ -11,4 +11,4 @@ _A struct with 2 members, how hard can it be?_
 We propose a view ~enumerate~ whose value type is a +struct with 2 members index and value+ _tuple of two elements_
 representing respectively the position and value of the elements in the adapted range.
 #+end_quote
-**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved
+tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, B3 - addition, size - medium, plenary-approved

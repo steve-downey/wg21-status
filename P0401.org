@@ -8,4 +8,4 @@ LWG, C++23, size - small, plenary-approved
 Utilize size feedback from Allocator to reduce spurious reallocations
 #+end_quote
 
-**** tags: LWG, C++23, small, plenary-approved
+tags: LWG, C++23, small, plenary-approved

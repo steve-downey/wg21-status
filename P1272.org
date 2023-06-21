@@ -9,4 +9,4 @@ namespace std {
 }
 // Where std::is_integral_v<IntegerType> is true.
 #+end_src
-**** tags: CWG, LWG, C++23, plenary-approved
+tags: CWG, LWG, C++23, plenary-approved

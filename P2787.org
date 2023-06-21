@@ -26,4 +26,4 @@ std::pmr::polymorphic_allocator<>   pa{&mbr};
 std::pmr::generator<int> g = pmr_requiring_coroutine(std::allocator_arg, pa);
 #+end_src
 
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

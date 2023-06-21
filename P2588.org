@@ -6,4 +6,4 @@
 Unintended consequences of ~std::barrier~ ’s specification constrain implementations to run the ~CompletionFunction~ on the last thread that arrives at the barrier during the phase. This prevents ~std::barrier~ from benefiting from hardware acceleration for thread synchronization. Removing these constraints is a _breaking change_. This paper aims to find a sweet spot for the barrier specification that delivers the functionality that applications need while allowing efficient implementations.
 #+end_quote
 
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

@@ -5,4 +5,4 @@
 #+begin_quote
 In C++20, return statements can implicitly move from local variables of rvalue reference type; but a defect in the wording means that implicit move fails to apply to functions that return references. C++20’s implicit move is specified via a complicated process involving two overload resolutions, which is hard to implement, causing implementation divergence. We fix the defect and simplify the spec by saying that a returned move-eligible id-expression is always an xvalue.
 #+end_quote
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

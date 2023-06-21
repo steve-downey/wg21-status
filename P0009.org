@@ -5,8 +5,10 @@
 
 #+begin_quote
 This paper proposes adding to the C++ Standard Library a multidimensional array view, ~mdspan~, along with classes, class templates, and constants for describing and creating multidimensional array views. It also proposes adding the submdspan function that “slices” (returns an ~mdspan~ that views a subset of) an existing mdspan.
+#+end_quote
 
+#+begin_quote
 The ~mdspan~ class template can represent arbitrary mixes of compile-time or run-time extents. Its element type can be any complete object type that is neither an abstract class type nor an array type. It has two customization opportunities for users: the _layout mapping_ and the _accessor_. The layout mapping specifies the formula, and properties of the formula, for mapping a multidimensional index to an element of the array. The accessor governs how elements are read and written.
 
 #+end_quote
-**** tags: LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan
+tags: LWG, C++23, linear-algebra, tentatively-ready-for-plenary, IS, size - large, plenary-approved, mdspan

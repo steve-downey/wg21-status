@@ -8,4 +8,4 @@ Walter Brown made an excellent observation: if we gave users the tools to write 
 The goal of this paper is provide that functionality: provide a standard customization mechanism for range adaptors, so that everybody can write their own adaptors.
 #+end_quote
 
-**** tags: LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved
+tags: LWG, ranges, C++23, IS, B2 - improvement, size - medium, plenary-approved

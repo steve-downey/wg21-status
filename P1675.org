@@ -14,4 +14,4 @@ http://eel.is/c++draft/propagation#8.
 Unfortunately, such care was not taken for ~rethrow_exception~.
 #+end_quote
 
-**** tags: CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved
+tags: CWG, LWG, C++23, B2 - improvement, size - small, plenary-approved

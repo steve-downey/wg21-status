@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2238-core-language-working-group-tentatively-ready-issues-for-the-november-2020-meeting-will
 :END:
-**** tags: info, C++23, plenary-approved
+tags: info, C++23, plenary-approved

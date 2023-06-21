@@ -9,4 +9,4 @@ No meaningful use-case for such mixed concatenations is known.
 
 This paper makes such mixed concatenations ill-formed.
 #+end_quote
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

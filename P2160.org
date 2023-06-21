@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2160-locks-lock-lockables-wording-for-lwg-2363-tim-song
 :END:
-**** tags: C++23, IS, size - medium, plenary-approved
+tags: C++23, IS, size - medium, plenary-approved

@@ -19,4 +19,4 @@ Three of these four criteria, I understand. A view clearly needs to be a range, 
 
 But why does a view need to be default_initializable?
 #+end_quote
-**** tags: LWG, ranges, C++23, IS, B2 - improvement, plenary-approved
+tags: LWG, ranges, C++23, IS, B2 - improvement, plenary-approved

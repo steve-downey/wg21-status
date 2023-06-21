@@ -8,4 +8,4 @@ This paper proposes adding many of the facilities in the ~[utilities]~, ~[ranges
 
 The ~<memory>~ header depends on facilities in ~<ranges>~ and ~<iterator>~, so those headers (and clauses) are addressed as well.
 #+end_quote
-**** tags: CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS, B2 - improvement, size - medium, plenary-approved
+tags: CWG, LWG, SG14, C++23, tentatively-ready-for-plenary, freestanding, IS, B2 - improvement, size - medium, plenary-approved

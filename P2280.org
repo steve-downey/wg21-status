@@ -18,4 +18,4 @@ void check(int const (&param)[3]) {
 The proposal is to allow all these cases to just work. That is, if during constant evaluation, we run into a reference with unknown origin, this is still okay, we keep going. Similarly, if we run into a pointer with unknown origin, we allow indirecting through it.
 #+end_quote
 
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

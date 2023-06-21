@@ -22,4 +22,4 @@ All in all we prefer the option of making extents require the additional argumen
 template<size_t ... Extents>
 using extents = basic_extents<size_t, Extents...>;
 #+end_src
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved, mdspan

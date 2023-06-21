@@ -13,4 +13,4 @@ forward_as_tuple(args...))~, adding ~noexcept~ to ~apply~ can easily achieve
 this and make it more consistent with ~invoke~.
 #+end_quote
 
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, plenary-approved
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, plenary-approved

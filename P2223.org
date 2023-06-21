@@ -14,4 +14,4 @@ int i = 1
 return i;
 }
 #+end_src
-**** tags: CWG, C++23, SG22, plenary-approved
+tags: CWG, C++23, SG22, plenary-approved

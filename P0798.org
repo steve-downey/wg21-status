@@ -30,4 +30,4 @@ Here is a list of programming languages which have a optional-like type without 
 - or_else :: ~or_else~ returns the optional if it has a value, otherwise it calls a given function. This allows you do things like logging or throwing exceptions in monadic contexts:
 
 
-**** tags: LWG, SG14, C++23, IS, size - small, plenary-approved
+tags: LWG, SG14, C++23, IS, size - small, plenary-approved

@@ -7,4 +7,4 @@ The current rules allow implementations freedom to reorder members in the layout
 access control. To our knowledge no implementation actually used that freedom. We propose to fix this
 established industry practice in the standard as mandatory.
 #+end_quote
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

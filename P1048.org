@@ -7,4 +7,4 @@
 This paper proposes ~is_scoped_enum~, a new trait for the C++ Standard Library, to detect
 whether a type is a scoped enumeration.
 #+end_quote
-**** tags: C++23, IS, B3 - addition, size - small, plenary-approved
+tags: C++23, IS, B3 - addition, size - small, plenary-approved

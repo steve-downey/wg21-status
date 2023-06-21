@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2386-core-language-working-group-ready-issues-for-the-june-2021-meeting-william-m.
 :END:
-**** tags: info, C++23, plenary-approved
+tags: info, C++23, plenary-approved

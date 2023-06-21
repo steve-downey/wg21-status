@@ -31,4 +31,4 @@ for (auto i = 0uz, s = v.size(); i < s; ++i) {
 LWG, C++23, tiny, plenary-approved
 
 
-**** tags: C++23, plenary-approved
+tags: C++23, plenary-approved

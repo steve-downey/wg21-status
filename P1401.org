@@ -13,4 +13,4 @@ This paper proposes to allow narrowing conversions in *contextually converted co
 | ~static_assert(N % 4 != 0);~              | ~static_assert(N % 4);~             |
 | ~static_assert(bool(N));~                 | ~static_assert(N);~                 |
 
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

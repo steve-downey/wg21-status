@@ -6,4 +6,4 @@
 #+begin_quote
 Several range adapters semantically behave as if they have a single member of some templated view type. If that underlying view type is a ~borrowed_range~, the range adapter itself can be transitively borrowed.
 #+end_quote
-**** tags: ranges, C++23, IS, size - small, plenary-approved
+tags: ranges, C++23, IS, size - small, plenary-approved

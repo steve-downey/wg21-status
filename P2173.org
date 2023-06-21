@@ -11,4 +11,4 @@ call operator of the lambda.
 #+begin_src c++
 auto lm = [] [[nodiscard, vendor::attr]] () -> int { return 42; };
 #+end_src
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

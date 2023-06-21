@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2462-core-language-working-group-ready-issues-for-the-october-2021-meeting-willi
 :END:
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

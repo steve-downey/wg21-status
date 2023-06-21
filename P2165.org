@@ -10,4 +10,4 @@ containers more compatible with them. The changes proposed in this paper make
 the use of ~std::pair~ unnecessary in new code
 #+end_quote
 
-**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved
+tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, lwg-fullreview, B2 - improvement, size - medium, plenary-approved

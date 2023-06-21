@@ -30,4 +30,4 @@ void fun()
 }
 #+end_src
 
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, plenary-approved

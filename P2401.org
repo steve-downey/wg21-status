@@ -5,4 +5,4 @@
 #+begin_quote
 We propose to add a noexcept-specification to std::exchange , which is currently lacking one.
 #+end_quote
-**** tags: LWG, C++23, IS, plenary-approved
+tags: LWG, C++23, IS, plenary-approved

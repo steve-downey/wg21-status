@@ -5,4 +5,4 @@
 #+begin_quote
 But even though the language provided the tools to make ~std::optional~ and ~std::variant~ completely ~constexpr~-able, there was no such update to the library. This paper seeks to remedy that omission by simply adding ~constexpr~ to all the relevant places.
 #+end_quote
-**** tags: LWG, C++23, IS, B2 - improvement, plenary-approved
+tags: LWG, C++23, IS, B2 - improvement, plenary-approved

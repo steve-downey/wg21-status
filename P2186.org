@@ -10,6 +10,6 @@ We propose removing (not deprecating) C++'s Garbage Collection support. Specific
 - undeclare_no_pointers
 - get_pointer_safety
 
-As well as the pointer_safety enum, the \_\_STDCPP_STRICT_POINTER_SAFETY\_\_ macro, and the Core Language wording.
+As well as the pointer_safety enum, the __STDCPP_STRICT_POINTER_SAFETY__ macro, and the Core Language wording.
 #+end_quote
-**** tags: CWG, LWG, C++23, IS, plenary-approved
+tags: CWG, LWG, C++23, IS, plenary-approved

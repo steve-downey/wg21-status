@@ -2,4 +2,4 @@
 :PROPERTIES:
 :CUSTOM_ID: p2385-c-standard-library-issues-to-be-moved-in-virtual-plenary-june-2021-jonathan-wakely
 :END:
-**** tags: info, C++23, plenary-approved
+tags: info, C++23, plenary-approved

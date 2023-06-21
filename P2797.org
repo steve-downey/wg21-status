@@ -9,4 +9,4 @@ This document proposes a resolution to [CWG2692]. This also touches the proposed
 #+end_quote
 
 
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

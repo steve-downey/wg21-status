@@ -9,4 +9,4 @@ not know at the time of parsing the return type which names actually are
 captured, so this paper proposes to treat all capturable entities as if they
 were captured.
 #+end_quote
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

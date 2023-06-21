@@ -7,4 +7,4 @@
 This paper proposes to add member function ~contains~ to class templates ~basic_string~ and ~basic_string_view~. This function checks, whether or not a string contains a given substring.
 #+end_quote
 
-**** tags: C++23, IS, size - small, plenary-approved
+tags: C++23, IS, size - small, plenary-approved

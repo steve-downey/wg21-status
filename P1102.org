@@ -7,4 +7,4 @@
 A proposal for removing unnecessary ()’s from C++ lambdas.
 #+end_quote
 
-**** tags: C++23, IS, plenary-approved
+tags: C++23, IS, plenary-approved

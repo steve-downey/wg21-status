@@ -12,4 +12,4 @@ std::aligned_storage. The symbols should be ~std::aligned_storage_for~ and
 of the standard library.
 #+end_quote
 
-**** tags: LWG, C++23, plenary-approved
+tags: LWG, C++23, plenary-approved

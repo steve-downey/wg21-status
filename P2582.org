@@ -27,4 +27,4 @@ struct Point { T x; T y; };
 Point p{3.0, 4.0};
 Point p2{.x = 3.0, .y = 4.0};
 #+end_src
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

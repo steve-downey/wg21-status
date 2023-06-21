@@ -5,4 +5,4 @@
 #+begin_quote
 the behavior of std::basic_string::basic_string(const CharT* s) constructor is undefined if [s, s + Traits::length(s)) is not a valid range (for example, if s is a null pointer)
 #+end_quote
-**** tags: LWG, C++23, IS, size - small, plenary-approved
+tags: LWG, C++23, IS, size - small, plenary-approved

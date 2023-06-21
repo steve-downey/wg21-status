@@ -13,4 +13,4 @@ C++20 by providing the standard library portion of that paper (only the core
 language portion of that paper made it into C++20).
 #+end_quote
 
-**** tags: CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved
+tags: CWG, LWG, C++23, tentatively-ready-for-plenary, lwg-fullreview, plenary-approved

@@ -6,4 +6,4 @@
 #+begin_quote
 To prevent mojibake std::print may use a native Unicode API when writing to a terminal bypassing the stream buffer. During the review of [P2093] "Formatted output" Tim Song suggested that synchronizing std::print with the underlying stream may be beneficial for gradual adoption. This paper presents motivating examples, observes that this problem doesn’t normally happen in practice and proposes a minor update to the wording to provide a synchronization guarantee.
 #+end_quote
-**** tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved
+tags: LWG, C++23, tentatively-ready-for-plenary, IS, B2 - improvement, size - small, plenary-approved

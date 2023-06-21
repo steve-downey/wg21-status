@@ -7,4 +7,4 @@
 We propose to relax the requirements on the Clock template parameter of std::chrono::time_point.
 #+end_quote
 
-**** tags: C++23, IS, plenary-approved
+tags: C++23, IS, plenary-approved

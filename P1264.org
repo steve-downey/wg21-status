@@ -8,4 +8,4 @@ The wording in [istream], [istream.formatted] and [istream.unformatted] is very 
 follow when it comes to exceptions. Some requirements are specified more than once in different
 locations, which makes it ambiguous how requirements should interact with each other.
 #+end_quote
-**** tags: LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium, plenary-approved, lwg-wording-only
+tags: LWG, C++23, IS, lwg-pending, B2 - improvement, size - medium, plenary-approved, lwg-wording-only

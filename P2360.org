@@ -12,4 +12,4 @@
   for (using T = int; T e : v)
     /* something */;
 #+end_src
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

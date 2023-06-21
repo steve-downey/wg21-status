@@ -14,4 +14,4 @@ proposal is to place no character set related requirements on the diagnostic out
 understanding that implementations will do what makes the most sense for their situation when issuing
 diagnostics in terms of which characters need to be escaped or otherwise handled in a special way.
 #+end_quote
-**** tags: CWG, C++23, plenary-approved
+tags: CWG, C++23, plenary-approved

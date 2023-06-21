@@ -18,4 +18,4 @@ After feedback, this draft also proposes the addition of two additional function
 
 - ~transform_error~ :: apply a function to change the value, otherwise call a function with error type
 - ~error_or~ :: a value to return when there is not an error
-**** tags: LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved
+tags: LWG, C++23, IS, lwg-fullreview, B2 - improvement, size - small, plenary-approved

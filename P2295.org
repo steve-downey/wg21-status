@@ -6,4 +6,4 @@
 #+begin_quote
 We propose that UTF-8 source files should be supported by all C++ compilers.
 #+end_quote
-**** tags: CWG, straw-poll, C++23, plenary-approved
+tags: CWG, straw-poll, C++23, plenary-approved

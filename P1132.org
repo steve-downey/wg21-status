@@ -21,4 +21,4 @@ if (err == C_API_ERROR_CONDITION) {
 }
 // resource.get() the out-value from the C API function
 #+end_src
-**** tags: LWG, C++23, IS, plenary-approved
+tags: LWG, C++23, IS, plenary-approved

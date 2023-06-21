@@ -6,4 +6,4 @@
 #+begin_quote
 char8_t has compatibility problems and issues during deployment that people have had to spend energy working around. This paper aims to alleviate some of those compatibility problems, for both C and C++, around string and character literals for the char8_t type.
 #+end_quote
-**** tags: CWG, straw-poll, C++23, B2 - improvement, plenary-approved
+tags: CWG, straw-poll, C++23, B2 - improvement, plenary-approved

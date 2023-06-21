@@ -25,4 +25,4 @@ for (auto&& [ea,eb,ec] : std::views::cartesian_product(a,b,c)) {
     use(ea,eb,ec);
 }
 #+end_src
-**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

@@ -7,4 +7,4 @@
 
 The name views::as_rvalue denotes a range adaptor object ([range.adaptor.object]).
 #+end_quote
-**** tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved
+tags: LWG, ranges, C++23, tentatively-ready-for-plenary, IS, plenary-approved

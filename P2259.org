@@ -19,4 +19,4 @@ auto r = vec | std::views::transform([](int c) { return std::views::single(c);})
              | std::views::filter([](int c) { return c > 0; });
 r.begin();
 #+end_src
-**** tags: C++23, IS, plenary-approved
+tags: C++23, IS, plenary-approved

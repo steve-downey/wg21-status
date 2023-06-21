@@ -7,4 +7,4 @@ template<class R>
 basic_string_view(R&&)
 -> basic_string_view<ranges::range_value_t<R>>;
 #+end_src
-**** tags: LWG, ranges, C++23, plenary-approved
+tags: LWG, ranges, C++23, plenary-approved

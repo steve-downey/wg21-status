@@ -14,4 +14,4 @@ This paper proposes to add iterators-pair constructors to ~std::stack~ and ~std:
 | ~std::queue<int> q({v.begin(), v.end()});~ | ~std::queue q(v.begin(), v.end());~ |
 
 
-**** tags: LWG, C++23, B2 - improvement, size - small, plenary-approved
+tags: LWG, C++23, B2 - improvement, size - small, plenary-approved
